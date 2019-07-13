@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+173-45f8baee-SNAPSHOT - org.bitcoins.core.serializers.p2p.headers.RawNetworkHeaderSerializer</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 173 - 45f8baee - SNAPSHOT - org.bitcoins.core.serializers.p2p.headers.RawNetworkHeaderSerializer" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 173 45f8baee SNAPSHOT org.bitcoins.core.serializers.p2p.headers.RawNetworkHeaderSerializer" />
+          <title>Bitcoin-S 169-fe73fb58-SNAPSHOT - org.bitcoins.core.serializers.p2p.headers.RawNetworkHeaderSerializer</title>
+          <meta name="description" content="Bitcoin - S 169 - fe73fb58 - SNAPSHOT - org.bitcoins.core.serializers.p2p.headers.RawNetworkHeaderSerializer" />
+          <meta name="keywords" content="Bitcoin S 169 fe73fb58 SNAPSHOT org.bitcoins.core.serializers.p2p.headers.RawNetworkHeaderSerializer" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+173-45f8baee-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">169-fe73fb58-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -527,7 +527,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">read</span><span class="params">(<span name="bytes">bytes: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: <a href="../../../p2p/NetworkHeader.html" class="extype" name="org.bitcoins.core.p2p.NetworkHeader">NetworkHeader</a></span>
+        <span class="name">read</span><span class="params">(<span name="bytes">bytes: <a href="http://scodec.org/api/scodec-bits/1.1.12/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: <a href="../../../p2p/NetworkHeader.html" class="extype" name="org.bitcoins.core.p2p.NetworkHeader">NetworkHeader</a></span>
       </span>
       
       <p class="shortcomment cmt">Transforms a sequence of bytes into a message header</p><div class="fullcomment"><div class="comment cmt"><p>Transforms a sequence of bytes into a message header</p></div><dl class="paramcmts block"><dt class="param">bytes</dt><dd class="cmt"><p>the byte representation for a MessageHeader on the peer-to-peer network</p></dd><dt>returns</dt><dd class="cmt"><p>the native object for the MessageHeader</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.bitcoins.core.serializers.p2p.headers.RawNetworkHeaderSerializer">RawNetworkHeaderSerializer</a> → <a href="../../RawBitcoinSerializer.html" class="extype" name="org.bitcoins.core.serializers.RawBitcoinSerializer">RawBitcoinSerializer</a></dd></dl></div>
@@ -659,7 +659,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">write</span><span class="params">(<span name="messageHeader">messageHeader: <a href="../../../p2p/NetworkHeader.html" class="extype" name="org.bitcoins.core.p2p.NetworkHeader">NetworkHeader</a></span>)</span><span class="result">: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>
+        <span class="name">write</span><span class="params">(<span name="messageHeader">messageHeader: <a href="../../../p2p/NetworkHeader.html" class="extype" name="org.bitcoins.core.p2p.NetworkHeader">NetworkHeader</a></span>)</span><span class="result">: <a href="http://scodec.org/api/scodec-bits/1.1.12/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>
       </span>
       
       <p class="shortcomment cmt">Takes in a message header and serializes it to hex</p><div class="fullcomment"><div class="comment cmt"><p>Takes in a message header and serializes it to hex</p></div><dl class="paramcmts block"><dt class="param">messageHeader</dt><dd class="cmt"><p>the message header to be serialized</p></dd><dt>returns</dt><dd class="cmt"><p>the hexadecimal representation of the message header</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.bitcoins.core.serializers.p2p.headers.RawNetworkHeaderSerializer">RawNetworkHeaderSerializer</a> → <a href="../../RawBitcoinSerializer.html" class="extype" name="org.bitcoins.core.serializers.RawBitcoinSerializer">RawBitcoinSerializer</a></dd></dl></div>

@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+173-45f8baee-SNAPSHOT - org.bitcoins.core.p2p.TypeIdentifier</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 173 - 45f8baee - SNAPSHOT - org.bitcoins.core.p2p.TypeIdentifier" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 173 45f8baee SNAPSHOT org.bitcoins.core.p2p.TypeIdentifier" />
+          <title>Bitcoin-S 169-fe73fb58-SNAPSHOT - org.bitcoins.core.p2p.TypeIdentifier</title>
+          <meta name="description" content="Bitcoin - S 169 - fe73fb58 - SNAPSHOT - org.bitcoins.core.p2p.TypeIdentifier" />
+          <meta name="keywords" content="Bitcoin S 169 fe73fb58 SNAPSHOT org.bitcoins.core.p2p.TypeIdentifier" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+173-45f8baee-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">169-fe73fb58-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -520,7 +520,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="bytes">bytes: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: <a href="TypeIdentifier.html" class="extype" name="org.bitcoins.core.p2p.TypeIdentifier">TypeIdentifier</a></span>
+        <span class="name">apply</span><span class="params">(<span name="bytes">bytes: <a href="http://scodec.org/api/scodec-bits/1.1.12/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: <a href="TypeIdentifier.html" class="extype" name="org.bitcoins.core.p2p.TypeIdentifier">TypeIdentifier</a></span>
       </span>
       
       <p class="shortcomment cmt">Creates a T out of a sequence of bytes.</p><div class="fullcomment"><div class="comment cmt"><p>Creates a T out of a sequence of bytes.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/Factory.html" class="extype" name="org.bitcoins.core.util.Factory">Factory</a></dd></dl></div>
@@ -610,7 +610,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">fromBytes</span><span class="params">(<span name="bytes">bytes: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: <a href="TypeIdentifier.html" class="extype" name="org.bitcoins.core.p2p.TypeIdentifier">TypeIdentifier</a></span>
+        <span class="name">fromBytes</span><span class="params">(<span name="bytes">bytes: <a href="http://scodec.org/api/scodec-bits/1.1.12/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: <a href="TypeIdentifier.html" class="extype" name="org.bitcoins.core.p2p.TypeIdentifier">TypeIdentifier</a></span>
       </span>
       
       <p class="shortcomment cmt">Creates a T out of a sequence of bytes.</p><div class="fullcomment"><div class="comment cmt"><p>Creates a T out of a sequence of bytes.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.bitcoins.core.p2p.TypeIdentifier">TypeIdentifier</a> → <a href="../util/Factory.html" class="extype" name="org.bitcoins.core.util.Factory">Factory</a></dd></dl></div>
@@ -894,6 +894,25 @@
       </span>
       
       
+    </li><li name="org.bitcoins.core.p2p.TypeIdentifier.MsgCompactBlock" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MsgCompactBlock"></a><a id="MsgCompactBlock:MsgCompactBlock"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/p2p/TypeIdentifier$.html#MsgCompactBlock" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="The hash is of a block header; identical to MsgBlock." href="TypeIdentifier$$MsgCompactBlock$.html"><span class="name">MsgCompactBlock</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="TypeIdentifier.html" class="extype" name="org.bitcoins.core.p2p.TypeIdentifier">TypeIdentifier</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The hash is of a block header; identical to <code>MsgBlock</code>.</p><div class="fullcomment"><div class="comment cmt"><p>The hash is of a block header; identical to <code>MsgBlock</code>. When used in
+a <code>getdata</code> message, this indicates the response should be a <code>cmpctblock</code>
+message. Only for use in <code>getdata</code> messages.
+</p></div></div>
     </li><li name="org.bitcoins.core.p2p.TypeIdentifier.MsgFilteredBlock" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MsgFilteredBlock"></a><a id="MsgFilteredBlock:MsgFilteredBlock"></a>
       <span class="permalink">
@@ -910,6 +929,22 @@
       </span>
       
       
+    </li><li name="org.bitcoins.core.p2p.TypeIdentifier.MsgFilteredWitnessBlock" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MsgFilteredWitnessBlock"></a><a id="MsgFilteredWitnessBlock:MsgFilteredWitnessBlock"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/p2p/TypeIdentifier$.html#MsgFilteredWitnessBlock" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="Reserved for future use, not used as of Protocol Version 70015." href="TypeIdentifier$$MsgFilteredWitnessBlock$.html"><span class="name">MsgFilteredWitnessBlock</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="TypeIdentifier.html" class="extype" name="org.bitcoins.core.p2p.TypeIdentifier">TypeIdentifier</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Reserved for future use, not used as of Protocol Version 70015.</p>
     </li><li name="org.bitcoins.core.p2p.TypeIdentifier.MsgTx" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MsgTx"></a><a id="MsgTx:MsgTx"></a>
       <span class="permalink">
@@ -926,6 +961,46 @@
       </span>
       
       
+    </li><li name="org.bitcoins.core.p2p.TypeIdentifier.MsgWitnessBlock" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MsgWitnessBlock"></a><a id="MsgWitnessBlock:MsgWitnessBlock"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/p2p/TypeIdentifier$.html#MsgWitnessBlock" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="The hash is of a block header; identical to MsgBlock." href="TypeIdentifier$$MsgWitnessBlock$.html"><span class="name">MsgWitnessBlock</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="TypeIdentifier.html" class="extype" name="org.bitcoins.core.p2p.TypeIdentifier">TypeIdentifier</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The hash is of a block header; identical to <code>MsgBlock</code>.</p><div class="fullcomment"><div class="comment cmt"><p>The hash is of a block header; identical to <code>MsgBlock</code>. When
+used in a <code>getdata</code> message, this indicates the response should
+be a block message with transactions that have a witness using
+witness serialization. Only for use in <code>getdata</code> messages.
+</p></div></div>
+    </li><li name="org.bitcoins.core.p2p.TypeIdentifier.MsgWitnessTx" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MsgWitnessTx"></a><a id="MsgWitnessTx:MsgWitnessTx"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/p2p/TypeIdentifier$.html#MsgWitnessTx" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="The hash is a TXID." href="TypeIdentifier$$MsgWitnessTx$.html"><span class="name">MsgWitnessTx</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="TypeIdentifier.html" class="extype" name="org.bitcoins.core.p2p.TypeIdentifier">TypeIdentifier</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The hash is a TXID.</p><div class="fullcomment"><div class="comment cmt"><p>The hash is a TXID. When used in a <code>getdata</code> message, this indicates
+the response should be a transaction message, if the witness structure
+is nonempty, the witness serialization will be used. Only for use in
+<code>getdata</code> messages.
+</p></div></div>
     </li>
               </ol>
             </div>

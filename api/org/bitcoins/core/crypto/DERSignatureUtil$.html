@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+173-45f8baee-SNAPSHOT - org.bitcoins.core.crypto.DERSignatureUtil</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 173 - 45f8baee - SNAPSHOT - org.bitcoins.core.crypto.DERSignatureUtil" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 173 45f8baee SNAPSHOT org.bitcoins.core.crypto.DERSignatureUtil" />
+          <title>Bitcoin-S 169-fe73fb58-SNAPSHOT - org.bitcoins.core.crypto.DERSignatureUtil</title>
+          <meta name="description" content="Bitcoin - S 169 - fe73fb58 - SNAPSHOT - org.bitcoins.core.crypto.DERSignatureUtil" />
+          <meta name="keywords" content="Bitcoin S 169 fe73fb58 SNAPSHOT org.bitcoins.core.crypto.DERSignatureUtil" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+173-45f8baee-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">169-fe73fb58-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -554,7 +554,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decodeSignature</span><span class="params">(<span name="bytes">bytes: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: (<a href="../../../../scala/index.html#BigInt=scala.math.BigInt" class="extmbr" name="scala.BigInt">BigInt</a>, <a href="../../../../scala/index.html#BigInt=scala.math.BigInt" class="extmbr" name="scala.BigInt">BigInt</a>)</span>
+        <span class="name">decodeSignature</span><span class="params">(<span name="bytes">bytes: <a href="http://scodec.org/api/scodec-bits/1.1.12/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: (<a href="../../../../scala/index.html#BigInt=scala.math.BigInt" class="extmbr" name="scala.BigInt">BigInt</a>, <a href="../../../../scala/index.html#BigInt=scala.math.BigInt" class="extmbr" name="scala.BigInt">BigInt</a>)</span>
       </span>
       
       <p class="shortcomment cmt">Decodes the given sequence of bytes into it's r and s points
@@ -662,7 +662,7 @@ throws an exception if the given sequence of bytes is not a DER encoded signatur
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isDEREncoded</span><span class="params">(<span name="bytes">bytes: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span class="name">isDEREncoded</span><span class="params">(<span name="bytes">bytes: <a href="http://scodec.org/api/scodec-bits/1.1.12/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <p class="shortcomment cmt">Checks if the bytes are encoded to DER correctly
@@ -718,7 +718,7 @@ NOTE: This will fail if this signature contains the hash type appended to the en
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isLowS</span><span class="params">(<span name="signature">signature: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span class="name">isLowS</span><span class="params">(<span name="signature">signature: <a href="http://scodec.org/api/scodec-bits/1.1.12/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <p class="shortcomment cmt">Requires the S value in signatures to be the low version of the S value
@@ -754,7 +754,7 @@ https://github.com/bitcoin/bips/blob/master/bip-0062.mediawiki#low-s-values-in-s
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isValidSignatureEncoding</span><span class="params">(<span name="bytes">bytes: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span class="name">isValidSignatureEncoding</span><span class="params">(<span name="bytes">bytes: <a href="http://scodec.org/api/scodec-bits/1.1.12/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <p class="shortcomment cmt">This functions implements the strict der encoding rules that were created in BIP66

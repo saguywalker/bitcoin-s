@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+173-45f8baee-SNAPSHOT - org.bitcoins.core.util.Base58</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 173 - 45f8baee - SNAPSHOT - org.bitcoins.core.util.Base58" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 173 45f8baee SNAPSHOT org.bitcoins.core.util.Base58" />
+          <title>Bitcoin-S 169-fe73fb58-SNAPSHOT - org.bitcoins.core.util.Base58</title>
+          <meta name="description" content="Bitcoin - S 169 - fe73fb58 - SNAPSHOT - org.bitcoins.core.util.Base58" />
+          <meta name="keywords" content="Bitcoin S 169 fe73fb58 SNAPSHOT org.bitcoins.core.util.Base58" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+173-45f8baee-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">169-fe73fb58-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -425,7 +425,7 @@ source of values: <a href="https://en.bitcoin.it/wiki/Base58Check_encoding" targ
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decode</span><span class="params">(<span name="input">input: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>
+        <span class="name">decode</span><span class="params">(<span name="input">input: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://scodec.org/api/scodec-bits/1.1.12/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>
       </span>
       
       <p class="shortcomment cmt">Takes in <a href="../protocol/blockchain/Base58Type.html" class="extype" name="org.bitcoins.core.protocol.blockchain.Base58Type">Base58Type</a>
@@ -445,7 +445,7 @@ string and returns sequence of <a href="http://www.scala-lang.org/api/2.12.8/sca
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decodeCheck</span><span class="params">(<span name="input">input: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/util/Try.html#scala.util.Try" class="extype" name="scala.util.Try">Try</a>[<a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a>]</span>
+        <span class="name">decodeCheck</span><span class="params">(<span name="input">input: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/util/Try.html#scala.util.Try" class="extype" name="scala.util.Try">Try</a>[<a href="http://scodec.org/api/scodec-bits/1.1.12/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a>]</span>
       </span>
       
       <p class="shortcomment cmt">Verifies a given <a href="../protocol/blockchain/Base58Type.html" class="extype" name="org.bitcoins.core.protocol.blockchain.Base58Type">Base58Type</a>
@@ -495,7 +495,7 @@ string against its checksum (last 4 decoded bytes).</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">encode</span><span class="params">(<span name="bytes">bytes: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">encode</span><span class="params">(<span name="bytes">bytes: <a href="http://scodec.org/api/scodec-bits/1.1.12/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       
       <p class="shortcomment cmt">Encodes a sequence of bytes to a <a href="../protocol/blockchain/Base58Type.html" class="extype" name="org.bitcoins.core.protocol.blockchain.Base58Type">Base58Type</a> string.</p>

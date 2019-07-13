@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+173-45f8baee-SNAPSHOT - org.bitcoins.core.util.CryptoUtil</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 173 - 45f8baee - SNAPSHOT - org.bitcoins.core.util.CryptoUtil" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 173 45f8baee SNAPSHOT org.bitcoins.core.util.CryptoUtil" />
+          <title>Bitcoin-S 169-fe73fb58-SNAPSHOT - org.bitcoins.core.util.CryptoUtil</title>
+          <meta name="description" content="Bitcoin - S 169 - fe73fb58 - SNAPSHOT - org.bitcoins.core.util.CryptoUtil" />
+          <meta name="keywords" content="Bitcoin S 169 fe73fb58 SNAPSHOT org.bitcoins.core.util.CryptoUtil" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+173-45f8baee-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">169-fe73fb58-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -393,7 +393,7 @@ Utility cryptographic functions
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">doubleSHA256</span><span class="params">(<span name="bytes">bytes: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: <a href="../crypto/DoubleSha256Digest.html" class="extype" name="org.bitcoins.core.crypto.DoubleSha256Digest">DoubleSha256Digest</a></span>
+        <span class="name">doubleSHA256</span><span class="params">(<span name="bytes">bytes: <a href="http://scodec.org/api/scodec-bits/1.1.12/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: <a href="../crypto/DoubleSha256Digest.html" class="extype" name="org.bitcoins.core.crypto.DoubleSha256Digest">DoubleSha256Digest</a></span>
       </span>
       
       <p class="shortcomment cmt">Performs sha256(sha256(bytes)).</p>
@@ -515,7 +515,7 @@ Utility cryptographic functions
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hmac512</span><span class="params">(<span name="key">key: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>, <span name="data">data: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>
+        <span class="name">hmac512</span><span class="params">(<span name="key">key: <a href="http://scodec.org/api/scodec-bits/1.1.12/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>, <span name="data">data: <a href="http://scodec.org/api/scodec-bits/1.1.12/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: <a href="http://scodec.org/api/scodec-bits/1.1.12/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>
       </span>
       
       <p class="shortcomment cmt">Calculates <code>HMAC-SHA512(key, data)</code>
@@ -639,7 +639,7 @@ Utility cryptographic functions
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">recoverPublicKey</span><span class="params">(<span name="signature">signature: <a href="../crypto/ECDigitalSignature.html" class="extype" name="org.bitcoins.core.crypto.ECDigitalSignature">ECDigitalSignature</a></span>, <span name="message">message: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: (<a href="../crypto/ECPublicKey.html" class="extype" name="org.bitcoins.core.crypto.ECPublicKey">ECPublicKey</a>, <a href="../crypto/ECPublicKey.html" class="extype" name="org.bitcoins.core.crypto.ECPublicKey">ECPublicKey</a>)</span>
+        <span class="name">recoverPublicKey</span><span class="params">(<span name="signature">signature: <a href="../crypto/ECDigitalSignature.html" class="extype" name="org.bitcoins.core.crypto.ECDigitalSignature">ECDigitalSignature</a></span>, <span name="message">message: <a href="http://scodec.org/api/scodec-bits/1.1.12/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: (<a href="../crypto/ECPublicKey.html" class="extype" name="org.bitcoins.core.crypto.ECPublicKey">ECPublicKey</a>, <a href="../crypto/ECPublicKey.html" class="extype" name="org.bitcoins.core.crypto.ECPublicKey">ECPublicKey</a>)</span>
       </span>
       
       <p class="shortcomment cmt">Recover public keys from a signature and the message that was signed.</p><div class="fullcomment"><div class="comment cmt"><p>Recover public keys from a signature and the message that was signed. This method will return 2 public keys, and the signature
@@ -658,7 +658,7 @@ can be verified with both, but only one of them matches that private key that wa
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ripeMd160</span><span class="params">(<span name="bytes">bytes: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: <a href="../crypto/RipeMd160Digest.html" class="extype" name="org.bitcoins.core.crypto.RipeMd160Digest">RipeMd160Digest</a></span>
+        <span class="name">ripeMd160</span><span class="params">(<span name="bytes">bytes: <a href="http://scodec.org/api/scodec-bits/1.1.12/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: <a href="../crypto/RipeMd160Digest.html" class="extype" name="org.bitcoins.core.crypto.RipeMd160Digest">RipeMd160Digest</a></span>
       </span>
       
       <p class="shortcomment cmt">Performs RIPEMD160(bytes).</p>
@@ -706,7 +706,7 @@ can be verified with both, but only one of them matches that private key that wa
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">sha1</span><span class="params">(<span name="bytes">bytes: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: <a href="../crypto/Sha1Digest.html" class="extype" name="org.bitcoins.core.crypto.Sha1Digest">Sha1Digest</a></span>
+        <span class="name">sha1</span><span class="params">(<span name="bytes">bytes: <a href="http://scodec.org/api/scodec-bits/1.1.12/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: <a href="../crypto/Sha1Digest.html" class="extype" name="org.bitcoins.core.crypto.Sha1Digest">Sha1Digest</a></span>
       </span>
       
       <p class="shortcomment cmt">Performs SHA1(bytes).</p>
@@ -722,7 +722,7 @@ can be verified with both, but only one of them matches that private key that wa
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">sha256</span><span class="params">(<span name="bits">bits: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/BitVector.html#scodec.bits.BitVector" class="extype" name="scodec.bits.BitVector">BitVector</a></span>)</span><span class="result">: <a href="../crypto/Sha256Digest.html" class="extype" name="org.bitcoins.core.crypto.Sha256Digest">Sha256Digest</a></span>
+        <span class="name">sha256</span><span class="params">(<span name="bits">bits: <a href="http://scodec.org/api/scodec-bits/1.1.12/scodec/bits/BitVector.html#scodec.bits.BitVector" class="extype" name="scodec.bits.BitVector">BitVector</a></span>)</span><span class="result">: <a href="../crypto/Sha256Digest.html" class="extype" name="org.bitcoins.core.crypto.Sha256Digest">Sha256Digest</a></span>
       </span>
       
       <p class="shortcomment cmt">Takes sha256(bits).</p>
@@ -738,7 +738,7 @@ can be verified with both, but only one of them matches that private key that wa
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">sha256</span><span class="params">(<span name="bytes">bytes: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: <a href="../crypto/Sha256Digest.html" class="extype" name="org.bitcoins.core.crypto.Sha256Digest">Sha256Digest</a></span>
+        <span class="name">sha256</span><span class="params">(<span name="bytes">bytes: <a href="http://scodec.org/api/scodec-bits/1.1.12/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: <a href="../crypto/Sha256Digest.html" class="extype" name="org.bitcoins.core.crypto.Sha256Digest">Sha256Digest</a></span>
       </span>
       
       <p class="shortcomment cmt">Takes sha256(bytes).</p>
@@ -770,7 +770,7 @@ can be verified with both, but only one of them matches that private key that wa
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">sha256Hash160</span><span class="params">(<span name="bytes">bytes: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: <a href="../crypto/Sha256Hash160Digest.html" class="extype" name="org.bitcoins.core.crypto.Sha256Hash160Digest">Sha256Hash160Digest</a></span>
+        <span class="name">sha256Hash160</span><span class="params">(<span name="bytes">bytes: <a href="http://scodec.org/api/scodec-bits/1.1.12/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: <a href="../crypto/Sha256Hash160Digest.html" class="extype" name="org.bitcoins.core.crypto.Sha256Hash160Digest">Sha256Hash160Digest</a></span>
       </span>
       
       
