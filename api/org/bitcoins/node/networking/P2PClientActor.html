@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 166-31ddb89f-SNAPSHOT - org.bitcoins.node.networking.ClientActor</title>
-          <meta name="description" content="Bitcoin - S 166 - 31ddb89f - SNAPSHOT - org.bitcoins.node.networking.ClientActor" />
-          <meta name="keywords" content="Bitcoin S 166 31ddb89f SNAPSHOT org.bitcoins.node.networking.ClientActor" />
+          <title>Bitcoin-S 164-ae134f97-SNAPSHOT - org.bitcoins.node.networking.P2PClientActor</title>
+          <meta name="description" content="Bitcoin - S 164 - ae134f97 - SNAPSHOT - org.bitcoins.node.networking.P2PClientActor" />
+          <meta name="keywords" content="Bitcoin S 164 ae134f97 SNAPSHOT org.bitcoins.node.networking.P2PClientActor" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">166-31ddb89f-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">164-ae134f97-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -154,13 +154,13 @@
                         <a class="class" href="BlockActor.html" title="Created by chris on 7/10/16."></a>
                         <a href="BlockActor.html" title="Created by chris on 7/10/16.">BlockActor</a>
                       </li><li class="current-entities indented4">
-                        <a class="object" href="Client$.html" title=""></a>
-                        <a class="class" href="Client.html" title=""></a>
-                        <a href="Client.html" title="">Client</a>
+                        <a class="object" href="P2PClient$.html" title=""></a>
+                        <a class="class" href="P2PClient.html" title=""></a>
+                        <a href="P2PClient.html" title="">P2PClient</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
-                        <a class="class" href="" title="Created by chris on 6/6/16."></a>
-                        <a href="" title="Created by chris on 6/6/16.">ClientActor</a>
+                        <a class="class" href="" title="This actor is responsible for creating a connection, relaying messages and closing a connection to our peer on the P2P network."></a>
+                        <a href="" title="This actor is responsible for creating a connection, relaying messages and closing a connection to our peer on the P2P network.">P2PClientActor</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="PaymentActor$.html" title=""></a>
                         <a class="class" href="PaymentActor.html" title="Created by chris on 8/30/16."></a>
@@ -174,8 +174,8 @@
       <div id="definition">
         <div class="big-circle class">c</div>
         <p id="owner"><a href="../../../index.html" class="extype" name="org">org</a>.<a href="../../index.html" class="extype" name="org.bitcoins">bitcoins</a>.<a href="../index.html" class="extype" name="org.bitcoins.node">node</a>.<a href="index.html" class="extype" name="org.bitcoins.node.networking">networking</a></p>
-        <h1>ClientActor<span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html" title="Permalink">
+        <h1>P2PClientActor<span class="permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span></h1>
@@ -184,36 +184,40 @@
 
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
-        <span class="modifier">sealed abstract </span>
-        <span class="kind">class</span>
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">ClientActor</span><span class="result"> extends <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/Actor.html#akka.actor.Actor" class="extype" name="akka.actor.Actor">Actor</a> with <a href="../../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a></span>
+        <span class="name">P2PClientActor</span><span class="params">(<span name="peer">peer: <a href="../models/Peer.html" class="extype" name="org.bitcoins.node.models.Peer">Peer</a></span>, <span name="peerMsgHandlerReceiver">peerMsgHandlerReceiver: <a href="peer/PeerMessageReceiver.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiver">PeerMessageReceiver</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="../config/NodeAppConfig.html" class="extype" name="org.bitcoins.node.config.NodeAppConfig">NodeAppConfig</a></span>)</span><span class="result"> extends <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/Actor.html#akka.actor.Actor" class="extype" name="akka.actor.Actor">Actor</a> with <a href="../../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Created by chris on 6/6/16.
-This actor is responsible for creating a connection,
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>This actor is responsible for creating a connection,
 relaying messages and closing a connection to our peer on
-the p2p network. This is the actor that directly interacts
+the P2P network. This is the actor that directly interacts
 with the p2p network. It's responsibly is to deal with low
-level <span class="extype" name="Tcp.Message">Tcp.Message</span>.</p><p>If the <a href="Client.html" class="extype" name="org.bitcoins.node.networking.Client">Client</a> receives a <span class="extype" name="NetworkMessage">NetworkMessage</span>, from a <a href="peer/PeerMessageSender.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageSender">org.bitcoins.node.networking.peer.PeerMessageSender</a>
-it serializes the message to it to a <a href="https://doc.akka.io/api/akka/2.5.23/akka/util/ByteString.html" class="extype" name="akka.util.ByteString">akka.util.ByteString</a> and then sends it to the <a href="#manager:akka.actor.ActorRef" class="extmbr" name="org.bitcoins.node.networking.ClientActor#manager">manager</a>
-which streams the data to our peer on the bitcoin network.</p><p>If the <a href="Client.html" class="extype" name="org.bitcoins.node.networking.Client">Client</a> receives a <span class="extype" name="Tcp.Received">Tcp.Received</span> message, it means we have received
-a message from our peer on the bitcoin p2p network. This means we try to parse
-the <span class="extype" name="ByteString">ByteString</span> into a <span class="extype" name="NetworkMessage">NetworkMessage</span>. If we successfully parse the message
-we relay that message to the <a href="peer/PeerMessageSender.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageSender">org.bitcoins.node.networking.peer.PeerMessageSender</a>
-that created the Client Actor.</p><p>In this class you will see a 'unalignedBytes' value passed around in a lot of methods
-This is because we cannot assume that a Bitcoin <span class="extype" name="NetworkMessage">NetworkMessage</span> aligns with a tcp packet.
-For instance, a large <span class="extype" name="org.bitcoins.node.messages.BlockMessage">org.bitcoins.node.messages.BlockMessage</span> (up to 4MB in size)
-CANNOT fit in a single tcp packet. This means we must cache
+level .TCP messages.</p><p>If the client receives a <span class="extype" name="NetworkMessage">NetworkMessage</span>, from a
+<a href="peer/PeerMessageSender.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageSender">PeerMessageSender</a>
+it serializes the message to it to a <a href="https://doc.akka.io/api/akka/2.5.23/akka/util/ByteString.html" class="extype" name="akka.util.ByteString">akka.util.ByteString</a> and then
+sends it to the internal <code>manager</code> which streams the data to our peer
+on the Bitcoin network.</p><p>If the client receives a <span class="extype" name="Tcp.Received">Tcp.Received</span> message, it means we have received
+a message from our peer on the Bitcoin P2P network. This means we try to parse
+the bytes into a <a href="../../core/p2p/NetworkMessage.html" class="extype" name="org.bitcoins.core.p2p.NetworkMessage">NetworkMessage</a>.
+If we successfully parse the message we relay that message to the
+<a href="peer/PeerMessageSender.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageSender">PeerMessageSender</a>
+that created the Client Actor.</p><p>In this class you will see a 'unalignedBytes' value passed around in a lot of methods.
+This is because we cannot assume that a Bitcoin P2P message aligns with a TCP packet.
+For instance, a large block message (up to 4MB in size)
+CANNOT fit in a single TCP packet. This means we must cache
 the bytes and wait for the rest of them to be sent.
-</p></div><div class="toggleContainer block">
+</p></div><dl class="paramcmts block"><dt class="param">peerMsgHandlerReceiver</dt><dd class="cmt"><p>The place we send messages that we successfully parsed
+                              from our peer on the P2P network. This is mostly likely
+                              a <a href="peer/PeerMessageSender.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageSender">org.bitcoins.node.networking.peer.PeerMessageSender</a></p></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><a href="../../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a>, <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/Actor.html#akka.actor.Actor" class="extype" name="akka.actor.Actor">Actor</a>, <a href="../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.8/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></div>
+          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a>, <a href="https://docs.oracle.com/javase/11/docs/api/java/io/Serializable.html#java.io.Serializable" class="extype" name="java.io.Serializable">Serializable</a>, <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a>, <a href="http://www.scala-lang.org/api/2.12.8/scala/Equals.html#scala.Equals" class="extype" name="scala.Equals">Equals</a>, <a href="../../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a>, <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/Actor.html#akka.actor.Actor" class="extype" name="akka.actor.Actor">Actor</a>, <a href="../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.8/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></div>
         </div></div>
         
 
@@ -239,7 +243,7 @@ the bytes and wait for the rest of them to be sent.
                   <span class="filtertype">Inherited<br />
                   </span>
                   <ol id="linearization">
-                    <li class="in" name="org.bitcoins.node.networking.ClientActor"><span>ClientActor</span></li><li class="in" name="org.bitcoins.core.util.BitcoinSLogger"><span>BitcoinSLogger</span></li><li class="in" name="akka.actor.Actor"><span>Actor</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                    <li class="in" name="org.bitcoins.node.networking.P2PClientActor"><span>P2PClientActor</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="org.bitcoins.core.util.BitcoinSLogger"><span>BitcoinSLogger</span></li><li class="in" name="akka.actor.Actor"><span>Actor</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                   </ol>
                 </div><div class="ancestors">
               <span class="filtertype"></span>
@@ -257,14 +261,35 @@ the bytes and wait for the rest of them to be sent.
 
       <div id="template">
         <div id="allMembers">
-        
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="org.bitcoins.node.networking.P2PClientActor#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;init&gt;(peer:org.bitcoins.node.models.Peer,peerMsgHandlerReceiver:org.bitcoins.node.networking.peer.PeerMessageReceiver)(implicitconfig:org.bitcoins.node.config.NodeAppConfig):org.bitcoins.node.networking.P2PClientActor"></a><a id="&lt;init&gt;:P2PClientActor"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#&lt;init&gt;(peer:org.bitcoins.node.models.Peer,peerMsgHandlerReceiver:org.bitcoins.node.networking.peer.PeerMessageReceiver)(implicitconfig:org.bitcoins.node.config.NodeAppConfig):org.bitcoins.node.networking.P2PClientActor" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">P2PClientActor</span><span class="params">(<span name="peer">peer: <a href="../models/Peer.html" class="extype" name="org.bitcoins.node.models.Peer">Peer</a></span>, <span name="peerMsgHandlerReceiver">peerMsgHandlerReceiver: <a href="peer/PeerMessageReceiver.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiver">PeerMessageReceiver</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="../config/NodeAppConfig.html" class="extype" name="org.bitcoins.node.config.NodeAppConfig">NodeAppConfig</a></span>)</span>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">peerMsgHandlerReceiver</dt><dd class="cmt"><p>The place we send messages that we successfully parsed
+                              from our peer on the P2P network. This is mostly likely
+                              a <a href="peer/PeerMessageSender.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageSender">org.bitcoins.node.networking.peer.PeerMessageSender</a></p></dd></dl></div>
+    </li></ol>
+            </div>
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
               <ol><li name="akka.actor.Actor.Receive" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="Receive=akka.actor.Actor.Receive"></a><a id="Receive:Receive"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#Receive=akka.actor.Actor.Receive" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#Receive=akka.actor.Actor.Receive" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -280,69 +305,15 @@ the bytes and wait for the rest of them to be sent.
     </li></ol>
             </div>
 
-        <div class="values members">
-              <h3>Abstract Value Members</h3>
-              <ol><li name="org.bitcoins.node.networking.ClientActor#config" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="config:org.bitcoins.node.config.NodeAppConfig"></a><a id="config:NodeAppConfig"></a>
-      <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#config:org.bitcoins.node.config.NodeAppConfig" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">config</span><span class="result">: <a href="../config/NodeAppConfig.html" class="extype" name="org.bitcoins.node.config.NodeAppConfig">NodeAppConfig</a></span>
-      </span>
-      
-      
-    </li><li name="org.bitcoins.node.networking.ClientActor#peer" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="peer:org.bitcoins.node.models.Peer"></a><a id="peer:Peer"></a>
-      <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#peer:org.bitcoins.node.models.Peer" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">peer</span><span class="result">: <a href="../models/Peer.html" class="extype" name="org.bitcoins.node.models.Peer">Peer</a></span>
-      </span>
-      
-      
-    </li><li name="org.bitcoins.node.networking.ClientActor#peerMsgHandlerReceiver" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="peerMsgHandlerReceiver:org.bitcoins.node.networking.peer.PeerMessageReceiver"></a><a id="peerMsgHandlerReceiver:PeerMessageReceiver"></a>
-      <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#peerMsgHandlerReceiver:org.bitcoins.node.networking.peer.PeerMessageReceiver" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">peerMsgHandlerReceiver</span><span class="result">: <a href="peer/PeerMessageReceiver.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiver">PeerMessageReceiver</a></span>
-      </span>
-      
-      <p class="shortcomment cmt">The place we send messages that we successfully parsed from our
-peer on the p2p network.</p><div class="fullcomment"><div class="comment cmt"><p>The place we send messages that we successfully parsed from our
-peer on the p2p network. This is mostly likely a <a href="peer/PeerMessageSender.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageSender">org.bitcoins.node.networking.peer.PeerMessageSender</a>
-</p></div></div>
-    </li></ol>
-            </div>
+        
 
         <div class="values members">
-              <h3>Concrete Value Members</h3>
+              <h3>Value Members</h3>
               <ol>
                 <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#!=(x$1:Any):Boolean" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#!=(x$1:Any):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -358,7 +329,7 @@ peer on the p2p network. This is mostly likely a <a href="peer/PeerMessageSender
     </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html###():Int" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html###():Int" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -374,7 +345,7 @@ peer on the p2p network. This is mostly likely a <a href="peer/PeerMessageSender
     </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#==(x$1:Any):Boolean" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#==(x$1:Any):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -390,7 +361,7 @@ peer on the p2p network. This is mostly likely a <a href="peer/PeerMessageSender
     </li><li name="akka.actor.Actor#aroundPostRestart" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="aroundPostRestart(reason:Throwable):Unit"></a><a id="aroundPostRestart(Throwable):Unit"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#aroundPostRestart(reason:Throwable):Unit" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#aroundPostRestart(reason:Throwable):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -409,7 +380,7 @@ peer on the p2p network. This is mostly likely a <a href="peer/PeerMessageSender
     </li><li name="akka.actor.Actor#aroundPostStop" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="aroundPostStop():Unit"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#aroundPostStop():Unit" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#aroundPostStop():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -428,7 +399,7 @@ peer on the p2p network. This is mostly likely a <a href="peer/PeerMessageSender
     </li><li name="akka.actor.Actor#aroundPreRestart" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="aroundPreRestart(reason:Throwable,message:Option[Any]):Unit"></a><a id="aroundPreRestart(Throwable,Option[Any]):Unit"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#aroundPreRestart(reason:Throwable,message:Option[Any]):Unit" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#aroundPreRestart(reason:Throwable,message:Option[Any]):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -447,7 +418,7 @@ peer on the p2p network. This is mostly likely a <a href="peer/PeerMessageSender
     </li><li name="akka.actor.Actor#aroundPreStart" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="aroundPreStart():Unit"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#aroundPreStart():Unit" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#aroundPreStart():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -466,7 +437,7 @@ peer on the p2p network. This is mostly likely a <a href="peer/PeerMessageSender
     </li><li name="akka.actor.Actor#aroundReceive" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="aroundReceive(receive:akka.actor.Actor.Receive,msg:Any):Unit"></a><a id="aroundReceive(akka.actor.Actor.Receive,Any):Unit"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#aroundReceive(receive:akka.actor.Actor.Receive,msg:Any):Unit" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#aroundReceive(receive:akka.actor.Actor.Receive,msg:Any):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -485,7 +456,7 @@ peer on the p2p network. This is mostly likely a <a href="peer/PeerMessageSender
     </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#asInstanceOf[T0]:T0" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#asInstanceOf[T0]:T0" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -501,7 +472,7 @@ peer on the p2p network. This is mostly likely a <a href="peer/PeerMessageSender
     </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a><a id="clone():AnyRef"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#clone():Object" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#clone():Object" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -527,7 +498,7 @@ peer on the p2p network. This is mostly likely a <a href="peer/PeerMessageSender
     </li><li name="akka.actor.Actor#context" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="context:akka.actor.ActorContext"></a><a id="context:ActorContext"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#context:akka.actor.ActorContext" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#context:akka.actor.ActorContext" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -543,7 +514,7 @@ peer on the p2p network. This is mostly likely a <a href="peer/PeerMessageSender
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#eq(x$1:AnyRef):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -556,26 +527,10 @@ peer on the p2p network. This is mostly likely a <a href="peer/PeerMessageSender
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#equals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="equals(x$1:Any):Boolean"></a><a id="equals(Any):Boolean"></a>
-      <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#equals(x$1:Any):Boolean" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.8/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#getClass():Class[_]" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#getClass():Class[_]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -593,31 +548,10 @@ peer on the p2p network. This is mostly likely a <a href="peer/PeerMessageSender
                 <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="hashCode():Int"></a>
-      <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#hashCode():Int" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
-                <span class="name">@native</span><span class="args">()</span>
-              
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
-              
-        </dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#isInstanceOf[T0]:Boolean" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#isInstanceOf[T0]:Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -633,7 +567,7 @@ peer on the p2p network. This is mostly likely a <a href="peer/PeerMessageSender
     </li><li name="org.bitcoins.core.util.BitcoinSLogger#logger" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="logger:org.slf4j.Logger"></a><a id="logger:Logger"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#logger:org.slf4j.Logger" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#logger:org.slf4j.Logger" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -646,10 +580,10 @@ peer on the p2p network. This is mostly likely a <a href="peer/PeerMessageSender
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a></dd></dl></div>
-    </li><li name="org.bitcoins.node.networking.ClientActor#manager" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="org.bitcoins.node.networking.P2PClientActor#manager" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="manager:akka.actor.ActorRef"></a><a id="manager:ActorRef"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#manager:akka.actor.ActorRef" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#manager:akka.actor.ActorRef" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -666,7 +600,7 @@ and instantiates workers for specific tasks, such as listening to incoming conne
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#ne(x$1:AnyRef):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -679,28 +613,27 @@ and instantiates workers for specific tasks, such as listening to incoming conne
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="org.bitcoins.node.networking.ClientActor#network" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="org.bitcoins.node.networking.P2PClientActor#network" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="network:org.bitcoins.core.config.NetworkParameters"></a><a id="network:NetworkParameters"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#network:org.bitcoins.core.config.NetworkParameters" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#network:org.bitcoins.core.config.NetworkParameters" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">def</span>
+        <span class="kind">val</span>
       </span>
       <span class="symbol">
         <span class="name">network</span><span class="result">: <a href="../../core/config/NetworkParameters.html" class="extype" name="org.bitcoins.core.config.NetworkParameters">NetworkParameters</a></span>
       </span>
       
       <p class="shortcomment cmt">The parameters for the network we are connected to
-i.e.</p><div class="fullcomment"><div class="comment cmt"><p>The parameters for the network we are connected to
-i.e. <a href="../../core/config/MainNet.html" class="extype" name="org.bitcoins.core.config.MainNet">org.bitcoins.core.config.MainNet</a> or <a href="../../core/config/TestNet3.html" class="extype" name="org.bitcoins.core.config.TestNet3">org.bitcoins.core.config.TestNet3</a></p></div></div>
+</p>
     </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#notify():Unit" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#notify():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -721,7 +654,7 @@ i.e. <a href="../../core/config/MainNet.html" class="extype" name="org.bitcoins.
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#notifyAll():Unit" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#notifyAll():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -739,10 +672,42 @@ i.e. <a href="../../core/config/MainNet.html" class="extype" name="org.bitcoins.
                 <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="org.bitcoins.node.networking.P2PClientActor#peer" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="peer:org.bitcoins.node.models.Peer"></a><a id="peer:Peer"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#peer:org.bitcoins.node.models.Peer" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">peer</span><span class="result">: <a href="../models/Peer.html" class="extype" name="org.bitcoins.node.models.Peer">Peer</a></span>
+      </span>
+      
+      
+    </li><li name="org.bitcoins.node.networking.P2PClientActor#peerMsgHandlerReceiver" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="peerMsgHandlerReceiver:org.bitcoins.node.networking.peer.PeerMessageReceiver"></a><a id="peerMsgHandlerReceiver:PeerMessageReceiver"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#peerMsgHandlerReceiver:org.bitcoins.node.networking.peer.PeerMessageReceiver" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">peerMsgHandlerReceiver</span><span class="result">: <a href="peer/PeerMessageReceiver.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiver">PeerMessageReceiver</a></span>
+      </span>
+      
+      
     </li><li name="akka.actor.Actor#postRestart" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="postRestart(reason:Throwable):Unit"></a><a id="postRestart(Throwable):Unit"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#postRestart(reason:Throwable):Unit" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#postRestart(reason:Throwable):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -764,7 +729,7 @@ i.e. <a href="../../core/config/MainNet.html" class="extype" name="org.bitcoins.
     </li><li name="akka.actor.Actor#postStop" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="postStop():Unit"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#postStop():Unit" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#postStop():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -786,7 +751,7 @@ i.e. <a href="../../core/config/MainNet.html" class="extype" name="org.bitcoins.
     </li><li name="akka.actor.Actor#preRestart" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="preRestart(reason:Throwable,message:Option[Any]):Unit"></a><a id="preRestart(Throwable,Option[Any]):Unit"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#preRestart(reason:Throwable,message:Option[Any]):Unit" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#preRestart(reason:Throwable,message:Option[Any]):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -808,7 +773,7 @@ i.e. <a href="../../core/config/MainNet.html" class="extype" name="org.bitcoins.
     </li><li name="akka.actor.Actor#preStart" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="preStart():Unit"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#preStart():Unit" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#preStart():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -827,10 +792,10 @@ i.e. <a href="../../core/config/MainNet.html" class="extype" name="org.bitcoins.
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="org.bitcoins.node.networking.ClientActor#receive" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="receive:ClientActor.this.Receive"></a><a id="receive:Receive"></a>
+    </li><li name="org.bitcoins.node.networking.P2PClientActor#receive" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="receive:P2PClientActor.this.Receive"></a><a id="receive:Receive"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#receive:ClientActor.this.Receive" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#receive:P2PClientActor.this.Receive" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -839,14 +804,14 @@ i.e. <a href="../../core/config/MainNet.html" class="extype" name="org.bitcoins.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">receive</span><span class="result">: <a href="#Receive=akka.actor.Actor.Receive" class="extmbr" name="org.bitcoins.node.networking.ClientActor.Receive">Receive</a></span>
+        <span class="name">receive</span><span class="result">: <a href="#Receive=akka.actor.Actor.Receive" class="extmbr" name="org.bitcoins.node.networking.P2PClientActor.Receive">Receive</a></span>
       </span>
       
-      <p class="shortcomment cmt">This context is responsible for initializing a tcp connection with a peer on the bitcoin p2p network</p><div class="fullcomment"><div class="comment cmt"><p>This context is responsible for initializing a tcp connection with a peer on the bitcoin p2p network</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.bitcoins.node.networking.ClientActor">ClientActor</a> → Actor</dd></dl></div>
+      <p class="shortcomment cmt">This context is responsible for initializing a tcp connection with a peer on the bitcoin p2p network</p><div class="fullcomment"><div class="comment cmt"><p>This context is responsible for initializing a tcp connection with a peer on the bitcoin p2p network</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.bitcoins.node.networking.P2PClientActor">P2PClientActor</a> → Actor</dd></dl></div>
     </li><li name="akka.actor.Actor#self" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="self:akka.actor.ActorRef"></a><a id="self:ActorRef"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#self:akka.actor.ActorRef" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#self:akka.actor.ActorRef" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -862,7 +827,7 @@ i.e. <a href="../../core/config/MainNet.html" class="extype" name="org.bitcoins.
     </li><li name="akka.actor.Actor#sender" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="sender():akka.actor.ActorRef"></a><a id="sender():ActorRef"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#sender():akka.actor.ActorRef" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#sender():akka.actor.ActorRef" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -878,7 +843,7 @@ i.e. <a href="../../core/config/MainNet.html" class="extype" name="org.bitcoins.
     </li><li name="akka.actor.Actor#supervisorStrategy" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="supervisorStrategy:akka.actor.SupervisorStrategy"></a><a id="supervisorStrategy:SupervisorStrategy"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#supervisorStrategy:akka.actor.SupervisorStrategy" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#supervisorStrategy:akka.actor.SupervisorStrategy" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -894,7 +859,7 @@ i.e. <a href="../../core/config/MainNet.html" class="extype" name="org.bitcoins.
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -907,26 +872,10 @@ i.e. <a href="../../core/config/MainNet.html" class="extype" name="org.bitcoins.
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="toString():String"></a>
-      <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#toString():String" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <a href="https://docs.oracle.com/javase/11/docs/api/java/lang/String.html#java.lang.String" class="extype" name="java.lang.String">String</a></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="akka.actor.Actor#unhandled" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="unhandled(message:Any):Unit"></a><a id="unhandled(Any):Unit"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#unhandled(message:Any):Unit" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#unhandled(message:Any):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -942,7 +891,7 @@ i.e. <a href="../../core/config/MainNet.html" class="extype" name="org.bitcoins.
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -964,7 +913,7 @@ i.e. <a href="../../core/config/MainNet.html" class="extype" name="org.bitcoins.
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#wait(x$1:Long):Unit" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#wait(x$1:Long):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -988,7 +937,7 @@ i.e. <a href="../../core/config/MainNet.html" class="extype" name="org.bitcoins.
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#wait():Unit" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#wait():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1018,7 +967,7 @@ i.e. <a href="../../core/config/MainNet.html" class="extype" name="org.bitcoins.
               <ol><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/ClientActor.html#finalize():Unit" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#finalize():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1046,7 +995,15 @@ i.e. <a href="../../core/config/MainNet.html" class="extype" name="org.bitcoins.
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="org.bitcoins.core.util.BitcoinSLogger">
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <a href="https://docs.oracle.com/javase/11/docs/api/java/io/Serializable.html#java.io.Serializable" class="extype" name="java.io.Serializable">Serializable</a></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.8/scala/Equals.html#scala.Equals" class="extype" name="scala.Equals">Equals</a></h3>
+            </div><div class="parent" name="org.bitcoins.core.util.BitcoinSLogger">
               <h3>Inherited from <a href="../../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a></h3>
             </div><div class="parent" name="akka.actor.Actor">
               <h3>Inherited from <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/Actor.html#akka.actor.Actor" class="extype" name="akka.actor.Actor">Actor</a></h3>

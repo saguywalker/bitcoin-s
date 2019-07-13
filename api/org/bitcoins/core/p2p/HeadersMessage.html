@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 166-31ddb89f-SNAPSHOT - org.bitcoins.core.p2p.HeadersMessage</title>
-          <meta name="description" content="Bitcoin - S 166 - 31ddb89f - SNAPSHOT - org.bitcoins.core.p2p.HeadersMessage" />
-          <meta name="keywords" content="Bitcoin S 166 31ddb89f SNAPSHOT org.bitcoins.core.p2p.HeadersMessage" />
+          <title>Bitcoin-S 164-ae134f97-SNAPSHOT - org.bitcoins.core.p2p.HeadersMessage</title>
+          <meta name="description" content="Bitcoin - S 164 - ae134f97 - SNAPSHOT - org.bitcoins.core.p2p.HeadersMessage" />
+          <meta name="keywords" content="Bitcoin S 164 ae134f97 SNAPSHOT org.bitcoins.core.p2p.HeadersMessage" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">166-31ddb89f-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">164-ae134f97-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -183,7 +183,7 @@
                         <a href="GetHeadersMessage.html" title="The getheaders message requests a headers message that provides block headers starting from a particular point in the block chain.">GetHeadersMessage</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="HeadersMessage$.html" title=""></a>
-                        <a class="trait" href="" title="The headers message sends one or more block headers to a node which previously requested certain headers with a getheaders message."></a>
+                        <a class="class" href="" title="The headers message sends one or more block headers to a node which previously requested certain headers with a getheaders message."></a>
                         <a href="" title="The headers message sends one or more block headers to a node which previously requested certain headers with a getheaders message.">HeadersMessage</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="Inventory$.html" title=""></a>
@@ -199,7 +199,7 @@
                         <a href="MemPoolMessage$.html" title="The mempool message requests the TXIDs of transactions that the receiving node has verified as valid but which have not yet appeared in a block.">MemPoolMessage</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="MerkleBlockMessage$.html" title=""></a>
-                        <a class="trait" href="MerkleBlockMessage.html" title="The merkleblock message is a reply to a getdata message which requested a block using the inventory type MSG_MERKLEBLOCK."></a>
+                        <a class="class" href="MerkleBlockMessage.html" title="The merkleblock message is a reply to a getdata message which requested a block using the inventory type MSG_MERKLEBLOCK."></a>
                         <a href="MerkleBlockMessage.html" title="The merkleblock message is a reply to a getdata message which requested a block using the inventory type MSG_MERKLEBLOCK.">MerkleBlockMessage</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
@@ -207,7 +207,7 @@
                         <a href="MsgUnassigned.html" title="">MsgUnassigned</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="NetworkHeader$.html" title=""></a>
-                        <a class="trait" href="NetworkHeader.html" title="Represents a message header on the peer-to-peer network"></a>
+                        <a class="class" href="NetworkHeader.html" title="Represents a message header on the peer-to-peer network"></a>
                         <a href="NetworkHeader.html" title="Represents a message header on the peer-to-peer network">NetworkHeader</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="NetworkIpAddress$.html" title=""></a>
@@ -215,8 +215,8 @@
                         <a href="NetworkIpAddress.html" title="Encapsulated network IP address currently uses the following structure">NetworkIpAddress</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="NetworkMessage$.html" title=""></a>
-                        <a class="class" href="NetworkMessage.html" title="Created by chris on 6/10/16."></a>
-                        <a href="NetworkMessage.html" title="Created by chris on 6/10/16.">NetworkMessage</a>
+                        <a class="class" href="NetworkMessage.html" title="Represents a P2P network message"></a>
+                        <a href="NetworkMessage.html" title="Represents a P2P network message">NetworkMessage</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="NetworkPayload$.html" title=""></a>
                         <a class="trait" href="NetworkPayload.html" title="Trait that represents a payload for a message on the Bitcoin p2p network"></a>
@@ -330,9 +330,9 @@
             </div>
           </div>
           <div id="content">
-            <body class="trait type">
+            <body class="class type">
       <div id="definition">
-        <a href="HeadersMessage$.html" title="See companion object"><div class="big-circle trait-companion-object">t</div></a>
+        <a href="HeadersMessage$.html" title="See companion object"><div class="big-circle class-companion-object">c</div></a>
         <p id="owner"><a href="../../../index.html" class="extype" name="org">org</a>.<a href="../../index.html" class="extype" name="org.bitcoins">bitcoins</a>.<a href="../index.html" class="extype" name="org.bitcoins.core">core</a>.<a href="index.html" class="extype" name="org.bitcoins.core.p2p">p2p</a></p>
         <h1><a href="HeadersMessage$.html" title="See companion object">HeadersMessage</a><span class="permalink">
       <a href="../../../../org/bitcoins/core/p2p/HeadersMessage.html" title="Permalink">
@@ -347,20 +347,25 @@
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">HeadersMessage</span><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="DataPayload.html" class="extype" name="org.bitcoins.core.p2p.DataPayload">DataPayload</a></span>
+        <span class="name">HeadersMessage</span><span class="params">(<span name="count">count: <a href="../protocol/CompactSizeUInt.html" class="extype" name="org.bitcoins.core.protocol.CompactSizeUInt">CompactSizeUInt</a></span>, <span name="headers">headers: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../protocol/blockchain/BlockHeader.html" class="extype" name="org.bitcoins.core.protocol.blockchain.BlockHeader">BlockHeader</a>]</span>)</span><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="DataPayload.html" class="extype" name="org.bitcoins.core.p2p.DataPayload">DataPayload</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       </h4>
 
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>The headers message sends one or more block headers to a node
-which previously requested certain headers with a getheaders message.</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://bitcoin.org/en/developer-reference#headers" target="_blank">https://bitcoin.org/en/developer-reference#headers</a></p></span></dd></dl><div class="toggleContainer block">
+which previously requested certain headers with a getheaders message.</p></div><dl class="paramcmts block"><dt class="param">count</dt><dd class="cmt"><p>Number of block headers up to a maximum of 2,000.
+             Note: headers-first sync assumes the sending node
+             will send the maximum number of headers whenever possible.</p></dd><dt class="param">headers</dt><dd class="cmt"><p>Block headers: each 80-byte block header is in the format described in the
+               block headers section with an additional 0x00 suffixed.
+               This 0x00 is called the transaction count, but because the headers message
+               doesn’t include any transactions, the transaction count is always zero.</p></dd></dl><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://bitcoin.org/en/developer-reference#headers" target="_blank">https://bitcoin.org/en/developer-reference#headers</a></p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><a href="DataPayload.html" class="extype" name="org.bitcoins.core.p2p.DataPayload">DataPayload</a>, <a href="NetworkPayload.html" class="extype" name="org.bitcoins.core.p2p.NetworkPayload">NetworkPayload</a>, <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a>, <a href="../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.8/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></div>
+          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a>, <a href="https://docs.oracle.com/javase/11/docs/api/java/io/Serializable.html#java.io.Serializable" class="extype" name="java.io.Serializable">Serializable</a>, <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a>, <a href="http://www.scala-lang.org/api/2.12.8/scala/Equals.html#scala.Equals" class="extype" name="scala.Equals">Equals</a>, <a href="DataPayload.html" class="extype" name="org.bitcoins.core.p2p.DataPayload">DataPayload</a>, <a href="NetworkPayload.html" class="extype" name="org.bitcoins.core.p2p.NetworkPayload">NetworkPayload</a>, <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a>, <a href="../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.8/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></div>
         </div></div>
         
 
@@ -386,7 +391,7 @@ which previously requested certain headers with a getheaders message.</p></div><
                   <span class="filtertype">Inherited<br />
                   </span>
                   <ol id="linearization">
-                    <li class="in" name="org.bitcoins.core.p2p.HeadersMessage"><span>HeadersMessage</span></li><li class="in" name="org.bitcoins.core.p2p.DataPayload"><span>DataPayload</span></li><li class="in" name="org.bitcoins.core.p2p.NetworkPayload"><span>NetworkPayload</span></li><li class="in" name="org.bitcoins.core.protocol.NetworkElement"><span>NetworkElement</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                    <li class="in" name="org.bitcoins.core.p2p.HeadersMessage"><span>HeadersMessage</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="org.bitcoins.core.p2p.DataPayload"><span>DataPayload</span></li><li class="in" name="org.bitcoins.core.p2p.NetworkPayload"><span>NetworkPayload</span></li><li class="in" name="org.bitcoins.core.protocol.NetworkElement"><span>NetworkElement</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                   </ol>
                 </div><div class="ancestors">
               <span class="filtertype"></span>
@@ -404,57 +409,38 @@ which previously requested certain headers with a getheaders message.</p></div><
 
       <div id="template">
         <div id="allMembers">
-        
-
-        
-
-        <div class="values members">
-              <h3>Abstract Value Members</h3>
-              <ol><li name="org.bitcoins.core.p2p.HeadersMessage#count" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="count:org.bitcoins.core.protocol.CompactSizeUInt"></a><a id="count:CompactSizeUInt"></a>
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="org.bitcoins.core.p2p.HeadersMessage#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;init&gt;(count:org.bitcoins.core.protocol.CompactSizeUInt,headers:Vector[org.bitcoins.core.protocol.blockchain.BlockHeader]):org.bitcoins.core.p2p.HeadersMessage"></a><a id="&lt;init&gt;:HeadersMessage"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/HeadersMessage.html#count:org.bitcoins.core.protocol.CompactSizeUInt" title="Permalink">
+      <a href="../../../../org/bitcoins/core/p2p/HeadersMessage.html#&lt;init&gt;(count:org.bitcoins.core.protocol.CompactSizeUInt,headers:Vector[org.bitcoins.core.protocol.blockchain.BlockHeader]):org.bitcoins.core.p2p.HeadersMessage" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
       <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
+        <span class="modifier"></span>
+        <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">count</span><span class="result">: <a href="../protocol/CompactSizeUInt.html" class="extype" name="org.bitcoins.core.protocol.CompactSizeUInt">CompactSizeUInt</a></span>
+        <span class="name">HeadersMessage</span><span class="params">(<span name="count">count: <a href="../protocol/CompactSizeUInt.html" class="extype" name="org.bitcoins.core.protocol.CompactSizeUInt">CompactSizeUInt</a></span>, <span name="headers">headers: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../protocol/blockchain/BlockHeader.html" class="extype" name="org.bitcoins.core.protocol.blockchain.BlockHeader">BlockHeader</a>]</span>)</span>
       </span>
       
-      <p class="shortcomment cmt">Number of block headers up to a maximum of 2,000.</p><div class="fullcomment"><div class="comment cmt"><p>Number of block headers up to a maximum of 2,000.
-Note: headers-first sync assumes the sending node
-will send the maximum number of headers whenever possible.
-</p></div></div>
-    </li><li name="org.bitcoins.core.p2p.HeadersMessage#headers" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="headers:Vector[org.bitcoins.core.protocol.blockchain.BlockHeader]"></a><a id="headers:Vector[BlockHeader]"></a>
-      <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/HeadersMessage.html#headers:Vector[org.bitcoins.core.protocol.blockchain.BlockHeader]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">headers</span><span class="result">: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../protocol/blockchain/BlockHeader.html" class="extype" name="org.bitcoins.core.protocol.blockchain.BlockHeader">BlockHeader</a>]</span>
-      </span>
-      
-      <p class="shortcomment cmt">Block headers: each 80-byte block header is in the format described in the
-block headers section with an additional 0x00 suffixed.</p><div class="fullcomment"><div class="comment cmt"><p>Block headers: each 80-byte block header is in the format described in the
-block headers section with an additional 0x00 suffixed.
-This 0x00 is called the transaction count, but because the headers message
-doesn’t include any transactions, the transaction count is always zero.
-</p></div></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">count</dt><dd class="cmt"><p>Number of block headers up to a maximum of 2,000.
+             Note: headers-first sync assumes the sending node
+             will send the maximum number of headers whenever possible.</p></dd><dt class="param">headers</dt><dd class="cmt"><p>Block headers: each 80-byte block header is in the format described in the
+               block headers section with an additional 0x00 suffixed.
+               This 0x00 is called the transaction count, but because the headers message
+               doesn’t include any transactions, the transaction count is always zero.</p></dd></dl></div>
     </li></ol>
             </div>
 
+        
+
+        
+
         <div class="values members">
-              <h3>Concrete Value Members</h3>
+              <h3>Value Members</h3>
               <ol>
                 <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
@@ -582,6 +568,22 @@ Followed by nulls (0x00) to pad out byte count; for example: version\0\0\0\0\0.
 Command names need to be 12 bytes long
 This is generally used to build a <a href="NetworkHeader.html" class="extype" name="org.bitcoins.core.p2p.NetworkHeader">org.bitcoins.core.p2p.NetworkHeader</a>
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.bitcoins.core.p2p.HeadersMessage">HeadersMessage</a> → <a href="NetworkPayload.html" class="extype" name="org.bitcoins.core.p2p.NetworkPayload">NetworkPayload</a></dd></dl></div>
+    </li><li name="org.bitcoins.core.p2p.HeadersMessage#count" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="count:org.bitcoins.core.protocol.CompactSizeUInt"></a><a id="count:CompactSizeUInt"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/p2p/HeadersMessage.html#count:org.bitcoins.core.protocol.CompactSizeUInt" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">count</span><span class="result">: <a href="../protocol/CompactSizeUInt.html" class="extype" name="org.bitcoins.core.protocol.CompactSizeUInt">CompactSizeUInt</a></span>
+      </span>
+      
+      
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -598,22 +600,6 @@ This is generally used to build a <a href="NetworkHeader.html" class="extype" na
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#equals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="equals(x$1:Any):Boolean"></a><a id="equals(Any):Boolean"></a>
-      <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/HeadersMessage.html#equals(x$1:Any):Boolean" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.8/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <span class="permalink">
@@ -635,27 +621,22 @@ This is generally used to build a <a href="NetworkHeader.html" class="extype" na
                 <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="hashCode():Int"></a>
+    </li><li name="org.bitcoins.core.p2p.HeadersMessage#headers" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="headers:Vector[org.bitcoins.core.protocol.blockchain.BlockHeader]"></a><a id="headers:Vector[BlockHeader]"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/HeadersMessage.html#hashCode():Int" title="Permalink">
+      <a href="../../../../org/bitcoins/core/p2p/HeadersMessage.html#headers:Vector[org.bitcoins.core.protocol.blockchain.BlockHeader]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">def</span>
+        <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
+        <span class="name">headers</span><span class="result">: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../protocol/blockchain/BlockHeader.html" class="extype" name="org.bitcoins.core.protocol.blockchain.BlockHeader">BlockHeader</a>]</span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
-                <span class="name">@native</span><span class="args">()</span>
-              
-                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
-              
-        </dd></dl></div>
+      
     </li><li name="org.bitcoins.core.protocol.NetworkElement#hex" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hex:String"></a>
       <span class="permalink">
@@ -794,22 +775,6 @@ This is generally used to build a <a href="NetworkHeader.html" class="extype" na
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="toString():String"></a>
-      <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/HeadersMessage.html#toString():String" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <a href="https://docs.oracle.com/javase/11/docs/api/java/lang/String.html#java.lang.String" class="extype" name="java.lang.String">String</a></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
       <span class="permalink">
@@ -917,7 +882,15 @@ This is generally used to build a <a href="NetworkHeader.html" class="extype" na
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="org.bitcoins.core.p2p.DataPayload">
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <a href="https://docs.oracle.com/javase/11/docs/api/java/io/Serializable.html#java.io.Serializable" class="extype" name="java.io.Serializable">Serializable</a></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.8/scala/Equals.html#scala.Equals" class="extype" name="scala.Equals">Equals</a></h3>
+            </div><div class="parent" name="org.bitcoins.core.p2p.DataPayload">
               <h3>Inherited from <a href="DataPayload.html" class="extype" name="org.bitcoins.core.p2p.DataPayload">DataPayload</a></h3>
             </div><div class="parent" name="org.bitcoins.core.p2p.NetworkPayload">
               <h3>Inherited from <a href="NetworkPayload.html" class="extype" name="org.bitcoins.core.p2p.NetworkPayload">NetworkPayload</a></h3>

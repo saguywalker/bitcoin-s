@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 166-31ddb89f-SNAPSHOT - org.bitcoins.node.networking</title>
-          <meta name="description" content="Bitcoin - S 166 - 31ddb89f - SNAPSHOT - org.bitcoins.node.networking" />
-          <meta name="keywords" content="Bitcoin S 166 31ddb89f SNAPSHOT org.bitcoins.node.networking" />
+          <title>Bitcoin-S 164-ae134f97-SNAPSHOT - org.bitcoins.node.networking</title>
+          <meta name="description" content="Bitcoin - S 164 - ae134f97 - SNAPSHOT - org.bitcoins.node.networking" />
+          <meta name="keywords" content="Bitcoin S 164 ae134f97 SNAPSHOT org.bitcoins.node.networking" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">166-31ddb89f-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">164-ae134f97-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -218,13 +218,13 @@
                         <a class="class" href="BlockActor.html" title="Created by chris on 7/10/16."></a>
                         <a href="BlockActor.html" title="Created by chris on 7/10/16.">BlockActor</a>
                       </li><li class="current-entities indented4">
-                        <a class="object" href="Client$.html" title=""></a>
-                        <a class="class" href="Client.html" title=""></a>
-                        <a href="Client.html" title="">Client</a>
+                        <a class="object" href="P2PClient$.html" title=""></a>
+                        <a class="class" href="P2PClient.html" title=""></a>
+                        <a href="P2PClient.html" title="">P2PClient</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
-                        <a class="class" href="ClientActor.html" title="Created by chris on 6/6/16."></a>
-                        <a href="ClientActor.html" title="Created by chris on 6/6/16.">ClientActor</a>
+                        <a class="class" href="P2PClientActor.html" title="This actor is responsible for creating a connection, relaying messages and closing a connection to our peer on the P2P network."></a>
+                        <a href="P2PClientActor.html" title="This actor is responsible for creating a connection, relaying messages and closing a connection to our peer on the P2P network.">P2PClientActor</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="PaymentActor$.html" title=""></a>
                         <a class="class" href="PaymentActor.html" title="Created by chris on 8/30/16."></a>
@@ -356,10 +356,10 @@
       </span>
       
       <p class="shortcomment cmt">Created by chris on 7/10/16.</p>
-    </li><li name="org.bitcoins.node.networking.Client" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="ClientextendsProductwithSerializable"></a><a id="Client:Client"></a>
+    </li><li name="org.bitcoins.node.networking.P2PClient" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="P2PClientextendsProductwithSerializable"></a><a id="P2PClient:P2PClient"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/index.html#ClientextendsProductwithSerializable" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/index.html#P2PClientextendsProductwithSerializable" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -368,42 +368,48 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="" href="Client.html"><span class="name">Client</span></a><span class="params">(<span name="actor">actor: <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/ActorRef.html#akka.actor.ActorRef" class="extype" name="akka.actor.ActorRef">ActorRef</a></span>, <span name="peer">peer: <a href="../models/Peer.html" class="extype" name="org.bitcoins.node.models.Peer">Peer</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="" href="P2PClient.html"><span class="name">P2PClient</span></a><span class="params">(<span name="actor">actor: <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/ActorRef.html#akka.actor.ActorRef" class="extype" name="akka.actor.ActorRef">ActorRef</a></span>, <span name="peer">peer: <a href="../models/Peer.html" class="extype" name="org.bitcoins.node.models.Peer">Peer</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       
-    </li><li name="org.bitcoins.node.networking.ClientActor" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="ClientActorextendsActorwithBitcoinSLogger"></a><a id="ClientActor:ClientActor"></a>
+    </li><li name="org.bitcoins.node.networking.P2PClientActor" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="P2PClientActorextendsActorwithBitcoinSLoggerwithProductwithSerializable"></a><a id="P2PClientActor:P2PClientActor"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/index.html#ClientActorextendsActorwithBitcoinSLogger" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/index.html#P2PClientActorextendsActorwithBitcoinSLoggerwithProductwithSerializable" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
       <span class="modifier_kind">
-        <span class="modifier">sealed abstract </span>
-        <span class="kind">class</span>
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="Created by chris on 6/6/16." href="ClientActor.html"><span class="name">ClientActor</span></a><span class="result"> extends <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/Actor.html#akka.actor.Actor" class="extype" name="akka.actor.Actor">Actor</a> with <a href="../../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a></span>
+        <a title="This actor is responsible for creating a connection, relaying messages and closing a connection to our peer on the P2P network." href="P2PClientActor.html"><span class="name">P2PClientActor</span></a><span class="params">(<span name="peer">peer: <a href="../models/Peer.html" class="extype" name="org.bitcoins.node.models.Peer">Peer</a></span>, <span name="peerMsgHandlerReceiver">peerMsgHandlerReceiver: <a href="peer/PeerMessageReceiver.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiver">PeerMessageReceiver</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="../config/NodeAppConfig.html" class="extype" name="org.bitcoins.node.config.NodeAppConfig">NodeAppConfig</a></span>)</span><span class="result"> extends <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/Actor.html#akka.actor.Actor" class="extype" name="akka.actor.Actor">Actor</a> with <a href="../../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
-      <p class="shortcomment cmt">Created by chris on 6/6/16.</p><div class="fullcomment"><div class="comment cmt"><p>Created by chris on 6/6/16.
-This actor is responsible for creating a connection,
+      <p class="shortcomment cmt">This actor is responsible for creating a connection,
 relaying messages and closing a connection to our peer on
-the p2p network. This is the actor that directly interacts
+the P2P network.</p><div class="fullcomment"><div class="comment cmt"><p>This actor is responsible for creating a connection,
+relaying messages and closing a connection to our peer on
+the P2P network. This is the actor that directly interacts
 with the p2p network. It's responsibly is to deal with low
-level <span class="extype" name="Tcp.Message">Tcp.Message</span>.</p><p>If the <a href="Client.html" class="extype" name="org.bitcoins.node.networking.Client">Client</a> receives a <span class="extype" name="NetworkMessage">NetworkMessage</span>, from a <a href="peer/PeerMessageSender.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageSender">org.bitcoins.node.networking.peer.PeerMessageSender</a>
-it serializes the message to it to a <a href="https://doc.akka.io/api/akka/2.5.23/akka/util/ByteString.html" class="extype" name="akka.util.ByteString">akka.util.ByteString</a> and then sends it to the <a href="ClientActor.html#manager:akka.actor.ActorRef" class="extmbr" name="org.bitcoins.node.networking.ClientActor#manager">manager</a>
-which streams the data to our peer on the bitcoin network.</p><p>If the <a href="Client.html" class="extype" name="org.bitcoins.node.networking.Client">Client</a> receives a <span class="extype" name="Tcp.Received">Tcp.Received</span> message, it means we have received
-a message from our peer on the bitcoin p2p network. This means we try to parse
-the <span class="extype" name="ByteString">ByteString</span> into a <span class="extype" name="NetworkMessage">NetworkMessage</span>. If we successfully parse the message
-we relay that message to the <a href="peer/PeerMessageSender.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageSender">org.bitcoins.node.networking.peer.PeerMessageSender</a>
-that created the Client Actor.</p><p>In this class you will see a 'unalignedBytes' value passed around in a lot of methods
-This is because we cannot assume that a Bitcoin <span class="extype" name="NetworkMessage">NetworkMessage</span> aligns with a tcp packet.
-For instance, a large <span class="extype" name="org.bitcoins.node.messages.BlockMessage">org.bitcoins.node.messages.BlockMessage</span> (up to 4MB in size)
-CANNOT fit in a single tcp packet. This means we must cache
+level .TCP messages.</p><p>If the client receives a <span class="extype" name="NetworkMessage">NetworkMessage</span>, from a
+<a href="peer/PeerMessageSender.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageSender">PeerMessageSender</a>
+it serializes the message to it to a <a href="https://doc.akka.io/api/akka/2.5.23/akka/util/ByteString.html" class="extype" name="akka.util.ByteString">akka.util.ByteString</a> and then
+sends it to the internal <code>manager</code> which streams the data to our peer
+on the Bitcoin network.</p><p>If the client receives a <span class="extype" name="Tcp.Received">Tcp.Received</span> message, it means we have received
+a message from our peer on the Bitcoin P2P network. This means we try to parse
+the bytes into a <a href="../../core/p2p/NetworkMessage.html" class="extype" name="org.bitcoins.core.p2p.NetworkMessage">NetworkMessage</a>.
+If we successfully parse the message we relay that message to the
+<a href="peer/PeerMessageSender.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageSender">PeerMessageSender</a>
+that created the Client Actor.</p><p>In this class you will see a 'unalignedBytes' value passed around in a lot of methods.
+This is because we cannot assume that a Bitcoin P2P message aligns with a TCP packet.
+For instance, a large block message (up to 4MB in size)
+CANNOT fit in a single TCP packet. This means we must cache
 the bytes and wait for the rest of them to be sent.
-</p></div></div>
+</p></div><dl class="paramcmts block"><dt class="param">peerMsgHandlerReceiver</dt><dd class="cmt"><p>The place we send messages that we successfully parsed
+                              from our peer on the P2P network. This is mostly likely
+                              a <a href="peer/PeerMessageSender.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageSender">org.bitcoins.node.networking.peer.PeerMessageSender</a></p></dd></dl></div>
     </li><li name="org.bitcoins.node.networking.PaymentActor" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="PaymentActorextendsActorwithBitcoinSLogger"></a><a id="PaymentActor:PaymentActor"></a>
       <span class="permalink">
@@ -455,10 +461,10 @@ to our peer on the network to see if the tx was included on that block
       </span>
       
       
-    </li><li name="org.bitcoins.node.networking.Client" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Client"></a><a id="Client:Client"></a>
+    </li><li name="org.bitcoins.node.networking.P2PClient" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="P2PClient"></a><a id="P2PClient:P2PClient"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/index.html#Client" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/index.html#P2PClient" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -467,7 +473,7 @@ to our peer on the network to see if the tx was included on that block
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="" href="Client$.html"><span class="name">Client</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="" href="P2PClient$.html"><span class="name">P2PClient</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       
