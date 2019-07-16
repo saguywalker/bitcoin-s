@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 151-e5f05cbb-SNAPSHOT - org.bitcoins.wallet.LockedWallet</title>
-          <meta name="description" content="Bitcoin - S 151 - e5f05cbb - SNAPSHOT - org.bitcoins.wallet.LockedWallet" />
-          <meta name="keywords" content="Bitcoin S 151 e5f05cbb SNAPSHOT org.bitcoins.wallet.LockedWallet" />
+          <title>Bitcoin-S 191-538f0e4f-SNAPSHOT - org.bitcoins.wallet.LockedWallet</title>
+          <meta name="description" content="Bitcoin - S 191 - 538f0e4f - SNAPSHOT - org.bitcoins.wallet.LockedWallet" />
+          <meta name="keywords" content="Bitcoin S 191 538f0e4f SNAPSHOT org.bitcoins.wallet.LockedWallet" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">151-e5f05cbb-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">191-538f0e4f-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -423,6 +423,42 @@
       </span>
       
       <p class="shortcomment cmt">The default HD coin for this wallet, read from config</p><div class="fullcomment"><div class="comment cmt"><p>The default HD coin for this wallet, read from config</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="index.html" class="extype" name="org.bitcoins.wallet">org.bitcoins.wallet</a>] </dd><dt>Definition Classes</dt><dd>AccountHandling</dd></dl></div>
+    </li><li name="org.bitcoins.wallet.internal.AccountHandling#DEFAULT_HD_COIN_TYPE" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DEFAULT_HD_COIN_TYPE:org.bitcoins.core.hd.HDCoinType"></a><a id="DEFAULT_HD_COIN_TYPE:HDCoinType"></a>
+      <span class="permalink">
+      <a href="../../../org/bitcoins/wallet/LockedWallet.html#DEFAULT_HD_COIN_TYPE:org.bitcoins.core.hd.HDCoinType" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DEFAULT_HD_COIN_TYPE</span><span class="result">: <a href="../core/hd/HDCoinType.html" class="extype" name="org.bitcoins.core.hd.HDCoinType">HDCoinType</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The default HD coin type for this wallet, derived from
+the network we're on
+</p><div class="fullcomment"><div class="comment cmt"><p>The default HD coin type for this wallet, derived from
+the network we're on
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="index.html" class="extype" name="org.bitcoins.wallet">org.bitcoins.wallet</a>] </dd><dt>Definition Classes</dt><dd>AccountHandling</dd></dl></div>
+    </li><li name="org.bitcoins.wallet.internal.AccountHandling#DEFAULT_HD_PURPOSE" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DEFAULT_HD_PURPOSE:org.bitcoins.core.hd.HDPurpose"></a><a id="DEFAULT_HD_PURPOSE:HDPurpose"></a>
+      <span class="permalink">
+      <a href="../../../org/bitcoins/wallet/LockedWallet.html#DEFAULT_HD_PURPOSE:org.bitcoins.core.hd.HDPurpose" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DEFAULT_HD_PURPOSE</span><span class="result">: <a href="../core/hd/HDPurpose.html" class="extype" name="org.bitcoins.core.hd.HDPurpose">HDPurpose</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The default HD purpose for this wallet, read from config</p><div class="fullcomment"><div class="comment cmt"><p>The default HD purpose for this wallet, read from config</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="index.html" class="extype" name="org.bitcoins.wallet">org.bitcoins.wallet</a>] </dd><dt>Definition Classes</dt><dd>AccountHandling</dd></dl></div>
     </li><li name="org.bitcoins.wallet.internal.UtxoHandling#addUtxo" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="addUtxo(transaction:org.bitcoins.core.protocol.transaction.Transaction,vout:org.bitcoins.core.number.UInt32,confirmations:Int,spent:Boolean):scala.concurrent.Future[org.bitcoins.wallet.api.AddUtxoResult]"></a><a id="addUtxo(Transaction,UInt32,Int,Boolean):Future[AddUtxoResult]"></a>
       <span class="permalink">
@@ -654,6 +690,38 @@ to get information about our transactions, pubkeys and scripts.
       </span>
       
       <p class="shortcomment cmt">&lt;invalid inheritdoc annotation&gt;</p><div class="fullcomment"><div class="comment cmt"><p>&lt;invalid inheritdoc annotation&gt;</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="index.html" class="extype" name="org.bitcoins.wallet">org.bitcoins.wallet</a>] </dd><dt>Definition Classes</dt><dd>AccountHandling</dd></dl></div>
+    </li><li name="org.bitcoins.wallet.internal.AccountHandling#getDefaultAccountForType" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getDefaultAccountForType(addressType:org.bitcoins.core.hd.AddressType):scala.concurrent.Future[org.bitcoins.wallet.models.AccountDb]"></a><a id="getDefaultAccountForType(AddressType):Future[AccountDb]"></a>
+      <span class="permalink">
+      <a href="../../../org/bitcoins/wallet/LockedWallet.html#getDefaultAccountForType(addressType:org.bitcoins.core.hd.AddressType):scala.concurrent.Future[org.bitcoins.wallet.models.AccountDb]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getDefaultAccountForType</span><span class="params">(<span name="addressType">addressType: <a href="../core/hd/AddressType.html" class="extype" name="org.bitcoins.core.hd.AddressType">AddressType</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="models/AccountDb.html" class="extype" name="org.bitcoins.wallet.models.AccountDb">AccountDb</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">&lt;invalid inheritdoc annotation&gt;</p><div class="fullcomment"><div class="comment cmt"><p>&lt;invalid inheritdoc annotation&gt;</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="index.html" class="extype" name="org.bitcoins.wallet">org.bitcoins.wallet</a>] </dd><dt>Definition Classes</dt><dd>AccountHandling</dd></dl></div>
+    </li><li name="org.bitcoins.wallet.internal.AddressHandling#getNewAddress" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getNewAddress(addressType:org.bitcoins.core.hd.AddressType):scala.concurrent.Future[org.bitcoins.core.protocol.BitcoinAddress]"></a><a id="getNewAddress(AddressType):Future[BitcoinAddress]"></a>
+      <span class="permalink">
+      <a href="../../../org/bitcoins/wallet/LockedWallet.html#getNewAddress(addressType:org.bitcoins.core.hd.AddressType):scala.concurrent.Future[org.bitcoins.core.protocol.BitcoinAddress]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getNewAddress</span><span class="params">(<span name="addressType">addressType: <a href="../core/hd/AddressType.html" class="extype" name="org.bitcoins.core.hd.AddressType">AddressType</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../core/protocol/BitcoinAddress.html" class="extype" name="org.bitcoins.core.protocol.BitcoinAddress">BitcoinAddress</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">&lt;invalid inheritdoc annotation&gt;</p><div class="fullcomment"><div class="comment cmt"><p>&lt;invalid inheritdoc annotation&gt;</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>AddressHandling</dd></dl></div>
     </li><li name="org.bitcoins.wallet.internal.AddressHandling#getNewAddress" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getNewAddress(account:org.bitcoins.wallet.models.AccountDb):scala.concurrent.Future[org.bitcoins.core.protocol.BitcoinAddress]"></a><a id="getNewAddress(AccountDb):Future[BitcoinAddress]"></a>
       <span class="permalink">
@@ -669,7 +737,7 @@ to get information about our transactions, pubkeys and scripts.
         <span class="name">getNewAddress</span><span class="params">(<span name="account">account: <a href="models/AccountDb.html" class="extype" name="org.bitcoins.wallet.models.AccountDb">AccountDb</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../core/protocol/BitcoinAddress.html" class="extype" name="org.bitcoins.core.protocol.BitcoinAddress">BitcoinAddress</a>]</span>
       </span>
       
-      <p class="shortcomment cmt">&lt;invalid inheritdoc annotation&gt;</p><div class="fullcomment"><div class="comment cmt"><p>&lt;invalid inheritdoc annotation&gt;</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>AddressHandling</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AddressHandling</dd></dl></div>
     </li><li name="org.bitcoins.wallet.api.LockedWalletApi#getNewAddress" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getNewAddress():scala.concurrent.Future[org.bitcoins.core.protocol.BitcoinAddress]"></a><a id="getNewAddress():Future[BitcoinAddress]"></a>
       <span class="permalink">
