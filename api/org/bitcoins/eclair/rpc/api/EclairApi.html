@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+220-8d448621-SNAPSHOT - org.bitcoins.eclair.rpc.api.EclairApi</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 220 - 8d448621 - SNAPSHOT - org.bitcoins.eclair.rpc.api.EclairApi" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 220 8d448621 SNAPSHOT org.bitcoins.eclair.rpc.api.EclairApi" />
+          <title>Bitcoin-S 0.1.0+219-e960422f-SNAPSHOT - org.bitcoins.eclair.rpc.api.EclairApi</title>
+          <meta name="description" content="Bitcoin - S 0.1.0 219 - e960422f - SNAPSHOT - org.bitcoins.eclair.rpc.api.EclairApi" />
+          <meta name="keywords" content="Bitcoin S 0.1.0 219 e960422f SNAPSHOT org.bitcoins.eclair.rpc.api.EclairApi" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+220-8d448621-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+219-e960422f-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -707,9 +707,9 @@
       
       
     </li><li name="org.bitcoins.eclair.rpc.api.EclairApi#getReceivedInfo" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="getReceivedInfo(invoice:org.bitcoins.core.protocol.ln.LnInvoice):scala.concurrent.Future[org.bitcoins.eclair.rpc.json.ReceivedPaymentResult]"></a><a id="getReceivedInfo(LnInvoice):Future[ReceivedPaymentResult]"></a>
+      <a id="getReceivedInfo(paymentHash:org.bitcoins.core.crypto.Sha256Digest):scala.concurrent.Future[Option[org.bitcoins.eclair.rpc.json.ReceivedPaymentResult]]"></a><a id="getReceivedInfo(Sha256Digest):Future[Option[ReceivedPaymentResult]]"></a>
       <span class="permalink">
-      <a href="../../../../../org/bitcoins/eclair/rpc/api/EclairApi.html#getReceivedInfo(invoice:org.bitcoins.core.protocol.ln.LnInvoice):scala.concurrent.Future[org.bitcoins.eclair.rpc.json.ReceivedPaymentResult]" title="Permalink">
+      <a href="../../../../../org/bitcoins/eclair/rpc/api/EclairApi.html#getReceivedInfo(paymentHash:org.bitcoins.core.crypto.Sha256Digest):scala.concurrent.Future[Option[org.bitcoins.eclair.rpc.json.ReceivedPaymentResult]]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -718,23 +718,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getReceivedInfo</span><span class="params">(<span name="invoice">invoice: <a href="../../../core/protocol/ln/LnInvoice.html" class="extype" name="org.bitcoins.core.protocol.ln.LnInvoice">LnInvoice</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../json/ReceivedPaymentResult.html" class="extype" name="org.bitcoins.eclair.rpc.json.ReceivedPaymentResult">ReceivedPaymentResult</a>]</span>
-      </span>
-      
-      
-    </li><li name="org.bitcoins.eclair.rpc.api.EclairApi#getReceivedInfo" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="getReceivedInfo(paymentHash:org.bitcoins.core.crypto.Sha256Digest):scala.concurrent.Future[org.bitcoins.eclair.rpc.json.ReceivedPaymentResult]"></a><a id="getReceivedInfo(Sha256Digest):Future[ReceivedPaymentResult]"></a>
-      <span class="permalink">
-      <a href="../../../../../org/bitcoins/eclair/rpc/api/EclairApi.html#getReceivedInfo(paymentHash:org.bitcoins.core.crypto.Sha256Digest):scala.concurrent.Future[org.bitcoins.eclair.rpc.json.ReceivedPaymentResult]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getReceivedInfo</span><span class="params">(<span name="paymentHash">paymentHash: <a href="../../../core/crypto/Sha256Digest.html" class="extype" name="org.bitcoins.core.crypto.Sha256Digest">Sha256Digest</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../json/ReceivedPaymentResult.html" class="extype" name="org.bitcoins.eclair.rpc.json.ReceivedPaymentResult">ReceivedPaymentResult</a>]</span>
+        <span class="name">getReceivedInfo</span><span class="params">(<span name="paymentHash">paymentHash: <a href="../../../core/crypto/Sha256Digest.html" class="extype" name="org.bitcoins.core.crypto.Sha256Digest">Sha256Digest</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<a href="../json/ReceivedPaymentResult.html" class="extype" name="org.bitcoins.eclair.rpc.json.ReceivedPaymentResult">ReceivedPaymentResult</a>]]</span>
       </span>
       
       
@@ -802,6 +786,25 @@
       </span>
       
       
+    </li><li name="org.bitcoins.eclair.rpc.api.EclairApi#monitorInvoice" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="monitorInvoice(lnInvoice:org.bitcoins.core.protocol.ln.LnInvoice,maxAttempts:Int):scala.concurrent.Future[org.bitcoins.eclair.rpc.json.ReceivedPaymentResult]"></a><a id="monitorInvoice(LnInvoice,Int):Future[ReceivedPaymentResult]"></a>
+      <span class="permalink">
+      <a href="../../../../../org/bitcoins/eclair/rpc/api/EclairApi.html#monitorInvoice(lnInvoice:org.bitcoins.core.protocol.ln.LnInvoice,maxAttempts:Int):scala.concurrent.Future[org.bitcoins.eclair.rpc.json.ReceivedPaymentResult]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">monitorInvoice</span><span class="params">(<span name="lnInvoice">lnInvoice: <a href="../../../core/protocol/ln/LnInvoice.html" class="extype" name="org.bitcoins.core.protocol.ln.LnInvoice">LnInvoice</a></span>, <span name="maxAttempts">maxAttempts: <a href="http://www.scala-lang.org/api/2.12.8/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../json/ReceivedPaymentResult.html" class="extype" name="org.bitcoins.eclair.rpc.json.ReceivedPaymentResult">ReceivedPaymentResult</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns a future that is completed when this invoice has been paid too.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a future that is completed when this invoice has been paid too.
+This also publishes the <span class="extype" name="ReceivedPaymentResult">received payment result</span> to the event bush
+when the payment is received
+</p></div><dl class="paramcmts block"><dt class="param">lnInvoice</dt><dd class="cmt"><p>the invoice to monitor</p></dd><dt class="param">maxAttempts</dt><dd class="cmt"><p>the number of attempts we ping eclair until we fail the returned future. Pinging occurrs every 1 second</p></dd></dl></div>
     </li><li name="org.bitcoins.eclair.rpc.api.EclairApi#monitorSentPayment" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="monitorSentPayment(paymentId:org.bitcoins.eclair.rpc.json.PaymentId,interval:scala.concurrent.duration.FiniteDuration,maxAttempts:Int):scala.concurrent.Future[org.bitcoins.eclair.rpc.json.PaymentResult]"></a><a id="monitorSentPayment(PaymentId,FiniteDuration,Int):Future[PaymentResult]"></a>
       <span class="permalink">
@@ -1181,6 +1184,22 @@ useful helper method</p></div></div>
                 <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="org.bitcoins.eclair.rpc.api.EclairApi#getReceivedInfo" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getReceivedInfo(invoice:org.bitcoins.core.protocol.ln.LnInvoice):scala.concurrent.Future[Option[org.bitcoins.eclair.rpc.json.ReceivedPaymentResult]]"></a><a id="getReceivedInfo(LnInvoice):Future[Option[ReceivedPaymentResult]]"></a>
+      <span class="permalink">
+      <a href="../../../../../org/bitcoins/eclair/rpc/api/EclairApi.html#getReceivedInfo(invoice:org.bitcoins.core.protocol.ln.LnInvoice):scala.concurrent.Future[Option[org.bitcoins.eclair.rpc.json.ReceivedPaymentResult]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getReceivedInfo</span><span class="params">(<span name="invoice">invoice: <a href="../../../core/protocol/ln/LnInvoice.html" class="extype" name="org.bitcoins.core.protocol.ln.LnInvoice">LnInvoice</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<a href="../json/ReceivedPaymentResult.html" class="extype" name="org.bitcoins.eclair.rpc.json.ReceivedPaymentResult">ReceivedPaymentResult</a>]]</span>
+      </span>
+      
+      
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <span class="permalink">
