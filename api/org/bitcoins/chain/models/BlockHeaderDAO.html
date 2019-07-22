@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+219-e960422f-SNAPSHOT - org.bitcoins.chain.models.BlockHeaderDAO</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 219 - e960422f - SNAPSHOT - org.bitcoins.chain.models.BlockHeaderDAO" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 219 e960422f SNAPSHOT org.bitcoins.chain.models.BlockHeaderDAO" />
+          <title>Bitcoin-S 218-2994e82d-SNAPSHOT - org.bitcoins.chain.models.BlockHeaderDAO</title>
+          <meta name="description" content="Bitcoin - S 218 - 2994e82d - SNAPSHOT - org.bitcoins.chain.models.BlockHeaderDAO" />
+          <meta name="keywords" content="Bitcoin S 218 2994e82d SNAPSHOT org.bitcoins.chain.models.BlockHeaderDAO" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+219-e960422f-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">218-2994e82d-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -479,6 +479,22 @@ competing blockchains (fork)</p></div></div>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.bitcoins.chain.models.BlockHeaderDAO#find" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="find(f:org.bitcoins.chain.models.BlockHeaderDb=&gt;Boolean)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Option[org.bitcoins.chain.models.BlockHeaderDb]]"></a><a id="find((BlockHeaderDb)⇒Boolean)(ExecutionContext):Future[Option[BlockHeaderDb]]"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/chain/models/BlockHeaderDAO.html#find(f:org.bitcoins.chain.models.BlockHeaderDb=&gt;Boolean)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Option[org.bitcoins.chain.models.BlockHeaderDb]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">find</span><span class="params">(<span name="f">f: (<a href="BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">BlockHeaderDb</a>) ⇒ <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/ExecutionContext.html#scala.concurrent.ExecutionContext" class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<a href="BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">BlockHeaderDb</a>]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Finds a <a href="BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">block header</a> that satisfies the given predicate, else returns None</p>
     </li><li name="org.bitcoins.db.CRUD#find" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="find(t:T):slick.jdbc.SQLiteProfile.api.Query[slick.jdbc.SQLiteProfile.api.Table[_],T,Seq]"></a><a id="find(BlockHeaderDb):slick.jdbc.JdbcProfile.API.Query[slick.jdbc.JdbcProfile.API.Table[_],BlockHeaderDb,Seq]"></a>
       <span class="permalink">
@@ -676,9 +692,9 @@ competing blockchains (fork)</p></div></div>
       
       <p class="shortcomment cmt">Returns competing blockchains that are contained in our BlockHeaderDAO
 Each chain returns the last <a href="../../core/protocol/blockchain/ChainParams.html#difficultyChangeInterval:Long" class="extmbr" name="org.bitcoins.core.protocol.blockchain.ChainParams#difficultyChangeInterval">difficutly interval</a>
-as defined by the network we are on.</p><div class="fullcomment"><div class="comment cmt"><p>Returns competing blockchains that are contained in our BlockHeaderDAO
+block headers as defined by the network we are on.</p><div class="fullcomment"><div class="comment cmt"><p>Returns competing blockchains that are contained in our BlockHeaderDAO
 Each chain returns the last <a href="../../core/protocol/blockchain/ChainParams.html#difficultyChangeInterval:Long" class="extmbr" name="org.bitcoins.core.protocol.blockchain.ChainParams#difficultyChangeInterval">difficutly interval</a>
-as defined by the network we are on. For instance, on bitcoin mainnet this will be 2016 block headers.
+block headers as defined by the network we are on. For instance, on bitcoin mainnet this will be 2016 block headers.
 If no competing tips are found, we only return one <span class="extype" name="Blockchain">blockchain</span>, else we
 return n chains for the number of competing <a href="#chainTips:scala.concurrent.Future[Vector[org.bitcoins.chain.models.BlockHeaderDb]]" class="extmbr" name="org.bitcoins.chain.models.BlockHeaderDAO#chainTips">tips</a> we have</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><span class="extype" name="Blockchain">Blockchain</span></p></span></dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
