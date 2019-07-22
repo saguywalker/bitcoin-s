@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 216-aef741ad-SNAPSHOT - org.bitcoins.rpc.client.v16.BitcoindV16RpcClient</title>
-          <meta name="description" content="Bitcoin - S 216 - aef741ad - SNAPSHOT - org.bitcoins.rpc.client.v16.BitcoindV16RpcClient" />
-          <meta name="keywords" content="Bitcoin S 216 aef741ad SNAPSHOT org.bitcoins.rpc.client.v16.BitcoindV16RpcClient" />
+          <title>Bitcoin-S 217-5171fbdc-SNAPSHOT - org.bitcoins.rpc.client.v16.BitcoindV16RpcClient</title>
+          <meta name="description" content="Bitcoin - S 217 - 5171fbdc - SNAPSHOT - org.bitcoins.rpc.client.v16.BitcoindV16RpcClient" />
+          <meta name="keywords" content="Bitcoin S 217 5171fbdc SNAPSHOT org.bitcoins.rpc.client.v16.BitcoindV16RpcClient" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">216-aef741ad-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">217-5171fbdc-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -1712,9 +1712,9 @@ so that the implicit network val is accessible
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/WalletRpc.html" class="extype" name="org.bitcoins.rpc.client.common.WalletRpc">WalletRpc</a></dd></dl></div>
     </li><li name="org.bitcoins.rpc.client.common.Client#getPayload" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getPayload(response:akka.http.scaladsl.model.HttpResponse):scala.concurrent.Future[play.api.libs.json.JsValue]"></a><a id="getPayload(HttpResponse):Future[JsValue]"></a>
+      <a id="getPayload(response:akka.http.scaladsl.model.HttpResponse,command:String,request:akka.http.scaladsl.model.HttpRequest,parameters:List[play.api.libs.json.JsValue]):scala.concurrent.Future[play.api.libs.json.JsValue]"></a><a id="getPayload(HttpResponse,String,HttpRequest,List[JsValue]):Future[JsValue]"></a>
       <span class="permalink">
-      <a href="../../../../../org/bitcoins/rpc/client/v16/BitcoindV16RpcClient.html#getPayload(response:akka.http.scaladsl.model.HttpResponse):scala.concurrent.Future[play.api.libs.json.JsValue]" title="Permalink">
+      <a href="../../../../../org/bitcoins/rpc/client/v16/BitcoindV16RpcClient.html#getPayload(response:akka.http.scaladsl.model.HttpResponse,command:String,request:akka.http.scaladsl.model.HttpRequest,parameters:List[play.api.libs.json.JsValue]):scala.concurrent.Future[play.api.libs.json.JsValue]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1723,10 +1723,12 @@ so that the implicit network val is accessible
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getPayload</span><span class="params">(<span name="response">response: <span class="extype" name="akka.http.scaladsl.model.HttpResponse">HttpResponse</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="https://playframework.com/documentation/2.7.x/api/scala/play/api/libs/json/JsValue.html#play.api.libs.json.JsValue" class="extype" name="play.api.libs.json.JsValue">JsValue</a>]</span>
+        <span class="name">getPayload</span><span class="params">(<span name="response">response: <span class="extype" name="akka.http.scaladsl.model.HttpResponse">HttpResponse</span></span>, <span name="command">command: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="request">request: <a href="https://doc.akka.io/api/akka-http/10.1.9/akka/http/scaladsl/model/HttpRequest.html#akka.http.scaladsl.model.HttpRequest" class="extype" name="akka.http.scaladsl.model.HttpRequest">HttpRequest</a></span>, <span name="parameters">parameters: <a href="../../../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="https://playframework.com/documentation/2.7.x/api/scala/play/api/libs/json/JsValue.html#play.api.libs.json.JsValue" class="extype" name="play.api.libs.json.JsValue">JsValue</a>] = <span class="symbol"><span class="name"><a href="../../../../../scala/index.html">List.empty</a></span></span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="https://playframework.com/documentation/2.7.x/api/scala/play/api/libs/json/JsValue.html#play.api.libs.json.JsValue" class="extype" name="play.api.libs.json.JsValue">JsValue</a>]</span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../common/Client.html" class="extype" name="org.bitcoins.rpc.client.common.Client">Client</a></dd></dl></div>
+      <p class="shortcomment cmt">Parses the payload of the given response into JSON.</p><div class="fullcomment"><div class="comment cmt"><p>Parses the payload of the given response into JSON.</p><p>The command, parameters and request are given as debug parameters,
+and only used for printing diagnostics if things go belly-up.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../common/Client.html" class="extype" name="org.bitcoins.rpc.client.common.Client">Client</a></dd></dl></div>
     </li><li name="org.bitcoins.rpc.client.common.P2PRpc#getPeerInfo" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getPeerInfo:scala.concurrent.Future[Vector[org.bitcoins.rpc.jsonmodels.Peer]]"></a><a id="getPeerInfo:Future[Vector[Peer]]"></a>
       <span class="permalink">
