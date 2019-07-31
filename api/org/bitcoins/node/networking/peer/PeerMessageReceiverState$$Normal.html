@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 212-1fc3a27a-SNAPSHOT - org.bitcoins.node.networking.peer.PeerMessageReceiverState.Normal</title>
-          <meta name="description" content="Bitcoin - S 212 - 1fc3a27a - SNAPSHOT - org.bitcoins.node.networking.peer.PeerMessageReceiverState.Normal" />
-          <meta name="keywords" content="Bitcoin S 212 1fc3a27a SNAPSHOT org.bitcoins.node.networking.peer.PeerMessageReceiverState.Normal" />
+          <title>Bitcoin-S 209-b6a5ffea-SNAPSHOT - org.bitcoins.node.networking.peer.PeerMessageReceiverState.Normal</title>
+          <meta name="description" content="Bitcoin - S 209 - b6a5ffea - SNAPSHOT - org.bitcoins.node.networking.peer.PeerMessageReceiverState.Normal" />
+          <meta name="keywords" content="Bitcoin S 209 b6a5ffea SNAPSHOT org.bitcoins.node.networking.peer.PeerMessageReceiverState.Normal" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">212-1fc3a27a-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">209-b6a5ffea-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -179,8 +179,8 @@
                         <a href="" title="This represents a org.bitcoins.node.networking.peer.PeerMessageReceiverState where the peer has been fully initialized and is ready to send messages to the peer on the network">Normal</a>
                       </li><li class="current-entities indented6">
                         <span class="separator"></span>
-                        <a class="object" href="PeerMessageReceiverState$$Preconnection$.html" title="Represents a org.bitcoins.node.networking.peer.PeerMessageReceiverState where the peer is not connected to the p2p network"></a>
-                        <a href="PeerMessageReceiverState$$Preconnection$.html" title="Represents a org.bitcoins.node.networking.peer.PeerMessageReceiverState where the peer is not connected to the p2p network">Preconnection</a>
+                        <a class="object" href="PeerMessageReceiverState$$Preconnection$.html" title="Represents a PeerMessageReceiverState where the peer is not connected to the p2p network"></a>
+                        <a href="PeerMessageReceiverState$$Preconnection$.html" title="Represents a PeerMessageReceiverState where the peer is not connected to the p2p network">Preconnection</a>
                       </li>
               </ul>
             </div>
@@ -368,9 +368,9 @@ the peer on the network
       </span>
       
       <p class="shortcomment cmt">This promise gets completed when we receive a
-<a href="https://doc.akka.io/api/akka/2.5.23/akka/io/Tcp$$Connected.html" class="extype" name="akka.io.Tcp.Connected">akka.io.Tcp.Connected</a> message from <span class="extype" name="Client">Client</span>
+<a href="https://doc.akka.io/api/akka/2.5.23/akka/io/Tcp$$Connected.html" class="extype" name="akka.io.Tcp.Connected">akka.io.Tcp.Connected</a> message from <a href="../P2PClient.html" class="extype" name="org.bitcoins.node.networking.P2PClient">P2PClient</a>
 </p><div class="fullcomment"><div class="comment cmt"><p>This promise gets completed when we receive a
-<a href="https://doc.akka.io/api/akka/2.5.23/akka/io/Tcp$$Connected.html" class="extype" name="akka.io.Tcp.Connected">akka.io.Tcp.Connected</a> message from <span class="extype" name="Client">Client</span>
+<a href="https://doc.akka.io/api/akka/2.5.23/akka/io/Tcp$$Connected.html" class="extype" name="akka.io.Tcp.Connected">akka.io.Tcp.Connected</a> message from <a href="../P2PClient.html" class="extype" name="org.bitcoins.node.networking.P2PClient">P2PClient</a>
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiverState.Normal">Normal</a> → <a href="PeerMessageReceiverState.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiverState">PeerMessageReceiverState</a></dd></dl></div>
     </li><li name="org.bitcoins.node.networking.peer.PeerMessageReceiverState.Normal#clientDisconnectP" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clientDisconnectP:scala.concurrent.Promise[Unit]"></a><a id="clientDisconnectP:Promise[Unit]"></a>
@@ -387,11 +387,11 @@ the peer on the network
         <span class="name">clientDisconnectP</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Promise.html#scala.concurrent.Promise" class="extype" name="scala.concurrent.Promise">Promise</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a>]</span>
       </span>
       
-      <p class="shortcomment cmt">This promise is completed in the <span class="extype" name="PeerMessageReceiver.disconnect()">PeerMessageReceiver.disconnect()</span>
-when a <span class="extype" name="Client">Client</span> initiates a disconnections from
+      <p class="shortcomment cmt">This promise is completed in the <span class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiver.disconnect()">disconnect()</span>
+when a <a href="../P2PClient.html" class="extype" name="org.bitcoins.node.networking.P2PClient">P2PClient</a> initiates a disconnections from
 our peer on the p2p network
-</p><div class="fullcomment"><div class="comment cmt"><p>This promise is completed in the <span class="extype" name="PeerMessageReceiver.disconnect()">PeerMessageReceiver.disconnect()</span>
-when a <span class="extype" name="Client">Client</span> initiates a disconnections from
+</p><div class="fullcomment"><div class="comment cmt"><p>This promise is completed in the <span class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiver.disconnect()">disconnect()</span>
+when a <a href="../P2PClient.html" class="extype" name="org.bitcoins.node.networking.P2PClient">P2PClient</a> initiates a disconnections from
 our peer on the p2p network
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiverState.Normal">Normal</a> → <a href="PeerMessageReceiverState.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiverState">PeerMessageReceiverState</a></dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -473,9 +473,9 @@ our peer on the p2p network
       </span>
       
       <p class="shortcomment cmt">This future completes when we have received a
-<span class="extype" name="VerAckMessage">VerAckMessage</span> from our peer.</p><div class="fullcomment"><div class="comment cmt"><p>This future completes when we have received a
-<span class="extype" name="VerAckMessage">VerAckMessage</span> from our peer. This means our
-peer has accepted our <span class="extype" name="VersionMessage">VersionMessage</span> and is
+<a href="../../../core/p2p/VerAckMessage$.html" class="extype" name="org.bitcoins.core.p2p.VerAckMessage">VerAckMessage</a> from our peer.</p><div class="fullcomment"><div class="comment cmt"><p>This future completes when we have received a
+<a href="../../../core/p2p/VerAckMessage$.html" class="extype" name="org.bitcoins.core.p2p.VerAckMessage">VerAckMessage</a> from our peer. This means our
+peer has accepted our <a href="../../../core/p2p/VersionMessage.html" class="extype" name="org.bitcoins.core.p2p.VersionMessage">VersionMessage</a> and is
 willing to connect with us</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PeerMessageReceiverState.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiverState">PeerMessageReceiverState</a></dd></dl></div>
     </li><li name="org.bitcoins.node.networking.peer.PeerMessageReceiverState#hasReceivedVersionMsg" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hasReceivedVersionMsg:scala.concurrent.Future[org.bitcoins.core.p2p.VersionMessage]"></a><a id="hasReceivedVersionMsg:Future[VersionMessage]"></a>
@@ -493,10 +493,10 @@ willing to connect with us</p></div><dl class="attributes block"> <dt>Definition
       </span>
       
       <p class="shortcomment cmt">This future is completed when our peer has sent
-us their <span class="extype" name="VersionMessage">VersionMessage</span> indicating what protocol
+us their <a href="../../../core/p2p/VersionMessage.html" class="extype" name="org.bitcoins.core.p2p.VersionMessage">VersionMessage</a> indicating what protocol
 features they support
 </p><div class="fullcomment"><div class="comment cmt"><p>This future is completed when our peer has sent
-us their <span class="extype" name="VersionMessage">VersionMessage</span> indicating what protocol
+us their <a href="../../../core/p2p/VersionMessage.html" class="extype" name="org.bitcoins.core.p2p.VersionMessage">VersionMessage</a> indicating what protocol
 features they support
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PeerMessageReceiverState.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiverState">PeerMessageReceiverState</a></dd></dl></div>
     </li><li name="org.bitcoins.node.networking.peer.PeerMessageReceiverState#isConnected" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -519,7 +519,7 @@ connected to our client.</p><div class="fullcomment"><div class="comment cmt"><p
 connected to our client. Note, there is
 no timeout on this future and no guarantee
 that some one has actually initiated
-a connection with a <span class="extype" name="Client">Client</span></p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PeerMessageReceiverState.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiverState">PeerMessageReceiverState</a></dd></dl></div>
+a connection with a <a href="../P2PClient.html" class="extype" name="org.bitcoins.node.networking.P2PClient">P2PClient</a></p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PeerMessageReceiverState.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiverState">PeerMessageReceiverState</a></dd></dl></div>
     </li><li name="org.bitcoins.node.networking.peer.PeerMessageReceiverState#isDisconnected" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isDisconnected:Boolean"></a>
       <span class="permalink">
@@ -554,10 +554,10 @@ a connection with a <span class="extype" name="Client">Client</span></p></div><d
       <p class="shortcomment cmt">Indicates we have connected and completed the initial
 handshake that is required to connect to the bitcoin p2p network
 If this is true, we can start sending and receiving normal
-<span class="extype" name="NetworkMessage">NetworkMessage</span> with our peer on the network</p><div class="fullcomment"><div class="comment cmt"><p>Indicates we have connected and completed the initial
+<a href="../../../core/p2p/NetworkMessage.html" class="extype" name="org.bitcoins.core.p2p.NetworkMessage">NetworkMessage</a> with our peer on the network</p><div class="fullcomment"><div class="comment cmt"><p>Indicates we have connected and completed the initial
 handshake that is required to connect to the bitcoin p2p network
 If this is true, we can start sending and receiving normal
-<span class="extype" name="NetworkMessage">NetworkMessage</span> with our peer on the network</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PeerMessageReceiverState.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiverState">PeerMessageReceiverState</a></dd></dl></div>
+<a href="../../../core/p2p/NetworkMessage.html" class="extype" name="org.bitcoins.core.p2p.NetworkMessage">NetworkMessage</a> with our peer on the network</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PeerMessageReceiverState.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiverState">PeerMessageReceiverState</a></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <span class="permalink">

@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 212-1fc3a27a-SNAPSHOT - org.bitcoins.wallet.api.LockedWalletApi</title>
-          <meta name="description" content="Bitcoin - S 212 - 1fc3a27a - SNAPSHOT - org.bitcoins.wallet.api.LockedWalletApi" />
-          <meta name="keywords" content="Bitcoin S 212 1fc3a27a SNAPSHOT org.bitcoins.wallet.api.LockedWalletApi" />
+          <title>Bitcoin-S 209-b6a5ffea-SNAPSHOT - org.bitcoins.wallet.api.LockedWalletApi</title>
+          <meta name="description" content="Bitcoin - S 209 - b6a5ffea - SNAPSHOT - org.bitcoins.wallet.api.LockedWalletApi" />
+          <meta name="keywords" content="Bitcoin S 209 b6a5ffea SNAPSHOT org.bitcoins.wallet.api.LockedWalletApi" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">212-1fc3a27a-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">209-b6a5ffea-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -364,9 +364,7 @@ to get information about our transactions, pubkeys and scripts.</p>
         <span class="name">getDefaultAccount</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../models/AccountDb.html" class="extype" name="org.bitcoins.wallet.models.AccountDb">AccountDb</a>]</span>
       </span>
       
-      <p class="shortcomment cmt">Fetches the default account from the DB
-</p><div class="fullcomment"><div class="comment cmt"><p>Fetches the default account from the DB
-</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../index.html" class="extype" name="org.bitcoins.wallet">org.bitcoins.wallet</a>] </dd></dl></div>
+      <p class="shortcomment cmt">Fetches the default account from the DB</p><div class="fullcomment"><div class="comment cmt"><p>Fetches the default account from the DB</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>Future[AccountDb]</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../index.html" class="extype" name="org.bitcoins.wallet">org.bitcoins.wallet</a>] </dd></dl></div>
     </li><li name="org.bitcoins.wallet.api.LockedWalletApi#getDefaultAccountForType" visbl="prt" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="getDefaultAccountForType(addressType:org.bitcoins.core.hd.AddressType):scala.concurrent.Future[org.bitcoins.wallet.models.AccountDb]"></a><a id="getDefaultAccountForType(AddressType):Future[AccountDb]"></a>
       <span class="permalink">
@@ -382,7 +380,7 @@ to get information about our transactions, pubkeys and scripts.</p>
         <span class="name">getDefaultAccountForType</span><span class="params">(<span name="addressType">addressType: <a href="../../core/hd/AddressType.html" class="extype" name="org.bitcoins.core.hd.AddressType">AddressType</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../models/AccountDb.html" class="extype" name="org.bitcoins.wallet.models.AccountDb">AccountDb</a>]</span>
       </span>
       
-      <p class="shortcomment cmt">Fetches the default account for the given address/acount kind</p><div class="fullcomment"><div class="comment cmt"><p>Fetches the default account for the given address/acount kind</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../index.html" class="extype" name="org.bitcoins.wallet">org.bitcoins.wallet</a>] </dd></dl></div>
+      <p class="shortcomment cmt">Fetches the default account for the given address/account kind</p><div class="fullcomment"><div class="comment cmt"><p>Fetches the default account for the given address/account kind</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../index.html" class="extype" name="org.bitcoins.wallet">org.bitcoins.wallet</a>] </dd></dl></div>
     </li><li name="org.bitcoins.wallet.api.LockedWalletApi#getNewAddress" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="getNewAddress(addressType:org.bitcoins.core.hd.AddressType):scala.concurrent.Future[org.bitcoins.core.protocol.BitcoinAddress]"></a><a id="getNewAddress(AddressType):Future[BitcoinAddress]"></a>
       <span class="permalink">
@@ -402,7 +400,9 @@ to get information about our transactions, pubkeys and scripts.</p>
 type.</p><div class="fullcomment"><div class="comment cmt"><p>Gets a new external address with the specified
 type. Calling this method multiple
 times will return the same address, until it has
-received funds.</p></div></div>
+received funds.
+ TODO: Last sentence is not true, implement that
+ https://github.com/bitcoin-s/bitcoin-s/issues/628</p></div></div>
     </li><li name="org.bitcoins.wallet.api.LockedWalletApi#getNewChangeAddress" visbl="prt" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="getNewChangeAddress(account:org.bitcoins.wallet.models.AccountDb):scala.concurrent.Future[org.bitcoins.core.protocol.BitcoinAddress]"></a><a id="getNewChangeAddress(AccountDb):Future[BitcoinAddress]"></a>
       <span class="permalink">
@@ -467,7 +467,7 @@ received funds.</p></div></div>
       </span>
       
       
-    </li><li name="org.bitcoins.wallet.api.LockedWalletApi#listUtxos" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+    </li><li name="org.bitcoins.wallet.api.LockedWalletApi#listUtxos" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="listUtxos():scala.concurrent.Future[Vector[org.bitcoins.wallet.models.SpendingInfoDb]]"></a><a id="listUtxos():Future[Vector[SpendingInfoDb]]"></a>
       <span class="permalink">
       <a href="../../../../org/bitcoins/wallet/api/LockedWalletApi.html#listUtxos():scala.concurrent.Future[Vector[org.bitcoins.wallet.models.SpendingInfoDb]]" title="Permalink">
@@ -482,7 +482,7 @@ received funds.</p></div></div>
         <span class="name">listUtxos</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../models/SpendingInfoDb.html" class="extype" name="org.bitcoins.wallet.models.SpendingInfoDb">SpendingInfoDb</a>]]</span>
       </span>
       
-      <p class="shortcomment cmt">Lists unspent transaction outputs in the wallet</p>
+      <p class="shortcomment cmt">Lists unspent transaction outputs in the wallet</p><div class="fullcomment"><div class="comment cmt"><p>Lists unspent transaction outputs in the wallet</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>Vector[SpendingInfoDb]</p></dd></dl></div>
     </li><li name="org.bitcoins.wallet.api.LockedWalletApi#processTransaction" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="processTransaction(transaction:org.bitcoins.core.protocol.transaction.Transaction,confirmations:Int):scala.concurrent.Future[org.bitcoins.wallet.api.LockedWalletApi]"></a><a id="processTransaction(Transaction,Int):Future[LockedWalletApi]"></a>
       <span class="permalink">
@@ -498,7 +498,7 @@ received funds.</p></div></div>
         <span class="name">processTransaction</span><span class="params">(<span name="transaction">transaction: <a href="../../core/protocol/transaction/Transaction.html" class="extype" name="org.bitcoins.core.protocol.transaction.Transaction">Transaction</a></span>, <span name="confirmations">confirmations: <a href="http://www.scala-lang.org/api/2.12.8/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="" class="extype" name="org.bitcoins.wallet.api.LockedWalletApi">LockedWalletApi</a>]</span>
       </span>
       
-      <p class="shortcomment cmt">Processes the given transaction, updating our DB state if it's relevant to us.</p><div class="fullcomment"><div class="comment cmt"><p>Processes the given transaction, updating our DB state if it's relevant to us.</p></div><dl class="paramcmts block"><dt class="param">transaction</dt><dd class="cmt"><p>The transacton we're processing</p></dd></dl></div>
+      <p class="shortcomment cmt">Processes the given transaction, updating our DB state if it's relevant to us.</p><div class="fullcomment"><div class="comment cmt"><p>Processes the given transaction, updating our DB state if it's relevant to us.</p></div><dl class="paramcmts block"><dt class="param">transaction</dt><dd class="cmt"><p>The transaction we're processing</p></dd><dt class="param">confirmations</dt><dd class="cmt"><p>How many confirmations the TX has</p></dd></dl></div>
     </li><li name="org.bitcoins.wallet.api.LockedWalletApi#unlock" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="unlock(passphrase:org.bitcoins.core.crypto.AesPassword):org.bitcoins.wallet.api.UnlockWalletResult"></a><a id="unlock(AesPassword):UnlockWalletResult"></a>
       <span class="permalink">
@@ -786,7 +786,7 @@ received funds.
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="org.bitcoins.wallet.api.LockedWalletApi#listAccounts" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="org.bitcoins.wallet.api.LockedWalletApi#listAccounts" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="listAccounts(purpose:org.bitcoins.core.hd.HDPurpose):scala.concurrent.Future[Vector[org.bitcoins.wallet.models.AccountDb]]"></a><a id="listAccounts(HDPurpose):Future[Vector[AccountDb]]"></a>
       <span class="permalink">
       <a href="../../../../org/bitcoins/wallet/api/LockedWalletApi.html#listAccounts(purpose:org.bitcoins.core.hd.HDPurpose):scala.concurrent.Future[Vector[org.bitcoins.wallet.models.AccountDb]]" title="Permalink">
@@ -801,7 +801,7 @@ received funds.
         <span class="name">listAccounts</span><span class="params">(<span name="purpose">purpose: <a href="../../core/hd/HDPurpose.html" class="extype" name="org.bitcoins.core.hd.HDPurpose">HDPurpose</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../models/AccountDb.html" class="extype" name="org.bitcoins.wallet.models.AccountDb">AccountDb</a>]]</span>
       </span>
       
-      <p class="shortcomment cmt">Lists all wallet accounts with the given type</p>
+      <p class="shortcomment cmt">Lists all wallet accounts with the given type</p><div class="fullcomment"><div class="comment cmt"><p>Lists all wallet accounts with the given type</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><span class="extype" name="Future[Vector[AccountDb">Future[Vector[AccountDb</span></p></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">

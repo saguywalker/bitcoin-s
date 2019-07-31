@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 212-1fc3a27a-SNAPSHOT - org.bitcoins.wallet.models</title>
-          <meta name="description" content="Bitcoin - S 212 - 1fc3a27a - SNAPSHOT - org.bitcoins.wallet.models" />
-          <meta name="keywords" content="Bitcoin S 212 1fc3a27a SNAPSHOT org.bitcoins.wallet.models" />
+          <title>Bitcoin-S 209-b6a5ffea-SNAPSHOT - org.bitcoins.wallet.models</title>
+          <meta name="description" content="Bitcoin - S 209 - b6a5ffea - SNAPSHOT - org.bitcoins.wallet.models" />
+          <meta name="keywords" content="Bitcoin S 209 b6a5ffea SNAPSHOT org.bitcoins.wallet.models" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">212-1fc3a27a-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">209-b6a5ffea-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -239,8 +239,8 @@
                         <a href="SpendingInfoDb.html" title="The database level representation of a UTXO.">SpendingInfoDb</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
-                        <a class="class" href="SpendingInfoTable.html" title="This table stores the necessary information to spend a TXO at a later point in time."></a>
-                        <a href="SpendingInfoTable.html" title="This table stores the necessary information to spend a TXO at a later point in time.">SpendingInfoTable</a>
+                        <a class="class" href="SpendingInfoTable.html" title="This table stores the necessary information to spend a transaction output (TXO) at a later point in time."></a>
+                        <a href="SpendingInfoTable.html" title="This table stores the necessary information to spend a transaction output (TXO) at a later point in time.">SpendingInfoTable</a>
                       </li>
               </ul>
             </div>
@@ -535,15 +535,15 @@ the root wallet seed.
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="This table stores the necessary information to spend a TXO at a later point in time." href="SpendingInfoTable.html"><span class="name">SpendingInfoTable</span></a><span class="params">(<span name="tag">tag: <span class="extype" name="slick.lifted.Aliases.Tag">slick.jdbc.JdbcProfile.API.Tag</span></span>)</span><span class="result"> extends <a href="../../db/TableAutoInc.html" class="extype" name="org.bitcoins.db.TableAutoInc">TableAutoInc</a>[<a href="SpendingInfoDb.html" class="extype" name="org.bitcoins.wallet.models.SpendingInfoDb">SpendingInfoDb</a>] with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="This table stores the necessary information to spend a transaction output (TXO) at a later point in time." href="SpendingInfoTable.html"><span class="name">SpendingInfoTable</span></a><span class="params">(<span name="tag">tag: <span class="extype" name="slick.lifted.Aliases.Tag">slick.jdbc.JdbcProfile.API.Tag</span></span>)</span><span class="result"> extends <a href="../../db/TableAutoInc.html" class="extype" name="org.bitcoins.db.TableAutoInc">TableAutoInc</a>[<a href="SpendingInfoDb.html" class="extype" name="org.bitcoins.wallet.models.SpendingInfoDb">SpendingInfoDb</a>] with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">This table stores the necessary information to spend
-a TXO at a later point in time.</p><div class="fullcomment"><div class="comment cmt"><p>This table stores the necessary information to spend
-a TXO at a later point in time.</p><p>It does not contain informations about whether or not
-it is spent, how many (if any) confirmations it has
-or which block/transaction it was included in.</p><p>That is rather handled by
-<span class="extype" name="org.bitcoins.wallet.models.WalletTXOTable">WalletTXOTable</span>.
+a transaction output (TXO) at a later point in time.</p><div class="fullcomment"><div class="comment cmt"><p>This table stores the necessary information to spend
+a transaction output (TXO) at a later point in time. It
+also stores how many confirmations it has, whether
+or not it is spent (i.e. if it is a UTXO or not) and the
+TXID of the transaction that created this output.
 </p></div></div>
     </li></ol>
             </div>

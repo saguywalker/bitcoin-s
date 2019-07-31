@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 212-1fc3a27a-SNAPSHOT - org.bitcoins.testkit.core.gen.ScriptGenerators</title>
-          <meta name="description" content="Bitcoin - S 212 - 1fc3a27a - SNAPSHOT - org.bitcoins.testkit.core.gen.ScriptGenerators" />
-          <meta name="keywords" content="Bitcoin S 212 1fc3a27a SNAPSHOT org.bitcoins.testkit.core.gen.ScriptGenerators" />
+          <title>Bitcoin-S 209-b6a5ffea-SNAPSHOT - org.bitcoins.testkit.core.gen.ScriptGenerators</title>
+          <meta name="description" content="Bitcoin - S 209 - b6a5ffea - SNAPSHOT - org.bitcoins.testkit.core.gen.ScriptGenerators" />
+          <meta name="keywords" content="Bitcoin S 209 b6a5ffea SNAPSHOT org.bitcoins.testkit.core.gen.ScriptGenerators" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">212-1fc3a27a-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">209-b6a5ffea-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -227,8 +227,8 @@
                         <a href="NumberGenerator.html" title="Created by chris on 6/16/16.">NumberGenerator</a>
                       </li><li class="current-entities indented5">
                         <a class="object" href="ScriptGenerators$.html" title=""></a>
-                        <a class="class" href="" title="Created by chris on 6/22/16."></a>
-                        <a href="" title="Created by chris on 6/22/16.">ScriptGenerators</a>
+                        <a class="class" href="" title=""></a>
+                        <a href="" title="">ScriptGenerators</a>
                       </li><li class="current-entities indented5">
                         <a class="object" href="StringGenerators$.html" title=""></a>
                         <a class="trait" href="StringGenerators.html" title="Created by chris on 6/20/16."></a>
@@ -271,8 +271,7 @@
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Created by chris on 6/22/16.
-</p></div><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -429,17 +428,17 @@
         <span class="name">chooseSignedScriptSig</span><span class="result">: <a href="https://javadoc.io/page/org.scalacheck/scalacheck_2.12/1.14.0/org/scalacheck/Gen.html#org.scalacheck.Gen" class="extype" name="org.scalacheck.Gen">Gen</a>[(<a href="../../../core/protocol/script/ScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.ScriptSignature">ScriptSignature</a>, <a href="../../../core/protocol/script/ScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.ScriptPubKey">ScriptPubKey</a>, <a href="../../../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="../../../core/crypto/ECPrivateKey.html" class="extype" name="org.bitcoins.core.crypto.ECPrivateKey">ECPrivateKey</a>])]</span>
       </span>
       
-      <p class="shortcomment cmt">This function chooses a random signed <a href="../../../core/protocol/script/ScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.ScriptSignature">ScriptSignature</a>
-that is NOT a <a href="../../../core/protocol/script/P2SHScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.P2SHScriptSignature">P2SHScriptSignature</a>,
-<a href="../../../core/protocol/script/CSVScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.CSVScriptSignature">CSVScriptSignature</a>,
-<a href="../../../core/protocol/script/CLTVScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.CLTVScriptSignature">CLTVScriptSignature</a>, or any witness type
-</p><div class="fullcomment"><div class="comment cmt"><p>This function chooses a random signed <a href="../../../core/protocol/script/ScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.ScriptSignature">ScriptSignature</a>
-that is NOT a <a href="../../../core/protocol/script/P2SHScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.P2SHScriptSignature">P2SHScriptSignature</a>,
-<a href="../../../core/protocol/script/CSVScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.CSVScriptSignature">CSVScriptSignature</a>,
-<a href="../../../core/protocol/script/CLTVScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.CLTVScriptSignature">CLTVScriptSignature</a>, or any witness type
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the signed <a href="../../../core/protocol/script/ScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.ScriptSignature">ScriptSignature</a>,
-        the <a href="../../../core/protocol/script/ScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.ScriptPubKey">ScriptPubKey</a> it is spending,
-        and the sequence of <a href="../../../core/crypto/ECPublicKey.html" class="extype" name="org.bitcoins.core.crypto.ECPublicKey">ECPrivateKey</a> used to sign it</p></dd></dl></div>
+      <p class="shortcomment cmt">This function chooses a random signed <code>ScriptSignature</code>
+that is NOT a <code>P2SHScriptSignature</code>,
+<code>CSVScriptSignature</code>,
+<code>CLTVScriptSignature</code>, or any witness type
+</p><div class="fullcomment"><div class="comment cmt"><p>This function chooses a random signed <code>ScriptSignature</code>
+that is NOT a <code>P2SHScriptSignature</code>,
+<code>CSVScriptSignature</code>,
+<code>CLTVScriptSignature</code>, or any witness type
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the signed <code>ScriptSignature</code>,
+        the <code>ScriptPubKey</code> it is spending,
+        and the sequence of <code>ECPrivateKey</code> used to sign it</p></dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a><a id="clone():AnyRef"></a>
       <span class="permalink">
@@ -902,7 +901,7 @@ that is NOT a <a href="../../../core/protocol/script/P2SHScriptSignature.html" c
       </span>
       
       
-    </li><li name="org.bitcoins.testkit.core.gen.ScriptGenerators#p2shScriptSignature" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="org.bitcoins.testkit.core.gen.ScriptGenerators#p2shScriptSignature" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="p2shScriptSignature:org.scalacheck.Gen[org.bitcoins.core.protocol.script.P2SHScriptSignature]"></a><a id="p2shScriptSignature:Gen[P2SHScriptSignature]"></a>
       <span class="permalink">
       <a href="../../../../../org/bitcoins/testkit/core/gen/ScriptGenerators.html#p2shScriptSignature:org.scalacheck.Gen[org.bitcoins.core.protocol.script.P2SHScriptSignature]" title="Permalink">
@@ -917,10 +916,10 @@ that is NOT a <a href="../../../core/protocol/script/P2SHScriptSignature.html" c
         <span class="name">p2shScriptSignature</span><span class="result">: <a href="https://javadoc.io/page/org.scalacheck/scalacheck_2.12/1.14.0/org/scalacheck/Gen.html#org.scalacheck.Gen" class="extype" name="org.scalacheck.Gen">Gen</a>[<a href="../../../core/protocol/script/P2SHScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.P2SHScriptSignature">P2SHScriptSignature</a>]</span>
       </span>
       
-      <p class="shortcomment cmt">Generates a <a href="../../../core/protocol/script/P2SHScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.P2SHScriptSignature">P2SHScriptSignature</a>
-WARNING: the redeem script and the script signature DO NOT evaluate to true
-if executed by <a href="../../../core/script/interpreter/ScriptInterpreter.html" class="extype" name="org.bitcoins.core.script.interpreter.ScriptInterpreter">ScriptInterpreter</a>
-</p>
+      <p class="shortcomment cmt">Generates a P2SH script signature
+</p><div class="fullcomment"><div class="comment cmt"><p>Generates a P2SH script signature
+</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>the redeem script and the script signature DO NOT evaluate to true
+if executed by <a href="../../../core/script/interpreter/ScriptInterpreter.html" class="extype" name="org.bitcoins.core.script.interpreter.ScriptInterpreter">org.bitcoins.core.script.interpreter.ScriptInterpreter</a></p></span></dd></dl></div>
     </li><li name="org.bitcoins.testkit.core.gen.ScriptGenerators#p2wpkhSPKV0" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="p2wpkhSPKV0:org.scalacheck.Gen[(org.bitcoins.core.protocol.script.P2WPKHWitnessSPKV0,Seq[org.bitcoins.core.crypto.ECPrivateKey])]"></a><a id="p2wpkhSPKV0:Gen[(P2WPKHWitnessSPKV0,Seq[ECPrivateKey])]"></a>
       <span class="permalink">
@@ -1018,9 +1017,9 @@ ScriptPubKeys inside of timelock scriptPubKeys
         <span class="name">randomScriptSig</span><span class="result">: <a href="https://javadoc.io/page/org.scalacheck/scalacheck_2.12/1.14.0/org/scalacheck/Gen.html#org.scalacheck.Gen" class="extype" name="org.scalacheck.Gen">Gen</a>[(<a href="../../../core/protocol/script/ScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.ScriptSignature">ScriptSignature</a>, <a href="../../../core/protocol/script/ScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.ScriptPubKey">ScriptPubKey</a>, <a href="../../../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="../../../core/crypto/ECPrivateKey.html" class="extype" name="org.bitcoins.core.crypto.ECPrivateKey">ECPrivateKey</a>])]</span>
       </span>
       
-      <p class="shortcomment cmt">Generates a random <a href="../../../core/protocol/script/ScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.ScriptSignature">ScriptSignature</a>, the
-<a href="../../../core/protocol/script/ScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.ScriptPubKey">ScriptPubKey</a> it is spending, and the
-<a href="../../../core/crypto/ECPrivateKey.html" class="extype" name="org.bitcoins.core.crypto.ECPrivateKey">ECPrivateKey</a> needed to spend it.</p>
+      <p class="shortcomment cmt">Generates a random <code>ScriptSignature</code>, the
+<code>ScriptPubKey</code> it is spending, and the
+<code>ECPrivateKey</code> needed to spend it.</p>
     </li><li name="org.bitcoins.testkit.core.gen.ScriptGenerators#scriptPubKey" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="scriptPubKey:org.scalacheck.Gen[(org.bitcoins.core.protocol.script.ScriptPubKey,Seq[org.bitcoins.core.crypto.ECPrivateKey])]"></a><a id="scriptPubKey:Gen[(ScriptPubKey,Seq[ECPrivateKey])]"></a>
       <span class="permalink">
@@ -1036,7 +1035,7 @@ ScriptPubKeys inside of timelock scriptPubKeys
         <span class="name">scriptPubKey</span><span class="result">: <a href="https://javadoc.io/page/org.scalacheck/scalacheck_2.12/1.14.0/org/scalacheck/Gen.html#org.scalacheck.Gen" class="extype" name="org.scalacheck.Gen">Gen</a>[(<a href="../../../core/protocol/script/ScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.ScriptPubKey">ScriptPubKey</a>, <a href="../../../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="../../../core/crypto/ECPrivateKey.html" class="extype" name="org.bitcoins.core.crypto.ECPrivateKey">ECPrivateKey</a>])]</span>
       </span>
       
-      <p class="shortcomment cmt">Generates an arbitrary <a href="../../../core/protocol/script/ScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.ScriptPubKey">ScriptPubKey</a></p>
+      <p class="shortcomment cmt">Generates an arbitrary <code>ScriptPubKey</code></p>
     </li><li name="org.bitcoins.testkit.core.gen.ScriptGenerators#scriptSignature" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="scriptSignature:org.scalacheck.Gen[org.bitcoins.core.protocol.script.ScriptSignature]"></a><a id="scriptSignature:Gen[ScriptSignature]"></a>
       <span class="permalink">
@@ -1052,7 +1051,7 @@ ScriptPubKeys inside of timelock scriptPubKeys
         <span class="name">scriptSignature</span><span class="result">: <a href="https://javadoc.io/page/org.scalacheck/scalacheck_2.12/1.14.0/org/scalacheck/Gen.html#org.scalacheck.Gen" class="extype" name="org.scalacheck.Gen">Gen</a>[<a href="../../../core/protocol/script/ScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.ScriptSignature">ScriptSignature</a>]</span>
       </span>
       
-      <p class="shortcomment cmt">Generates an arbitrary <a href="../../../core/protocol/script/ScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.ScriptSignature">ScriptSignature</a></p>
+      <p class="shortcomment cmt">Generates an arbitrary <code>ScriptSignature</code></p>
     </li><li name="org.bitcoins.testkit.core.gen.ScriptGenerators#signedCLTVScriptSignature" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="signedCLTVScriptSignature:org.scalacheck.Gen[(org.bitcoins.core.protocol.script.CLTVScriptSignature,org.bitcoins.core.protocol.script.CLTVScriptPubKey,Seq[org.bitcoins.core.crypto.ECPrivateKey])]"></a><a id="signedCLTVScriptSignature:Gen[(CLTVScriptSignature,CLTVScriptPubKey,Seq[ECPrivateKey])]"></a>
       <span class="permalink">
@@ -1084,13 +1083,9 @@ ScriptPubKeys inside of timelock scriptPubKeys
         <span class="name">signedCLTVScriptSignature</span><span class="params">(<span name="cltvLockTime">cltvLockTime: <a href="../../../core/script/constant/ScriptNumber.html" class="extype" name="org.bitcoins.core.script.constant.ScriptNumber">ScriptNumber</a></span>, <span name="lockTime">lockTime: <a href="../../../core/number/UInt32.html" class="extype" name="org.bitcoins.core.number.UInt32">UInt32</a></span>, <span name="sequence">sequence: <a href="../../../core/number/UInt32.html" class="extype" name="org.bitcoins.core.number.UInt32">UInt32</a></span>)</span><span class="result">: <a href="https://javadoc.io/page/org.scalacheck/scalacheck_2.12/1.14.0/org/scalacheck/Gen.html#org.scalacheck.Gen" class="extype" name="org.scalacheck.Gen">Gen</a>[(<a href="../../../core/protocol/script/CLTVScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.CLTVScriptSignature">CLTVScriptSignature</a>, <a href="../../../core/protocol/script/CLTVScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.CLTVScriptPubKey">CLTVScriptPubKey</a>, <a href="../../../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="../../../core/crypto/ECPrivateKey.html" class="extype" name="org.bitcoins.core.crypto.ECPrivateKey">ECPrivateKey</a>])]</span>
       </span>
       
-      <p class="shortcomment cmt">Generates a signed <a href="../../../core/protocol/script/P2SHScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.P2SHScriptSignature">CLTVScriptSignature</a> that spends
-from a <a href="../../../core/protocol/script/P2SHScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.P2SHScriptSignature">CLTVScriptPubKey</a> correctly
-</p><div class="fullcomment"><div class="comment cmt"><p>Generates a signed <a href="../../../core/protocol/script/P2SHScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.P2SHScriptSignature">CLTVScriptSignature</a> that spends
-from a <a href="../../../core/protocol/script/P2SHScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.P2SHScriptSignature">CLTVScriptPubKey</a> correctly
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the signed <a href="../../../core/protocol/script/CLTVScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.CLTVScriptSignature">CLTVScriptSignature</a>, the
-        <a href="../../../core/protocol/script/CLTVScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.CLTVScriptPubKey">CLTVScriptPubKey</a> it spends, and the
-        sequences of <a href="../../../core/crypto/ECPrivateKey.html" class="extype" name="org.bitcoins.core.crypto.ECPrivateKey">ECPrivateKey</a>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the signed <code>CLTVScriptSignature</code>, the
+        <code>CLTVScriptPubKey</code> it spends, and the
+        sequences of <code>ECPrivateKey</code>
         used to sign the scriptSig</p></dd></dl></div>
     </li><li name="org.bitcoins.testkit.core.gen.ScriptGenerators#signedCSVScriptSignature" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="signedCSVScriptSignature:org.scalacheck.Gen[(org.bitcoins.core.protocol.script.CSVScriptSignature,org.bitcoins.core.protocol.script.CSVScriptPubKey,Seq[org.bitcoins.core.crypto.ECPrivateKey])]"></a><a id="signedCSVScriptSignature:Gen[(CSVScriptSignature,CSVScriptPubKey,Seq[ECPrivateKey])]"></a>
@@ -1123,13 +1118,13 @@ from a <a href="../../../core/protocol/script/P2SHScriptSignature.html" class="e
         <span class="name">signedCSVScriptSignature</span><span class="params">(<span name="csvScriptNum">csvScriptNum: <a href="../../../core/script/constant/ScriptNumber.html" class="extype" name="org.bitcoins.core.script.constant.ScriptNumber">ScriptNumber</a></span>, <span name="sequence">sequence: <a href="../../../core/number/UInt32.html" class="extype" name="org.bitcoins.core.number.UInt32">UInt32</a></span>)</span><span class="result">: <a href="https://javadoc.io/page/org.scalacheck/scalacheck_2.12/1.14.0/org/scalacheck/Gen.html#org.scalacheck.Gen" class="extype" name="org.scalacheck.Gen">Gen</a>[(<a href="../../../core/protocol/script/CSVScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.CSVScriptSignature">CSVScriptSignature</a>, <a href="../../../core/protocol/script/CSVScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.CSVScriptPubKey">CSVScriptPubKey</a>, <a href="../../../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="../../../core/crypto/ECPrivateKey.html" class="extype" name="org.bitcoins.core.crypto.ECPrivateKey">ECPrivateKey</a>])]</span>
       </span>
       
-      <p class="shortcomment cmt">Generates a signed <a href="../../../core/protocol/script/CLTVScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.CLTVScriptSignature">CSVScriptSignature</a> that spends
-from a <a href="../../../core/protocol/script/CLTVScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.CLTVScriptSignature">CSVScriptPubKey</a> correctly
-</p><div class="fullcomment"><div class="comment cmt"><p>Generates a signed <a href="../../../core/protocol/script/CLTVScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.CLTVScriptSignature">CSVScriptSignature</a> that spends
-from a <a href="../../../core/protocol/script/CLTVScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.CLTVScriptSignature">CSVScriptPubKey</a> correctly
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the signed <a href="../../../core/protocol/script/CSVScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.CSVScriptSignature">CSVScriptSignature</a>, the
-        <a href="../../../core/protocol/script/CSVScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.CSVScriptPubKey">CSVScriptPubKey</a> it spends, and the
-        sequences of <a href="../../../core/crypto/ECPrivateKey.html" class="extype" name="org.bitcoins.core.crypto.ECPrivateKey">ECPrivateKey</a>
+      <p class="shortcomment cmt">Generates a signed <code>CLTVScriptSignature</code> that spends
+from a <code>CLTVScriptSignature</code> correctly
+</p><div class="fullcomment"><div class="comment cmt"><p>Generates a signed <code>CLTVScriptSignature</code> that spends
+from a <code>CLTVScriptSignature</code> correctly
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the signed <code>CSVScriptSignature</code>, the
+        <code>CSVScriptPubKey</code> it spends, and the
+        sequences of <code>ECPrivateKey</code>
         used to sign the scriptSig</p></dd></dl></div>
     </li><li name="org.bitcoins.testkit.core.gen.ScriptGenerators#signedLockTimeScriptSignature" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="signedLockTimeScriptSignature:org.scalacheck.Gen[(org.bitcoins.core.protocol.script.LockTimeScriptSignature,org.bitcoins.core.protocol.script.LockTimeScriptPubKey,Seq[org.bitcoins.core.crypto.ECPrivateKey])]"></a><a id="signedLockTimeScriptSignature:Gen[(LockTimeScriptSignature,LockTimeScriptPubKey,Seq[ECPrivateKey])]"></a>
@@ -1146,8 +1141,8 @@ from a <a href="../../../core/protocol/script/CLTVScriptSignature.html" class="e
         <span class="name">signedLockTimeScriptSignature</span><span class="result">: <a href="https://javadoc.io/page/org.scalacheck/scalacheck_2.12/1.14.0/org/scalacheck/Gen.html#org.scalacheck.Gen" class="extype" name="org.scalacheck.Gen">Gen</a>[(<a href="../../../core/protocol/script/LockTimeScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.LockTimeScriptSignature">LockTimeScriptSignature</a>, <a href="../../../core/protocol/script/LockTimeScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.LockTimeScriptPubKey">LockTimeScriptPubKey</a>, <a href="../../../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="../../../core/crypto/ECPrivateKey.html" class="extype" name="org.bitcoins.core.crypto.ECPrivateKey">ECPrivateKey</a>])]</span>
       </span>
       
-      <p class="shortcomment cmt">Generates a <a href="../../../core/protocol/script/LockTimeScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.LockTimeScriptSignature">LockTimeScriptSignature</a> and
-<a href="../../../core/protocol/script/LockTimeScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.LockTimeScriptPubKey">LockTimeScriptPubKey</a> pair that are valid when
+      <p class="shortcomment cmt">Generates a <code>LockTimeScriptSignature</code> and
+<code>LockTimeScriptPubKey</code> pair that are valid when
 run through the interpreter</p>
     </li><li name="org.bitcoins.testkit.core.gen.ScriptGenerators#signedMultiSignatureScriptSignature" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="signedMultiSignatureScriptSignature:org.scalacheck.Gen[(org.bitcoins.core.protocol.script.MultiSignatureScriptSignature,org.bitcoins.core.protocol.script.MultiSignatureScriptPubKey,Seq[org.bitcoins.core.crypto.ECPrivateKey])]"></a><a id="signedMultiSignatureScriptSignature:Gen[(MultiSignatureScriptSignature,MultiSignatureScriptPubKey,Seq[ECPrivateKey])]"></a>
@@ -1165,14 +1160,14 @@ run through the interpreter</p>
       </span>
       
       <p class="shortcomment cmt">Generates a signed
-<a href="../../../core/protocol/script/MultiSignatureScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.MultiSignatureScriptSignature">MultiSignatureScriptSignature</a> that spends the
-<a href="../../../core/protocol/script/MultiSignatureScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.MultiSignatureScriptPubKey">MultiSignatureScriptPubKey</a> correctly
+<code>MultiSignatureScriptSignature</code> that spends the
+<code>MultiSignatureScriptPubKey</code> correctly
 ti</p><div class="fullcomment"><div class="comment cmt"><p>Generates a signed
-<a href="../../../core/protocol/script/MultiSignatureScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.MultiSignatureScriptSignature">MultiSignatureScriptSignature</a> that spends the
-<a href="../../../core/protocol/script/MultiSignatureScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.MultiSignatureScriptPubKey">MultiSignatureScriptPubKey</a> correctly
-ti</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the signed <a href="../../../core/protocol/script/MultiSignatureScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.MultiSignatureScriptSignature">MultiSignatureScriptSignature</a>,
-        the <a href="../../../core/protocol/script/MultiSignatureScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.MultiSignatureScriptPubKey">MultiSignatureScriptPubKey</a> it spends and the
-        sequence of <a href="../../../core/crypto/ECPrivateKey.html" class="extype" name="org.bitcoins.core.crypto.ECPrivateKey">ECPrivateKey</a> used to sign the scriptSig</p></dd></dl></div>
+<code>MultiSignatureScriptSignature</code> that spends the
+<code>MultiSignatureScriptPubKey</code> correctly
+ti</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the signed <code>MultiSignatureScriptSignature</code>,
+        the <code>MultiSignatureScriptPubKey</code> it spends and the
+        sequence of <code>ECPrivateKey</code> used to sign the scriptSig</p></dd></dl></div>
     </li><li name="org.bitcoins.testkit.core.gen.ScriptGenerators#signedP2PKHScriptSignature" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="signedP2PKHScriptSignature:org.scalacheck.Gen[(org.bitcoins.core.protocol.script.P2PKHScriptSignature,org.bitcoins.core.protocol.script.P2PKHScriptPubKey,org.bitcoins.core.crypto.ECPrivateKey)]"></a><a id="signedP2PKHScriptSignature:Gen[(P2PKHScriptSignature,P2PKHScriptPubKey,ECPrivateKey)]"></a>
       <span class="permalink">
@@ -1188,13 +1183,13 @@ ti</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the s
         <span class="name">signedP2PKHScriptSignature</span><span class="result">: <a href="https://javadoc.io/page/org.scalacheck/scalacheck_2.12/1.14.0/org/scalacheck/Gen.html#org.scalacheck.Gen" class="extype" name="org.scalacheck.Gen">Gen</a>[(<a href="../../../core/protocol/script/P2PKHScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.P2PKHScriptSignature">P2PKHScriptSignature</a>, <a href="../../../core/protocol/script/P2PKHScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.P2PKHScriptPubKey">P2PKHScriptPubKey</a>, <a href="../../../core/crypto/ECPrivateKey.html" class="extype" name="org.bitcoins.core.crypto.ECPrivateKey">ECPrivateKey</a>)]</span>
       </span>
       
-      <p class="shortcomment cmt">Generates a signed <a href="../../../core/protocol/script/P2PKHScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.P2PKHScriptSignature">P2PKHScriptSignature</a> that
-spends the <a href="../../../core/protocol/script/P2PKHScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.P2PKHScriptPubKey">P2PKHScriptPubKey</a> correctly
-</p><div class="fullcomment"><div class="comment cmt"><p>Generates a signed <a href="../../../core/protocol/script/P2PKHScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.P2PKHScriptSignature">P2PKHScriptSignature</a> that
-spends the <a href="../../../core/protocol/script/P2PKHScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.P2PKHScriptPubKey">P2PKHScriptPubKey</a> correctly
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the signed <a href="../../../core/protocol/script/P2PKHScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.P2PKHScriptSignature">P2PKHScriptSignature</a>, the
-        <a href="../../../core/protocol/script/P2PKHScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.P2PKHScriptPubKey">P2PKHScriptPubKey</a> it spends, and the
-        <a href="../../../core/crypto/ECPrivateKey.html" class="extype" name="org.bitcoins.core.crypto.ECPrivateKey">ECPrivateKey</a> used to sign the scriptSig</p></dd></dl></div>
+      <p class="shortcomment cmt">Generates a signed <code>P2PKHScriptSignature</code> that
+spends the <code>P2PKHScriptPubKey</code> correctly
+</p><div class="fullcomment"><div class="comment cmt"><p>Generates a signed <code>P2PKHScriptSignature</code> that
+spends the <code>P2PKHScriptPubKey</code> correctly
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the signed <code>P2PKHScriptSignature</code>, the
+        <code>P2PKHScriptPubKey</code> it spends, and the
+        <code>ECPrivateKey</code> used to sign the scriptSig</p></dd></dl></div>
     </li><li name="org.bitcoins.testkit.core.gen.ScriptGenerators#signedP2PKScriptSignature" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="signedP2PKScriptSignature:org.scalacheck.Gen[(org.bitcoins.core.protocol.script.P2PKScriptSignature,org.bitcoins.core.protocol.script.P2PKScriptPubKey,org.bitcoins.core.crypto.ECPrivateKey)]"></a><a id="signedP2PKScriptSignature:Gen[(P2PKScriptSignature,P2PKScriptPubKey,ECPrivateKey)]"></a>
       <span class="permalink">
@@ -1210,13 +1205,13 @@ spends the <a href="../../../core/protocol/script/P2PKHScriptPubKey.html" class=
         <span class="name">signedP2PKScriptSignature</span><span class="result">: <a href="https://javadoc.io/page/org.scalacheck/scalacheck_2.12/1.14.0/org/scalacheck/Gen.html#org.scalacheck.Gen" class="extype" name="org.scalacheck.Gen">Gen</a>[(<a href="../../../core/protocol/script/P2PKScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.P2PKScriptSignature">P2PKScriptSignature</a>, <a href="../../../core/protocol/script/P2PKScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.P2PKScriptPubKey">P2PKScriptPubKey</a>, <a href="../../../core/crypto/ECPrivateKey.html" class="extype" name="org.bitcoins.core.crypto.ECPrivateKey">ECPrivateKey</a>)]</span>
       </span>
       
-      <p class="shortcomment cmt">Generates a signed <a href="../../../core/protocol/script/P2PKScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.P2PKScriptSignature">P2PKScriptSignature</a> that spends the
-<a href="../../../core/protocol/script/P2PKScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.P2PKScriptPubKey">P2PKScriptPubKey</a> correctly
-</p><div class="fullcomment"><div class="comment cmt"><p>Generates a signed <a href="../../../core/protocol/script/P2PKScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.P2PKScriptSignature">P2PKScriptSignature</a> that spends the
-<a href="../../../core/protocol/script/P2PKScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.P2PKScriptPubKey">P2PKScriptPubKey</a> correctly
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the signed <a href="../../../core/protocol/script/P2PKScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.P2PKScriptSignature">P2PKScriptSignature</a>,
-        the <a href="../../../core/protocol/script/P2PKScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.P2PKScriptPubKey">P2PKScriptPubKey</a> it spends, and the
-        <a href="../../../core/crypto/ECPrivateKey.html" class="extype" name="org.bitcoins.core.crypto.ECPrivateKey">ECPrivateKey</a> used to sign the scriptSig</p></dd></dl></div>
+      <p class="shortcomment cmt">Generates a signed <code>P2PKScriptSignature</code> that spends the
+<code>P2PKScriptPubKey</code> correctly
+</p><div class="fullcomment"><div class="comment cmt"><p>Generates a signed <code>P2PKScriptSignature</code> that spends the
+<code>P2PKScriptPubKey</code> correctly
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the signed <code>P2PKScriptSignature</code>,
+        the <code>P2PKScriptPubKey</code> it spends, and the
+        <code>ECPrivateKey</code> used to sign the scriptSig</p></dd></dl></div>
     </li><li name="org.bitcoins.testkit.core.gen.ScriptGenerators#signedP2SHP2WPKHScriptSignature" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="signedP2SHP2WPKHScriptSignature:org.scalacheck.Gen[(org.bitcoins.core.protocol.script.P2SHScriptSignature,org.bitcoins.core.protocol.script.P2SHScriptPubKey,Seq[org.bitcoins.core.crypto.ECPrivateKey],org.bitcoins.core.protocol.transaction.TransactionWitness,org.bitcoins.core.currency.CurrencyUnit)]"></a><a id="signedP2SHP2WPKHScriptSignature:Gen[(P2SHScriptSignature,P2SHScriptPubKey,Seq[ECPrivateKey],TransactionWitness,CurrencyUnit)]"></a>
       <span class="permalink">
@@ -1264,13 +1259,13 @@ spends the <a href="../../../core/protocol/script/P2PKHScriptPubKey.html" class=
         <span class="name">signedP2SHScriptSignature</span><span class="result">: <a href="https://javadoc.io/page/org.scalacheck/scalacheck_2.12/1.14.0/org/scalacheck/Gen.html#org.scalacheck.Gen" class="extype" name="org.scalacheck.Gen">Gen</a>[(<a href="../../../core/protocol/script/P2SHScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.P2SHScriptSignature">P2SHScriptSignature</a>, <a href="../../../core/protocol/script/P2SHScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.P2SHScriptPubKey">P2SHScriptPubKey</a>, <a href="../../../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="../../../core/crypto/ECPrivateKey.html" class="extype" name="org.bitcoins.core.crypto.ECPrivateKey">ECPrivateKey</a>])]</span>
       </span>
       
-      <p class="shortcomment cmt">Generates a signed <a href="../../../core/protocol/script/P2SHScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.P2SHScriptSignature">P2SHScriptSignature</a>
-that spends from a <a href="../../../core/protocol/script/P2SHScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.P2SHScriptPubKey">P2SHScriptPubKey</a> correctly
-</p><div class="fullcomment"><div class="comment cmt"><p>Generates a signed <a href="../../../core/protocol/script/P2SHScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.P2SHScriptSignature">P2SHScriptSignature</a>
-that spends from a <a href="../../../core/protocol/script/P2SHScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.P2SHScriptPubKey">P2SHScriptPubKey</a> correctly
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the signed <a href="../../../core/protocol/script/P2SHScriptSignature.html" class="extype" name="org.bitcoins.core.protocol.script.P2SHScriptSignature">P2SHScriptSignature</a>,
-        the <a href="../../../core/protocol/script/P2SHScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.P2SHScriptPubKey">P2SHScriptPubKey</a> it spends, and the
-        sequence of <a href="../../../core/crypto/ECPrivateKey.html" class="extype" name="org.bitcoins.core.crypto.ECPrivateKey">ECPrivateKey</a>
+      <p class="shortcomment cmt">Generates a signed <code>P2SHScriptSignature</code>
+that spends from a <code>P2SHScriptPubKey</code> correctly
+</p><div class="fullcomment"><div class="comment cmt"><p>Generates a signed <code>P2SHScriptSignature</code>
+that spends from a <code>P2SHScriptPubKey</code> correctly
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the signed <code>P2SHScriptSignature</code>,
+        the <code>P2SHScriptPubKey</code> it spends, and the
+        sequence of <code>ECPrivateKey</code>
         used to sign the scriptSig</p></dd></dl></div>
     </li><li name="org.bitcoins.testkit.core.gen.ScriptGenerators#smallMultiSigScriptPubKey" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="smallMultiSigScriptPubKey:org.scalacheck.Gen[(org.bitcoins.core.protocol.script.MultiSignatureScriptPubKey,Seq[org.bitcoins.core.crypto.ECPrivateKey])]"></a><a id="smallMultiSigScriptPubKey:Gen[(MultiSignatureScriptPubKey,Seq[ECPrivateKey])]"></a>
@@ -1336,7 +1331,7 @@ that spends from a <a href="../../../core/protocol/script/P2SHScriptPubKey.html"
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="org.bitcoins.testkit.core.gen.ScriptGenerators#unassignedWitnessScriptPubKey" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="org.bitcoins.testkit.core.gen.ScriptGenerators#unassignedWitnessScriptPubKey" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="unassignedWitnessScriptPubKey:org.scalacheck.Gen[(org.bitcoins.core.protocol.script.UnassignedWitnessScriptPubKey,Seq[org.bitcoins.core.crypto.ECPrivateKey])]"></a><a id="unassignedWitnessScriptPubKey:Gen[(UnassignedWitnessScriptPubKey,Seq[ECPrivateKey])]"></a>
       <span class="permalink">
       <a href="../../../../../org/bitcoins/testkit/core/gen/ScriptGenerators.html#unassignedWitnessScriptPubKey:org.scalacheck.Gen[(org.bitcoins.core.protocol.script.UnassignedWitnessScriptPubKey,Seq[org.bitcoins.core.crypto.ECPrivateKey])]" title="Permalink">
@@ -1351,10 +1346,10 @@ that spends from a <a href="../../../core/protocol/script/P2SHScriptPubKey.html"
         <span class="name">unassignedWitnessScriptPubKey</span><span class="result">: <a href="https://javadoc.io/page/org.scalacheck/scalacheck_2.12/1.14.0/org/scalacheck/Gen.html#org.scalacheck.Gen" class="extype" name="org.scalacheck.Gen">Gen</a>[(<a href="../../../core/protocol/script/UnassignedWitnessScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.UnassignedWitnessScriptPubKey">UnassignedWitnessScriptPubKey</a>, <a href="../../../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="../../../core/crypto/ECPrivateKey.html" class="extype" name="org.bitcoins.core.crypto.ECPrivateKey">ECPrivateKey</a>])]</span>
       </span>
       
-      <p class="shortcomment cmt">Creates an <a href="../../../core/protocol/script/UnassignedWitnessScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.UnassignedWitnessScriptPubKey">UnassignedWitnessScriptPubKey</a>,
-currently this is any witness script pubkey besides
+      <p class="shortcomment cmt">Creates an unassigned witness scriptPubKey.</p><div class="fullcomment"><div class="comment cmt"><p>Creates an unassigned witness scriptPubKey.
+Currently this is any witness script pubkey besides
 <a href="../../../core/protocol/script/WitnessScriptPubKeyV0.html" class="extype" name="org.bitcoins.core.protocol.script.WitnessScriptPubKeyV0">WitnessScriptPubKeyV0</a>
-</p>
+</p></div></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
       <span class="permalink">
@@ -1454,7 +1449,7 @@ currently this is any witness script pubkey besides
         <span class="name">witnessScriptPubKey</span><span class="result">: <a href="https://javadoc.io/page/org.scalacheck/scalacheck_2.12/1.14.0/org/scalacheck/Gen.html#org.scalacheck.Gen" class="extype" name="org.scalacheck.Gen">Gen</a>[(<a href="../../../core/protocol/script/WitnessScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.WitnessScriptPubKey">WitnessScriptPubKey</a>, <a href="../../../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="../../../core/crypto/ECPrivateKey.html" class="extype" name="org.bitcoins.core.crypto.ECPrivateKey">ECPrivateKey</a>])]</span>
       </span>
       
-      <p class="shortcomment cmt">Generates an arbitrary <a href="../../../core/protocol/script/WitnessScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.WitnessScriptPubKey">WitnessScriptPubKey</a></p>
+      <p class="shortcomment cmt">Generates an arbitrary <code>WitnessScriptPubKey</code></p>
     </li><li name="org.bitcoins.testkit.core.gen.ScriptGenerators#witnessScriptPubKeyV0" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="witnessScriptPubKeyV0:org.scalacheck.Gen[(org.bitcoins.core.protocol.script.WitnessScriptPubKeyV0,Seq[org.bitcoins.core.crypto.ECPrivateKey])]"></a><a id="witnessScriptPubKeyV0:Gen[(WitnessScriptPubKeyV0,Seq[ECPrivateKey])]"></a>
       <span class="permalink">
