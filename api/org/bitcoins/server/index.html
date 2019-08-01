@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 207-36947473-SNAPSHOT - org.bitcoins.server</title>
-          <meta name="description" content="Bitcoin - S 207 - 36947473 - SNAPSHOT - org.bitcoins.server" />
-          <meta name="keywords" content="Bitcoin S 207 36947473 SNAPSHOT org.bitcoins.server" />
+          <title>Bitcoin-S 206-31642aff-SNAPSHOT - org.bitcoins.server</title>
+          <meta name="description" content="Bitcoin - S 206 - 31642aff - SNAPSHOT - org.bitcoins.server" />
+          <meta name="keywords" content="Bitcoin S 206 31642aff SNAPSHOT org.bitcoins.server" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">207-36947473-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">206-31642aff-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -456,7 +456,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="A unified config class for all submodules of Bitcoin-S that accepts configuration." href="BitcoinSAppConfig.html"><span class="name">BitcoinSAppConfig</span></a><span class="params">(<span name="confs">confs: <a href="https://javadoc.io/page/com.typesafe/config/1.3.4/com/typesafe/config/Config.html#com.typesafe.config.Config" class="extype" name="com.typesafe.config.Config">Config</a>*</span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="A unified config class for all submodules of Bitcoin-S that accepts configuration." href="BitcoinSAppConfig.html"><span class="name">BitcoinSAppConfig</span></a><span class="params">(<span name="directory">directory: <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java/nio/file/Path.html#java.nio.file.Path" class="extype" name="java.nio.file.Path">Path</a></span>, <span name="confs">confs: <a href="https://javadoc.io/page/com.typesafe/config/1.3.4/com/typesafe/config/Config.html#com.typesafe.config.Config" class="extype" name="com.typesafe.config.Config">Config</a>*</span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">A unified config class for all submodules of Bitcoin-S
@@ -465,11 +465,11 @@ that accepts configuration. Thanks to implicit definitions
 in this case class' companion object an instance
 of this class can be passed in anywhere a wallet,
 chain or node config is required.
-</p></div></div>
+</p></div><dl class="paramcmts block"><dt class="param">directory</dt><dd class="cmt"><p>The data directory of this app configuration</p></dd><dt class="param">confs</dt><dd class="cmt"><p>A sequence of optional configuration overrides</p></dd></dl></div>
     </li><li name="org.bitcoins.server.ChainRoutes" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="ChainRoutesextendsBitcoinSLoggerwithServerRoutewithProductwithSerializable"></a><a id="ChainRoutes:ChainRoutes"></a>
+      <a id="ChainRoutesextendsServerRoutewithProductwithSerializable"></a><a id="ChainRoutes:ChainRoutes"></a>
       <span class="permalink">
-      <a href="../../../org/bitcoins/server/index.html#ChainRoutesextendsBitcoinSLoggerwithServerRoutewithProductwithSerializable" title="Permalink">
+      <a href="../../../org/bitcoins/server/index.html#ChainRoutesextendsServerRoutewithProductwithSerializable" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -478,7 +478,7 @@ chain or node config is required.
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="" href="ChainRoutes.html"><span class="name">ChainRoutes</span></a><span class="params">(<span name="chain">chain: <a href="../chain/api/ChainApi.html" class="extype" name="org.bitcoins.chain.api.ChainApi">ChainApi</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="system">system: <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/ActorSystem.html#akka.actor.ActorSystem" class="extype" name="akka.actor.ActorSystem">ActorSystem</a></span>)</span><span class="result"> extends <a href="../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a> with <a href="ServerRoute.html" class="extype" name="org.bitcoins.server.ServerRoute">ServerRoute</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="" href="ChainRoutes.html"><span class="name">ChainRoutes</span></a><span class="params">(<span name="chain">chain: <a href="../chain/api/ChainApi.html" class="extype" name="org.bitcoins.chain.api.ChainApi">ChainApi</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="system">system: <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/ActorSystem.html#akka.actor.ActorSystem" class="extype" name="akka.actor.ActorSystem">ActorSystem</a></span>)</span><span class="result"> extends <a href="ServerRoute.html" class="extype" name="org.bitcoins.server.ServerRoute">ServerRoute</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       
@@ -502,9 +502,9 @@ These gets picked up by the exceptions handler
 in Main
 </p></div></div>
     </li><li name="org.bitcoins.server.NodeRoutes" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="NodeRoutesextendsBitcoinSLoggerwithServerRoutewithProductwithSerializable"></a><a id="NodeRoutes:NodeRoutes"></a>
+      <a id="NodeRoutesextendsServerRoutewithProductwithSerializable"></a><a id="NodeRoutes:NodeRoutes"></a>
       <span class="permalink">
-      <a href="../../../org/bitcoins/server/index.html#NodeRoutesextendsBitcoinSLoggerwithServerRoutewithProductwithSerializable" title="Permalink">
+      <a href="../../../org/bitcoins/server/index.html#NodeRoutesextendsServerRoutewithProductwithSerializable" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -513,7 +513,7 @@ in Main
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="" href="NodeRoutes.html"><span class="name">NodeRoutes</span></a><span class="params">(<span name="node">node: <a href="../node/SpvNode.html" class="extype" name="org.bitcoins.node.SpvNode">SpvNode</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="system">system: <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/ActorSystem.html#akka.actor.ActorSystem" class="extype" name="akka.actor.ActorSystem">ActorSystem</a></span>)</span><span class="result"> extends <a href="../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a> with <a href="ServerRoute.html" class="extype" name="org.bitcoins.server.ServerRoute">ServerRoute</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="" href="NodeRoutes.html"><span class="name">NodeRoutes</span></a><span class="params">(<span name="node">node: <a href="../node/SpvNode.html" class="extype" name="org.bitcoins.node.SpvNode">SpvNode</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="system">system: <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/ActorSystem.html#akka.actor.ActorSystem" class="extype" name="akka.actor.ActorSystem">ActorSystem</a></span>)</span><span class="result"> extends <a href="ServerRoute.html" class="extype" name="org.bitcoins.server.ServerRoute">ServerRoute</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       
@@ -534,9 +534,9 @@ in Main
       
       
     </li><li name="org.bitcoins.server.Server" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="ServerextendsBitcoinSLoggerwithProductwithSerializable"></a><a id="Server:Server"></a>
+      <a id="ServerextendsHttpLoggerwithProductwithSerializable"></a><a id="Server:Server"></a>
       <span class="permalink">
-      <a href="../../../org/bitcoins/server/index.html#ServerextendsBitcoinSLoggerwithProductwithSerializable" title="Permalink">
+      <a href="../../../org/bitcoins/server/index.html#ServerextendsHttpLoggerwithProductwithSerializable" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -545,7 +545,7 @@ in Main
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="" href="Server.html"><span class="name">Server</span></a><span class="params">(<span name="handlers">handlers: <a href="../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="ServerRoute.html" class="extype" name="org.bitcoins.server.ServerRoute">ServerRoute</a>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="system">system: <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/ActorSystem.html#akka.actor.ActorSystem" class="extype" name="akka.actor.ActorSystem">ActorSystem</a></span>)</span><span class="result"> extends <a href="../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="" href="Server.html"><span class="name">Server</span></a><span class="params">(<span name="conf">conf: <a href="../db/AppConfig.html" class="extype" name="org.bitcoins.db.AppConfig">AppConfig</a></span>, <span name="handlers">handlers: <a href="../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="ServerRoute.html" class="extype" name="org.bitcoins.server.ServerRoute">ServerRoute</a>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="system">system: <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/ActorSystem.html#akka.actor.ActorSystem" class="extype" name="akka.actor.ActorSystem">ActorSystem</a></span>)</span><span class="result"> extends <span class="extype" name="org.bitcoins.db.HttpLogger">HttpLogger</span> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       
@@ -582,9 +582,9 @@ in Main
       
       
     </li><li name="org.bitcoins.server.WalletRoutes" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="WalletRoutesextendsBitcoinSLoggerwithServerRoutewithProductwithSerializable"></a><a id="WalletRoutes:WalletRoutes"></a>
+      <a id="WalletRoutesextendsServerRoutewithProductwithSerializable"></a><a id="WalletRoutes:WalletRoutes"></a>
       <span class="permalink">
-      <a href="../../../org/bitcoins/server/index.html#WalletRoutesextendsBitcoinSLoggerwithServerRoutewithProductwithSerializable" title="Permalink">
+      <a href="../../../org/bitcoins/server/index.html#WalletRoutesextendsServerRoutewithProductwithSerializable" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -593,7 +593,7 @@ in Main
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="" href="WalletRoutes.html"><span class="name">WalletRoutes</span></a><span class="params">(<span name="wallet">wallet: <a href="../wallet/api/UnlockedWalletApi.html" class="extype" name="org.bitcoins.wallet.api.UnlockedWalletApi">UnlockedWalletApi</a></span>, <span name="node">node: <a href="../node/SpvNode.html" class="extype" name="org.bitcoins.node.SpvNode">SpvNode</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="system">system: <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/ActorSystem.html#akka.actor.ActorSystem" class="extype" name="akka.actor.ActorSystem">ActorSystem</a></span>)</span><span class="result"> extends <a href="../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a> with <a href="ServerRoute.html" class="extype" name="org.bitcoins.server.ServerRoute">ServerRoute</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="" href="WalletRoutes.html"><span class="name">WalletRoutes</span></a><span class="params">(<span name="wallet">wallet: <a href="../wallet/api/UnlockedWalletApi.html" class="extype" name="org.bitcoins.wallet.api.UnlockedWalletApi">UnlockedWalletApi</a></span>, <span name="node">node: <a href="../node/SpvNode.html" class="extype" name="org.bitcoins.node.SpvNode">SpvNode</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="system">system: <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/ActorSystem.html#akka.actor.ActorSystem" class="extype" name="akka.actor.ActorSystem">ActorSystem</a></span>)</span><span class="result"> extends <a href="ServerRoute.html" class="extype" name="org.bitcoins.server.ServerRoute">ServerRoute</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       
@@ -651,7 +651,7 @@ to be passed in wherever a specializes one is required
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="" href="Main$.html"><span class="name">Main</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.8/scala/App.html#scala.App" class="extype" name="scala.App">App</a> with <a href="../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a></span>
+        <a title="" href="Main$.html"><span class="name">Main</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.8/scala/App.html#scala.App" class="extype" name="scala.App">App</a></span>
       </span>
       
       
@@ -683,7 +683,7 @@ to be passed in wherever a specializes one is required
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="" href="Server$.html"><span class="name">Server</span></a><span class="result"> extends <a href="../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="" href="Server$.html"><span class="name">Server</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       

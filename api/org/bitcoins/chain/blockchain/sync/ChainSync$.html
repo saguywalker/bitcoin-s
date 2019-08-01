@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 207-36947473-SNAPSHOT - org.bitcoins.chain.blockchain.sync.ChainSync</title>
-          <meta name="description" content="Bitcoin - S 207 - 36947473 - SNAPSHOT - org.bitcoins.chain.blockchain.sync.ChainSync" />
-          <meta name="keywords" content="Bitcoin S 207 36947473 SNAPSHOT org.bitcoins.chain.blockchain.sync.ChainSync" />
+          <title>Bitcoin-S 206-31642aff-SNAPSHOT - org.bitcoins.chain.blockchain.sync.ChainSync</title>
+          <meta name="description" content="Bitcoin - S 206 - 31642aff - SNAPSHOT - org.bitcoins.chain.blockchain.sync.ChainSync" />
+          <meta name="keywords" content="Bitcoin S 206 31642aff SNAPSHOT org.bitcoins.chain.blockchain.sync.ChainSync" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">207-36947473-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">206-31642aff-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -187,7 +187,7 @@
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><a href="ChainSync.html" class="extype" name="org.bitcoins.chain.blockchain.sync.ChainSync">ChainSync</a>, <a href="../../../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a>, <a href="../../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.8/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></div>
+          <div class="superTypes hiddenContent"><a href="ChainSync.html" class="extype" name="org.bitcoins.chain.blockchain.sync.ChainSync">ChainSync</a>, <span class="extype" name="org.bitcoins.db.ChainVerificationLogger">ChainVerificationLogger</span>, <a href="../../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.8/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></div>
         </div></div>
         
 
@@ -213,7 +213,7 @@
                   <span class="filtertype">Inherited<br />
                   </span>
                   <ol id="linearization">
-                    <li class="in" name="org.bitcoins.chain.blockchain.sync.ChainSync"><span>ChainSync</span></li><li class="in" name="org.bitcoins.chain.blockchain.sync.ChainSync"><span>ChainSync</span></li><li class="in" name="org.bitcoins.core.util.BitcoinSLogger"><span>BitcoinSLogger</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                    <li class="in" name="org.bitcoins.chain.blockchain.sync.ChainSync"><span>ChainSync</span></li><li class="in" name="org.bitcoins.chain.blockchain.sync.ChainSync"><span>ChainSync</span></li><li class="in" name="org.bitcoins.db.ChainVerificationLogger"><span>ChainVerificationLogger</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                   </ol>
                 </div><div class="ancestors">
               <span class="filtertype"></span>
@@ -420,22 +420,22 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="org.bitcoins.core.util.BitcoinSLogger#logger" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="logger:org.slf4j.Logger"></a><a id="logger:Logger"></a>
+    </li><li name="org.bitcoins.db.ChainVerificationLogger#logger" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="logger(implicitconfig:org.bitcoins.db.AppConfig):org.slf4j.Logger"></a><a id="logger(AppConfig):Logger"></a>
       <span class="permalink">
-      <a href="../../../../../org/bitcoins/chain/blockchain/sync/ChainSync$.html#logger:org.slf4j.Logger" title="Permalink">
+      <a href="../../../../../org/bitcoins/chain/blockchain/sync/ChainSync$.html#logger(implicitconfig:org.bitcoins.db.AppConfig):org.slf4j.Logger" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">lazy val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">logger</span><span class="result">: <a href="https://javadoc.io/page/org.slf4j/slf4j-api/1.7.25/org/slf4j/Logger.html#org.slf4j.Logger" class="extype" name="org.slf4j.Logger">Logger</a></span>
+        <span class="name">logger</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="../../../db/AppConfig.html" class="extype" name="org.bitcoins.db.AppConfig">AppConfig</a></span>)</span><span class="result">: <a href="https://javadoc.io/page/org.slf4j/slf4j-api/1.7.25/org/slf4j/Logger.html#org.slf4j.Logger" class="extype" name="org.slf4j.Logger">Logger</a></span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../index.html" class="extype" name="org.bitcoins">org.bitcoins</a>] </dd><dt>Definition Classes</dt><dd>ChainVerificationLogger</dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -495,9 +495,9 @@
               
         </dd></dl></div>
     </li><li name="org.bitcoins.chain.blockchain.sync.ChainSync#sync" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="sync(chainHandler:org.bitcoins.chain.blockchain.ChainHandler,getBlockHeaderFunc:org.bitcoins.core.crypto.DoubleSha256DigestBE=&gt;scala.concurrent.Future[org.bitcoins.core.protocol.blockchain.BlockHeader],getBestBlockHashFunc:()=&gt;scala.concurrent.Future[org.bitcoins.core.crypto.DoubleSha256DigestBE])(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[org.bitcoins.chain.api.ChainApi]"></a><a id="sync(ChainHandler,(DoubleSha256DigestBE)⇒Future[BlockHeader],()⇒Future[DoubleSha256DigestBE])(ExecutionContext):Future[ChainApi]"></a>
+      <a id="sync(chainHandler:org.bitcoins.chain.blockchain.ChainHandler,getBlockHeaderFunc:org.bitcoins.core.crypto.DoubleSha256DigestBE=&gt;scala.concurrent.Future[org.bitcoins.core.protocol.blockchain.BlockHeader],getBestBlockHashFunc:()=&gt;scala.concurrent.Future[org.bitcoins.core.crypto.DoubleSha256DigestBE])(implicitec:scala.concurrent.ExecutionContext,implicitconf:org.bitcoins.chain.config.ChainAppConfig):scala.concurrent.Future[org.bitcoins.chain.api.ChainApi]"></a><a id="sync(ChainHandler,(DoubleSha256DigestBE)⇒Future[BlockHeader],()⇒Future[DoubleSha256DigestBE])(ExecutionContext,ChainAppConfig):Future[ChainApi]"></a>
       <span class="permalink">
-      <a href="../../../../../org/bitcoins/chain/blockchain/sync/ChainSync$.html#sync(chainHandler:org.bitcoins.chain.blockchain.ChainHandler,getBlockHeaderFunc:org.bitcoins.core.crypto.DoubleSha256DigestBE=&gt;scala.concurrent.Future[org.bitcoins.core.protocol.blockchain.BlockHeader],getBestBlockHashFunc:()=&gt;scala.concurrent.Future[org.bitcoins.core.crypto.DoubleSha256DigestBE])(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[org.bitcoins.chain.api.ChainApi]" title="Permalink">
+      <a href="../../../../../org/bitcoins/chain/blockchain/sync/ChainSync$.html#sync(chainHandler:org.bitcoins.chain.blockchain.ChainHandler,getBlockHeaderFunc:org.bitcoins.core.crypto.DoubleSha256DigestBE=&gt;scala.concurrent.Future[org.bitcoins.core.protocol.blockchain.BlockHeader],getBestBlockHashFunc:()=&gt;scala.concurrent.Future[org.bitcoins.core.crypto.DoubleSha256DigestBE])(implicitec:scala.concurrent.ExecutionContext,implicitconf:org.bitcoins.chain.config.ChainAppConfig):scala.concurrent.Future[org.bitcoins.chain.api.ChainApi]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -506,7 +506,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">sync</span><span class="params">(<span name="chainHandler">chainHandler: <a href="../ChainHandler.html" class="extype" name="org.bitcoins.chain.blockchain.ChainHandler">ChainHandler</a></span>, <span name="getBlockHeaderFunc">getBlockHeaderFunc: (<a href="../../../core/crypto/DoubleSha256DigestBE.html" class="extype" name="org.bitcoins.core.crypto.DoubleSha256DigestBE">DoubleSha256DigestBE</a>) ⇒ <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../../../core/protocol/blockchain/BlockHeader.html" class="extype" name="org.bitcoins.core.protocol.blockchain.BlockHeader">BlockHeader</a>]</span>, <span name="getBestBlockHashFunc">getBestBlockHashFunc: () ⇒ <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../../../core/crypto/DoubleSha256DigestBE.html" class="extype" name="org.bitcoins.core.crypto.DoubleSha256DigestBE">DoubleSha256DigestBE</a>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/ExecutionContext.html#scala.concurrent.ExecutionContext" class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../../api/ChainApi.html" class="extype" name="org.bitcoins.chain.api.ChainApi">ChainApi</a>]</span>
+        <span class="name">sync</span><span class="params">(<span name="chainHandler">chainHandler: <a href="../ChainHandler.html" class="extype" name="org.bitcoins.chain.blockchain.ChainHandler">ChainHandler</a></span>, <span name="getBlockHeaderFunc">getBlockHeaderFunc: (<a href="../../../core/crypto/DoubleSha256DigestBE.html" class="extype" name="org.bitcoins.core.crypto.DoubleSha256DigestBE">DoubleSha256DigestBE</a>) ⇒ <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../../../core/protocol/blockchain/BlockHeader.html" class="extype" name="org.bitcoins.core.protocol.blockchain.BlockHeader">BlockHeader</a>]</span>, <span name="getBestBlockHashFunc">getBestBlockHashFunc: () ⇒ <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../../../core/crypto/DoubleSha256DigestBE.html" class="extype" name="org.bitcoins.core.crypto.DoubleSha256DigestBE">DoubleSha256DigestBE</a>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/ExecutionContext.html#scala.concurrent.ExecutionContext" class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</a></span>, <span name="conf">conf: <a href="../../config/ChainAppConfig.html" class="extype" name="org.bitcoins.chain.config.ChainAppConfig">ChainAppConfig</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../../api/ChainApi.html" class="extype" name="org.bitcoins.chain.api.ChainApi">ChainApi</a>]</span>
       </span>
       
       <p class="shortcomment cmt">This method checks if our chain handler has the tip of the blockchain as an external source
@@ -654,8 +654,8 @@ If we do not have the same chain, we sync our chain handler until we are at the 
         <div id="inheritedMembers">
         <div class="parent" name="org.bitcoins.chain.blockchain.sync.ChainSync">
               <h3>Inherited from <a href="ChainSync.html" class="extype" name="org.bitcoins.chain.blockchain.sync.ChainSync">ChainSync</a></h3>
-            </div><div class="parent" name="org.bitcoins.core.util.BitcoinSLogger">
-              <h3>Inherited from <a href="../../../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a></h3>
+            </div><div class="parent" name="org.bitcoins.db.ChainVerificationLogger">
+              <h3>Inherited from <span class="extype" name="org.bitcoins.db.ChainVerificationLogger">ChainVerificationLogger</span></h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <a href="../../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">

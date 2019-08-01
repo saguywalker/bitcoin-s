@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 207-36947473-SNAPSHOT - org.bitcoins.db</title>
-          <meta name="description" content="Bitcoin - S 207 - 36947473 - SNAPSHOT - org.bitcoins.db" />
-          <meta name="keywords" content="Bitcoin S 207 36947473 SNAPSHOT org.bitcoins.db" />
+          <title>Bitcoin-S 206-31642aff-SNAPSHOT - org.bitcoins.db</title>
+          <meta name="description" content="Bitcoin - S 206 - 31642aff - SNAPSHOT - org.bitcoins.db" />
+          <meta name="keywords" content="Bitcoin S 206 31642aff SNAPSHOT org.bitcoins.db" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">207-36947473-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">206-31642aff-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -490,9 +490,9 @@ of bitcoin-s applications  is found in here.
 </p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://github.com/bitcoin-s/bitcoin-s-core/blob/master/doc/configuration.md" target="_blank"><code>configuration.md</code></a>
      for more information.</p></span></dd></dl></div>
     </li><li name="org.bitcoins.db.CRUD" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="CRUD[T,PrimaryKeyType]extendsBitcoinSLogger"></a><a id="CRUD[T,PrimaryKeyType]:CRUD[T,PrimaryKeyType]"></a>
+      <a id="CRUD[T,PrimaryKeyType]extendsDatabaseLogger"></a><a id="CRUD[T,PrimaryKeyType]:CRUD[T,PrimaryKeyType]"></a>
       <span class="permalink">
-      <a href="../../../org/bitcoins/db/index.html#CRUD[T,PrimaryKeyType]extendsBitcoinSLogger" title="Permalink">
+      <a href="../../../org/bitcoins/db/index.html#CRUD[T,PrimaryKeyType]extendsDatabaseLogger" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -501,7 +501,7 @@ of bitcoin-s applications  is found in here.
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="Created by chris on 9/8/16." href="CRUD.html"><span class="name">CRUD</span></a><span class="tparams">[<span name="T">T</span>, <span name="PrimaryKeyType">PrimaryKeyType</span>]</span><span class="result"> extends <a href="../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a></span>
+        <a title="Created by chris on 9/8/16." href="CRUD.html"><span class="name">CRUD</span></a><span class="tparams">[<span name="T">T</span>, <span name="PrimaryKeyType">PrimaryKeyType</span>]</span><span class="result"> extends <span class="extype" name="org.bitcoins.db.DatabaseLogger">DatabaseLogger</span></span>
       </span>
       
       <p class="shortcomment cmt">Created by chris on 9/8/16.</p><div class="fullcomment"><div class="comment cmt"><p>Created by chris on 9/8/16.
@@ -560,9 +560,9 @@ the table and the database you are connecting to.
       
       
     </li><li name="org.bitcoins.db.DbManagement" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="DbManagementextendsBitcoinSLogger"></a><a id="DbManagement:DbManagement"></a>
+      <a id="DbManagementextendsDatabaseLogger"></a><a id="DbManagement:DbManagement"></a>
       <span class="permalink">
-      <a href="../../../org/bitcoins/db/index.html#DbManagementextendsBitcoinSLogger" title="Permalink">
+      <a href="../../../org/bitcoins/db/index.html#DbManagementextendsDatabaseLogger" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -571,7 +571,7 @@ the table and the database you are connecting to.
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="" href="DbManagement.html"><span class="name">DbManagement</span></a><span class="result"> extends <a href="../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a></span>
+        <a title="" href="DbManagement.html"><span class="name">DbManagement</span></a><span class="result"> extends <span class="extype" name="org.bitcoins.db.DatabaseLogger">DatabaseLogger</span></span>
       </span>
       
       
@@ -615,9 +615,9 @@ is created
       
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>The name of the table</p></dd><dt class="param">sql</dt><dd class="cmt"><p>The SQL executed to create the table</p></dd></dl></div>
     </li><li name="org.bitcoins.db.SafeDatabase" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="SafeDatabaseextendsBitcoinSLoggerwithProductwithSerializable"></a><a id="SafeDatabase:SafeDatabase"></a>
+      <a id="SafeDatabaseextendsDatabaseLoggerwithProductwithSerializable"></a><a id="SafeDatabase:SafeDatabase"></a>
       <span class="permalink">
-      <a href="../../../org/bitcoins/db/index.html#SafeDatabaseextendsBitcoinSLoggerwithProductwithSerializable" title="Permalink">
+      <a href="../../../org/bitcoins/db/index.html#SafeDatabaseextendsDatabaseLoggerwithProductwithSerializable" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -626,7 +626,7 @@ is created
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="" href="SafeDatabase.html"><span class="name">SafeDatabase</span></a><span class="params">(<span name="config">config: <a href="AppConfig.html" class="extype" name="org.bitcoins.db.AppConfig">AppConfig</a></span>)</span><span class="result"> extends <a href="../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="" href="SafeDatabase.html"><span class="name">SafeDatabase</span></a><span class="params">(<span name="config">config: <a href="AppConfig.html" class="extype" name="org.bitcoins.db.AppConfig">AppConfig</a></span>)</span><span class="result"> extends <span class="extype" name="org.bitcoins.db.DatabaseLogger">DatabaseLogger</span> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       
