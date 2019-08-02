@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 206-31642aff-SNAPSHOT - org.bitcoins.node.SpvNodeCallbacks</title>
-          <meta name="description" content="Bitcoin - S 206 - 31642aff - SNAPSHOT - org.bitcoins.node.SpvNodeCallbacks" />
-          <meta name="keywords" content="Bitcoin S 206 31642aff SNAPSHOT org.bitcoins.node.SpvNodeCallbacks" />
+          <title>Bitcoin-S 205-b706e8ea-SNAPSHOT - org.bitcoins.node.SpvNodeCallbacks</title>
+          <meta name="description" content="Bitcoin - S 205 - b706e8ea - SNAPSHOT - org.bitcoins.node.SpvNodeCallbacks" />
+          <meta name="keywords" content="Bitcoin S 205 b706e8ea SNAPSHOT org.bitcoins.node.SpvNodeCallbacks" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">206-31642aff-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">205-b706e8ea-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -578,6 +578,54 @@
                 <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="org.bitcoins.node.SpvNodeCallbacks#onBlockReceived" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onBlockReceived(f:org.bitcoins.node.networking.peer.DataMessageHandler.OnBlockReceived):org.bitcoins.node.SpvNodeCallbacks"></a><a id="onBlockReceived(OnBlockReceived):SpvNodeCallbacks"></a>
+      <span class="permalink">
+      <a href="../../../org/bitcoins/node/SpvNodeCallbacks$.html#onBlockReceived(f:org.bitcoins.node.networking.peer.DataMessageHandler.OnBlockReceived):org.bitcoins.node.SpvNodeCallbacks" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onBlockReceived</span><span class="params">(<span name="f">f: <a href="networking/peer/DataMessageHandler$.html#OnBlockReceived=org.bitcoins.core.protocol.blockchain.Block=&gt;Unit" class="extmbr" name="org.bitcoins.node.networking.peer.DataMessageHandler.OnBlockReceived">OnBlockReceived</a></span>)</span><span class="result">: <a href="SpvNodeCallbacks.html" class="extype" name="org.bitcoins.node.SpvNodeCallbacks">SpvNodeCallbacks</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Constructs a set of callbacks that only acts on block received</p>
+    </li><li name="org.bitcoins.node.SpvNodeCallbacks#onMerkleBlockReceived" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onMerkleBlockReceived(f:org.bitcoins.node.networking.peer.DataMessageHandler.OnMerkleBlockReceived):org.bitcoins.node.SpvNodeCallbacks"></a><a id="onMerkleBlockReceived(OnMerkleBlockReceived):SpvNodeCallbacks"></a>
+      <span class="permalink">
+      <a href="../../../org/bitcoins/node/SpvNodeCallbacks$.html#onMerkleBlockReceived(f:org.bitcoins.node.networking.peer.DataMessageHandler.OnMerkleBlockReceived):org.bitcoins.node.SpvNodeCallbacks" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onMerkleBlockReceived</span><span class="params">(<span name="f">f: <a href="networking/peer/DataMessageHandler$.html#OnMerkleBlockReceived=(org.bitcoins.core.protocol.blockchain.MerkleBlock,Vector[org.bitcoins.core.protocol.transaction.Transaction])=&gt;Unit" class="extmbr" name="org.bitcoins.node.networking.peer.DataMessageHandler.OnMerkleBlockReceived">OnMerkleBlockReceived</a></span>)</span><span class="result">: <a href="SpvNodeCallbacks.html" class="extype" name="org.bitcoins.node.SpvNodeCallbacks">SpvNodeCallbacks</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Constructs a set of callbacks that only acts on merkle block received</p>
+    </li><li name="org.bitcoins.node.SpvNodeCallbacks#onTxReceived" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onTxReceived(f:org.bitcoins.node.networking.peer.DataMessageHandler.OnTxReceived):org.bitcoins.node.SpvNodeCallbacks"></a><a id="onTxReceived(OnTxReceived):SpvNodeCallbacks"></a>
+      <span class="permalink">
+      <a href="../../../org/bitcoins/node/SpvNodeCallbacks$.html#onTxReceived(f:org.bitcoins.node.networking.peer.DataMessageHandler.OnTxReceived):org.bitcoins.node.SpvNodeCallbacks" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onTxReceived</span><span class="params">(<span name="f">f: <a href="networking/peer/DataMessageHandler$.html#OnTxReceived=org.bitcoins.core.protocol.transaction.Transaction=&gt;Unit" class="extmbr" name="org.bitcoins.node.networking.peer.DataMessageHandler.OnTxReceived">OnTxReceived</a></span>)</span><span class="result">: <a href="SpvNodeCallbacks.html" class="extype" name="org.bitcoins.node.SpvNodeCallbacks">SpvNodeCallbacks</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Constructs a set of callbacks that only acts on TX received</p>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">

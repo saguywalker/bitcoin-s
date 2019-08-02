@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 206-31642aff-SNAPSHOT - org.bitcoins.core.p2p.HeadersMessage</title>
-          <meta name="description" content="Bitcoin - S 206 - 31642aff - SNAPSHOT - org.bitcoins.core.p2p.HeadersMessage" />
-          <meta name="keywords" content="Bitcoin S 206 31642aff SNAPSHOT org.bitcoins.core.p2p.HeadersMessage" />
+          <title>Bitcoin-S 205-b706e8ea-SNAPSHOT - org.bitcoins.core.p2p.HeadersMessage</title>
+          <meta name="description" content="Bitcoin - S 205 - b706e8ea - SNAPSHOT - org.bitcoins.core.p2p.HeadersMessage" />
+          <meta name="keywords" content="Bitcoin S 205 b706e8ea SNAPSHOT org.bitcoins.core.p2p.HeadersMessage" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">206-31642aff-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">205-b706e8ea-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -139,7 +139,7 @@
                         <a href="AddrMessage.html" title="The addr (IP address) message relays connection information for peers on the network.">AddrMessage</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="BlockMessage$.html" title=""></a>
-                        <a class="trait" href="BlockMessage.html" title="The block message transmits a single serialized block"></a>
+                        <a class="class" href="BlockMessage.html" title="The block message transmits a single serialized block"></a>
                         <a href="BlockMessage.html" title="The block message transmits a single serialized block">BlockMessage</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
@@ -175,7 +175,7 @@
                         <a href="GetBlocksMessage.html" title="The getblocks message requests an inv message that provides block header hashes starting from a particular point in the block chain.">GetBlocksMessage</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="GetDataMessage$.html" title=""></a>
-                        <a class="trait" href="GetDataMessage.html" title="The getdata message requests one or more data objects from another node."></a>
+                        <a class="class" href="GetDataMessage.html" title="The getdata message requests one or more data objects from another node."></a>
                         <a href="GetDataMessage.html" title="The getdata message requests one or more data objects from another node.">GetDataMessage</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="GetHeadersMessage$.html" title=""></a>
@@ -187,7 +187,7 @@
                         <a href="HeadersMessage.html" title="The headers message sends one or more block headers to a node which previously requested certain headers with a getheaders message.">HeadersMessage</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="Inventory$.html" title=""></a>
-                        <a class="trait" href="Inventory.html" title="These are used as unique identifiers inside the peer-to-peer network"></a>
+                        <a class="class" href="Inventory.html" title="These are used as unique identifiers inside the peer-to-peer network"></a>
                         <a href="Inventory.html" title="These are used as unique identifiers inside the peer-to-peer network">Inventory</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="InventoryMessage$.html" title="Creates an scala object that represents the inventory type on the p2p network"></a>
@@ -307,7 +307,7 @@
                         <a href="ServiceIdentifier.html" title="Indicates the services that are provided by a node on the P2P network">ServiceIdentifier</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="TransactionMessage$.html" title="Companion factory object for the TransactionMessage on the p2p network"></a>
-                        <a class="trait" href="TransactionMessage.html" title="The tx message transmits a single transaction in the raw transaction format."></a>
+                        <a class="class" href="TransactionMessage.html" title="The tx message transmits a single transaction in the raw transaction format."></a>
                         <a href="TransactionMessage.html" title="The tx message transmits a single transaction in the raw transaction format.">TransactionMessage</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="TypeIdentifier$.html" title=""></a>
@@ -460,6 +460,25 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.bitcoins.core.p2p.HeadersMessage#MaxHeadersCount" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MaxHeadersCount:Int"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/p2p/HeadersMessage$.html#MaxHeadersCount:Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MaxHeadersCount</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The maximum amount of headers sent in one <code>headers</code> message
+</p><div class="fullcomment"><div class="comment cmt"><p>The maximum amount of headers sent in one <code>headers</code> message
+</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://bitcoin.org/en/developer-reference#getheaders" target="_blank">bitcoin.org</a>
+     developer reference</p></span></dd></dl></div>
     </li><li name="org.bitcoins.core.p2p.HeadersMessage#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="apply(headers:Vector[org.bitcoins.core.protocol.blockchain.BlockHeader]):org.bitcoins.core.p2p.HeadersMessage"></a><a id="apply(Vector[BlockHeader]):HeadersMessage"></a>
       <span class="permalink">
@@ -475,7 +494,7 @@
         <span class="name">apply</span><span class="params">(<span name="headers">headers: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../protocol/blockchain/BlockHeader.html" class="extype" name="org.bitcoins.core.protocol.blockchain.BlockHeader">BlockHeader</a>]</span>)</span><span class="result">: <a href="HeadersMessage.html" class="extype" name="org.bitcoins.core.p2p.HeadersMessage">HeadersMessage</a></span>
       </span>
       
-      
+      <p class="shortcomment cmt">Constructs a <code>headers</code> message from the given headers</p>
     </li><li name="org.bitcoins.core.util.Factory#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="apply(hex:String):T"></a><a id="apply(String):HeadersMessage"></a>
       <span class="permalink">
