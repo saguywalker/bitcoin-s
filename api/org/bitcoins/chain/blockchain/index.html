@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 201-6258946f-SNAPSHOT - org.bitcoins.chain.blockchain</title>
-          <meta name="description" content="Bitcoin - S 201 - 6258946f - SNAPSHOT - org.bitcoins.chain.blockchain" />
-          <meta name="keywords" content="Bitcoin S 201 6258946f SNAPSHOT org.bitcoins.chain.blockchain" />
+          <title>Bitcoin-S 195-76216812-SNAPSHOT - org.bitcoins.chain.blockchain</title>
+          <meta name="description" content="Bitcoin - S 195 - 76216812 - SNAPSHOT - org.bitcoins.chain.blockchain" />
+          <meta name="keywords" content="Bitcoin S 195 76216812 SNAPSHOT org.bitcoins.chain.blockchain" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">201-6258946f-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">195-76216812-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -178,7 +178,7 @@
                         <a class="class" href="BlockchainUpdate.html" title="Represents the state of an update to our Blockchain An example of a successful update is receiving a BlockHeader and successfully adding it to our database."></a>
                         <a href="BlockchainUpdate.html" title="Represents the state of an update to our Blockchain An example of a successful update is receiving a BlockHeader and successfully adding it to our database.">BlockchainUpdate</a>
                       </li><li class="current-entities indented4">
-                        <span class="separator"></span>
+                        <a class="object" href="ChainHandler$.html" title=""></a>
                         <a class="class" href="ChainHandler.html" title="Chain Handler is meant to be the reference implementation of ChainApi, this is the entry point in to the chain project."></a>
                         <a href="ChainHandler.html" title="Chain Handler is meant to be the reference implementation of ChainApi, this is the entry point in to the chain project.">ChainHandler</a>
                       </li><li class="current-entities indented4">
@@ -405,7 +405,7 @@ because of <a href="../validation/TipUpdateResult$$BadPOW.html" class="extype" n
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="Chain Handler is meant to be the reference implementation of ChainApi, this is the entry point in to the chain project." href="ChainHandler.html"><span class="name">ChainHandler</span></a><span class="params">(<span name="blockHeaderDAO">blockHeaderDAO: <a href="../models/BlockHeaderDAO.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDAO">BlockHeaderDAO</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="chainConfig">chainConfig: <a href="../config/ChainAppConfig.html" class="extype" name="org.bitcoins.chain.config.ChainAppConfig">ChainAppConfig</a></span>)</span><span class="result"> extends <a href="../api/ChainApi.html" class="extype" name="org.bitcoins.chain.api.ChainApi">ChainApi</a> with <span class="extype" name="org.bitcoins.db.ChainVerificationLogger">ChainVerificationLogger</span> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="Chain Handler is meant to be the reference implementation of ChainApi, this is the entry point in to the chain project." href="ChainHandler.html"><span class="name">ChainHandler</span></a><span class="params">(<span name="blockHeaderDAO">blockHeaderDAO: <a href="../models/BlockHeaderDAO.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDAO">BlockHeaderDAO</a></span>, <span name="blockchains">blockchains: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="Blockchain.html" class="extype" name="org.bitcoins.chain.blockchain.Blockchain">Blockchain</a>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="chainConfig">chainConfig: <a href="../config/ChainAppConfig.html" class="extype" name="org.bitcoins.chain.config.ChainAppConfig">ChainAppConfig</a></span>)</span><span class="result"> extends <a href="../api/ChainApi.html" class="extype" name="org.bitcoins.chain.api.ChainApi">ChainApi</a> with <span class="extype" name="org.bitcoins.db.ChainVerificationLogger">ChainVerificationLogger</span> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">Chain Handler is meant to be the reference implementation
@@ -464,6 +464,22 @@ chain project.</p>
       </span>
       <span class="symbol">
         <a title="" href="BlockchainUpdate$.html"><span class="name">BlockchainUpdate</span></a>
+      </span>
+      
+      
+    </li><li name="org.bitcoins.chain.blockchain.ChainHandler" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ChainHandler"></a><a id="ChainHandler:ChainHandler"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/chain/blockchain/index.html#ChainHandler" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="ChainHandler$.html"><span class="name">ChainHandler</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       

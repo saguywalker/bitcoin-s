@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 201-6258946f-SNAPSHOT - org.bitcoins.node.networking.peer.DataMessageHandler</title>
-          <meta name="description" content="Bitcoin - S 201 - 6258946f - SNAPSHOT - org.bitcoins.node.networking.peer.DataMessageHandler" />
-          <meta name="keywords" content="Bitcoin S 201 6258946f SNAPSHOT org.bitcoins.node.networking.peer.DataMessageHandler" />
+          <title>Bitcoin-S 195-76216812-SNAPSHOT - org.bitcoins.node.networking.peer.DataMessageHandler</title>
+          <meta name="description" content="Bitcoin - S 195 - 76216812 - SNAPSHOT - org.bitcoins.node.networking.peer.DataMessageHandler" />
+          <meta name="keywords" content="Bitcoin S 195 76216812 SNAPSHOT org.bitcoins.node.networking.peer.DataMessageHandler" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">201-6258946f-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">195-76216812-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -253,9 +253,9 @@ that a peer to sent to us on the p2p network, for instance, if we a receive a
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="org.bitcoins.node.networking.peer.DataMessageHandler#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(callbacks:org.bitcoins.node.SpvNodeCallbacks,chainHandler:org.bitcoins.chain.api.ChainApi)(implicitec:scala.concurrent.ExecutionContext,implicitappConfig:org.bitcoins.node.config.NodeAppConfig):org.bitcoins.node.networking.peer.DataMessageHandler"></a><a id="&lt;init&gt;:DataMessageHandler"></a>
+      <a id="&lt;init&gt;(chainApi:org.bitcoins.chain.api.ChainApi,callbacks:org.bitcoins.node.SpvNodeCallbacks)(implicitec:scala.concurrent.ExecutionContext,implicitappConfig:org.bitcoins.node.config.NodeAppConfig):org.bitcoins.node.networking.peer.DataMessageHandler"></a><a id="&lt;init&gt;:DataMessageHandler"></a>
       <span class="permalink">
-      <a href="../../../../../org/bitcoins/node/networking/peer/DataMessageHandler.html#&lt;init&gt;(callbacks:org.bitcoins.node.SpvNodeCallbacks,chainHandler:org.bitcoins.chain.api.ChainApi)(implicitec:scala.concurrent.ExecutionContext,implicitappConfig:org.bitcoins.node.config.NodeAppConfig):org.bitcoins.node.networking.peer.DataMessageHandler" title="Permalink">
+      <a href="../../../../../org/bitcoins/node/networking/peer/DataMessageHandler.html#&lt;init&gt;(chainApi:org.bitcoins.chain.api.ChainApi,callbacks:org.bitcoins.node.SpvNodeCallbacks)(implicitec:scala.concurrent.ExecutionContext,implicitappConfig:org.bitcoins.node.config.NodeAppConfig):org.bitcoins.node.networking.peer.DataMessageHandler" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -264,7 +264,7 @@ that a peer to sent to us on the p2p network, for instance, if we a receive a
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">DataMessageHandler</span><span class="params">(<span name="callbacks">callbacks: <a href="../../SpvNodeCallbacks.html" class="extype" name="org.bitcoins.node.SpvNodeCallbacks">SpvNodeCallbacks</a></span>, <span name="chainHandler">chainHandler: <a href="../../../chain/api/ChainApi.html" class="extype" name="org.bitcoins.chain.api.ChainApi">ChainApi</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/ExecutionContext.html#scala.concurrent.ExecutionContext" class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</a></span>, <span name="appConfig">appConfig: <a href="../../config/NodeAppConfig.html" class="extype" name="org.bitcoins.node.config.NodeAppConfig">NodeAppConfig</a></span>)</span>
+        <span class="name">DataMessageHandler</span><span class="params">(<span name="chainApi">chainApi: <a href="../../../chain/api/ChainApi.html" class="extype" name="org.bitcoins.chain.api.ChainApi">ChainApi</a></span>, <span name="callbacks">callbacks: <a href="../../SpvNodeCallbacks.html" class="extype" name="org.bitcoins.node.SpvNodeCallbacks">SpvNodeCallbacks</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/ExecutionContext.html#scala.concurrent.ExecutionContext" class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</a></span>, <span name="appConfig">appConfig: <a href="../../config/NodeAppConfig.html" class="extype" name="org.bitcoins.node.config.NodeAppConfig">NodeAppConfig</a></span>)</span>
       </span>
       
       
@@ -422,9 +422,9 @@ that a peer to sent to us on the p2p network, for instance, if we a receive a
               
         </dd></dl></div>
     </li><li name="org.bitcoins.node.networking.peer.DataMessageHandler#handleDataPayload" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="handleDataPayload(payload:org.bitcoins.core.p2p.DataPayload,peerMsgSender:org.bitcoins.node.networking.peer.PeerMessageSender):scala.concurrent.Future[Unit]"></a><a id="handleDataPayload(DataPayload,PeerMessageSender):Future[Unit]"></a>
+      <a id="handleDataPayload(payload:org.bitcoins.core.p2p.DataPayload,peerMsgSender:org.bitcoins.node.networking.peer.PeerMessageSender):scala.concurrent.Future[org.bitcoins.node.networking.peer.DataMessageHandler]"></a><a id="handleDataPayload(DataPayload,PeerMessageSender):Future[DataMessageHandler]"></a>
       <span class="permalink">
-      <a href="../../../../../org/bitcoins/node/networking/peer/DataMessageHandler.html#handleDataPayload(payload:org.bitcoins.core.p2p.DataPayload,peerMsgSender:org.bitcoins.node.networking.peer.PeerMessageSender):scala.concurrent.Future[Unit]" title="Permalink">
+      <a href="../../../../../org/bitcoins/node/networking/peer/DataMessageHandler.html#handleDataPayload(payload:org.bitcoins.core.p2p.DataPayload,peerMsgSender:org.bitcoins.node.networking.peer.PeerMessageSender):scala.concurrent.Future[org.bitcoins.node.networking.peer.DataMessageHandler]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -433,7 +433,7 @@ that a peer to sent to us on the p2p network, for instance, if we a receive a
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">handleDataPayload</span><span class="params">(<span name="payload">payload: <a href="../../../core/p2p/DataPayload.html" class="extype" name="org.bitcoins.core.p2p.DataPayload">DataPayload</a></span>, <span name="peerMsgSender">peerMsgSender: <a href="PeerMessageSender.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageSender">PeerMessageSender</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a>]</span>
+        <span class="name">handleDataPayload</span><span class="params">(<span name="payload">payload: <a href="../../../core/p2p/DataPayload.html" class="extype" name="org.bitcoins.core.p2p.DataPayload">DataPayload</a></span>, <span name="peerMsgSender">peerMsgSender: <a href="PeerMessageSender.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageSender">PeerMessageSender</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="" class="extype" name="org.bitcoins.node.networking.peer.DataMessageHandler">DataMessageHandler</a>]</span>
       </span>
       
       

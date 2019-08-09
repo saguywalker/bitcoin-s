@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 201-6258946f-SNAPSHOT - org.bitcoins.chain.blockchain.ChainHandler</title>
-          <meta name="description" content="Bitcoin - S 201 - 6258946f - SNAPSHOT - org.bitcoins.chain.blockchain.ChainHandler" />
-          <meta name="keywords" content="Bitcoin S 201 6258946f SNAPSHOT org.bitcoins.chain.blockchain.ChainHandler" />
+          <title>Bitcoin-S 195-76216812-SNAPSHOT - org.bitcoins.chain.blockchain.ChainHandler</title>
+          <meta name="description" content="Bitcoin - S 195 - 76216812 - SNAPSHOT - org.bitcoins.chain.blockchain.ChainHandler" />
+          <meta name="keywords" content="Bitcoin S 195 76216812 SNAPSHOT org.bitcoins.chain.blockchain.ChainHandler" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">201-6258946f-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">195-76216812-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -162,7 +162,7 @@
                         <a class="class" href="BlockchainUpdate.html" title="Represents the state of an update to our Blockchain An example of a successful update is receiving a BlockHeader and successfully adding it to our database."></a>
                         <a href="BlockchainUpdate.html" title="Represents the state of an update to our Blockchain An example of a successful update is receiving a BlockHeader and successfully adding it to our database.">BlockchainUpdate</a>
                       </li><li class="current-entities indented4">
-                        <span class="separator"></span>
+                        <a class="object" href="ChainHandler$.html" title=""></a>
                         <a class="class" href="" title="Chain Handler is meant to be the reference implementation of ChainApi, this is the entry point in to the chain project."></a>
                         <a href="" title="Chain Handler is meant to be the reference implementation of ChainApi, this is the entry point in to the chain project.">ChainHandler</a>
                       </li><li class="current-entities indented4">
@@ -176,14 +176,16 @@
           <div id="content">
             <body class="class type">
       <div id="definition">
-        <div class="big-circle class">c</div>
+        <a href="ChainHandler$.html" title="See companion object"><div class="big-circle class-companion-object">c</div></a>
         <p id="owner"><a href="../../../index.html" class="extype" name="org">org</a>.<a href="../../index.html" class="extype" name="org.bitcoins">bitcoins</a>.<a href="../index.html" class="extype" name="org.bitcoins.chain">chain</a>.<a href="index.html" class="extype" name="org.bitcoins.chain.blockchain">blockchain</a></p>
-        <h1>ChainHandler<span class="permalink">
+        <h1><a href="ChainHandler$.html" title="See companion object">ChainHandler</a><span class="permalink">
       <a href="../../../../org/bitcoins/chain/blockchain/ChainHandler.html" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span></h1>
-        <h3><span class="morelinks"></span></h3>
+        <h3><span class="morelinks"><div>
+            Companion <a href="ChainHandler$.html" title="See companion object">object ChainHandler</a>
+          </div></span></h3>
       </div>
 
       <h4 id="signature" class="signature">
@@ -192,7 +194,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">ChainHandler</span><span class="params">(<span name="blockHeaderDAO">blockHeaderDAO: <a href="../models/BlockHeaderDAO.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDAO">BlockHeaderDAO</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="chainConfig">chainConfig: <a href="../config/ChainAppConfig.html" class="extype" name="org.bitcoins.chain.config.ChainAppConfig">ChainAppConfig</a></span>)</span><span class="result"> extends <a href="../api/ChainApi.html" class="extype" name="org.bitcoins.chain.api.ChainApi">ChainApi</a> with <span class="extype" name="org.bitcoins.db.ChainVerificationLogger">ChainVerificationLogger</span> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <span class="name">ChainHandler</span><span class="params">(<span name="blockHeaderDAO">blockHeaderDAO: <a href="../models/BlockHeaderDAO.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDAO">BlockHeaderDAO</a></span>, <span name="blockchains">blockchains: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="Blockchain.html" class="extype" name="org.bitcoins.chain.blockchain.Blockchain">Blockchain</a>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="chainConfig">chainConfig: <a href="../config/ChainAppConfig.html" class="extype" name="org.bitcoins.chain.config.ChainAppConfig">ChainAppConfig</a></span>)</span><span class="result"> extends <a href="../api/ChainApi.html" class="extype" name="org.bitcoins.chain.api.ChainApi">ChainApi</a> with <span class="extype" name="org.bitcoins.db.ChainVerificationLogger">ChainVerificationLogger</span> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       </h4>
 
@@ -251,9 +253,9 @@ chain project.
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="org.bitcoins.chain.blockchain.ChainHandler#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(blockHeaderDAO:org.bitcoins.chain.models.BlockHeaderDAO)(implicitchainConfig:org.bitcoins.chain.config.ChainAppConfig):org.bitcoins.chain.blockchain.ChainHandler"></a><a id="&lt;init&gt;:ChainHandler"></a>
+      <a id="&lt;init&gt;(blockHeaderDAO:org.bitcoins.chain.models.BlockHeaderDAO,blockchains:Vector[org.bitcoins.chain.blockchain.Blockchain])(implicitchainConfig:org.bitcoins.chain.config.ChainAppConfig):org.bitcoins.chain.blockchain.ChainHandler"></a><a id="&lt;init&gt;:ChainHandler"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/chain/blockchain/ChainHandler.html#&lt;init&gt;(blockHeaderDAO:org.bitcoins.chain.models.BlockHeaderDAO)(implicitchainConfig:org.bitcoins.chain.config.ChainAppConfig):org.bitcoins.chain.blockchain.ChainHandler" title="Permalink">
+      <a href="../../../../org/bitcoins/chain/blockchain/ChainHandler.html#&lt;init&gt;(blockHeaderDAO:org.bitcoins.chain.models.BlockHeaderDAO,blockchains:Vector[org.bitcoins.chain.blockchain.Blockchain])(implicitchainConfig:org.bitcoins.chain.config.ChainAppConfig):org.bitcoins.chain.blockchain.ChainHandler" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -262,7 +264,7 @@ chain project.
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">ChainHandler</span><span class="params">(<span name="blockHeaderDAO">blockHeaderDAO: <a href="../models/BlockHeaderDAO.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDAO">BlockHeaderDAO</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="chainConfig">chainConfig: <a href="../config/ChainAppConfig.html" class="extype" name="org.bitcoins.chain.config.ChainAppConfig">ChainAppConfig</a></span>)</span>
+        <span class="name">ChainHandler</span><span class="params">(<span name="blockHeaderDAO">blockHeaderDAO: <a href="../models/BlockHeaderDAO.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDAO">BlockHeaderDAO</a></span>, <span name="blockchains">blockchains: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="Blockchain.html" class="extype" name="org.bitcoins.chain.blockchain.Blockchain">Blockchain</a>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="chainConfig">chainConfig: <a href="../config/ChainAppConfig.html" class="extype" name="org.bitcoins.chain.config.ChainAppConfig">ChainAppConfig</a></span>)</span>
       </span>
       
       
@@ -353,6 +355,22 @@ chain project.
       </span>
       <span class="symbol">
         <span class="name">blockHeaderDAO</span><span class="result">: <a href="../models/BlockHeaderDAO.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDAO">BlockHeaderDAO</a></span>
+      </span>
+      
+      
+    </li><li name="org.bitcoins.chain.blockchain.ChainHandler#blockchains" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="blockchains:Vector[org.bitcoins.chain.blockchain.Blockchain]"></a><a id="blockchains:Vector[Blockchain]"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/chain/blockchain/ChainHandler.html#blockchains:Vector[org.bitcoins.chain.blockchain.Blockchain]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">blockchains</span><span class="result">: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="Blockchain.html" class="extype" name="org.bitcoins.chain.blockchain.Blockchain">Blockchain</a>]</span>
       </span>
       
       

@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 201-6258946f-SNAPSHOT - org.bitcoins.node.networking.P2PClient</title>
-          <meta name="description" content="Bitcoin - S 201 - 6258946f - SNAPSHOT - org.bitcoins.node.networking.P2PClient" />
-          <meta name="keywords" content="Bitcoin S 201 6258946f SNAPSHOT org.bitcoins.node.networking.P2PClient" />
+          <title>Bitcoin-S 195-76216812-SNAPSHOT - org.bitcoins.node.networking.P2PClient</title>
+          <meta name="description" content="Bitcoin - S 195 - 76216812 - SNAPSHOT - org.bitcoins.node.networking.P2PClient" />
+          <meta name="keywords" content="Bitcoin S 195 76216812 SNAPSHOT org.bitcoins.node.networking.P2PClient" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">201-6258946f-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">195-76216812-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -237,7 +237,28 @@
         <div id="allMembers">
         
 
-        
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.bitcoins.node.networking.P2PClient.MetaMsg" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MetaMsgextendsAnyRef"></a><a id="MetaMsg:MetaMsg"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClient$.html#MetaMsgextendsAnyRef" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="A message hierarchy that canbe sent to P2P Client Actor to query about meta information of a peer" href="P2PClient$$MetaMsg.html"><span class="name">MetaMsg</span></a><span class="result"> extends <a href="../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A message hierarchy that canbe sent to <a href="P2PClientActor.html" class="extype" name="org.bitcoins.node.networking.P2PClientActor">P2P Client Actor</a>
+to query about meta information of a peer
+</p>
+    </li></ol>
+            </div>
 
         
 
@@ -630,6 +651,57 @@
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="org.bitcoins.node.networking.P2PClient.IsConnected" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IsConnected"></a><a id="IsConnected:IsConnected"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClient$.html#IsConnected" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="A message that can be sent to p2p client that returns true if the peer is connected, false if not" href="P2PClient$$IsConnected$.html"><span class="name">IsConnected</span></a><span class="result"> extends <a href="P2PClient$$MetaMsg.html" class="extype" name="org.bitcoins.node.networking.P2PClient.MetaMsg">MetaMsg</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A message that can be sent to <a href="P2PClient.html" class="extype" name="org.bitcoins.node.networking.P2PClient">p2p client</a> that returns true
+if the peer is connected, false if not</p>
+    </li><li name="org.bitcoins.node.networking.P2PClient.IsDisconnected" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IsDisconnected"></a><a id="IsDisconnected:IsDisconnected"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClient$.html#IsDisconnected" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="A message that can be sent to p2p client that returns true if the peer is disconnected, false otherwise" href="P2PClient$$IsDisconnected$.html"><span class="name">IsDisconnected</span></a><span class="result"> extends <a href="P2PClient$$MetaMsg.html" class="extype" name="org.bitcoins.node.networking.P2PClient.MetaMsg">MetaMsg</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A message that can be sent to <a href="P2PClient.html" class="extype" name="org.bitcoins.node.networking.P2PClient">p2p client</a> that returns true
+if the peer is disconnected, false otherwise</p>
+    </li><li name="org.bitcoins.node.networking.P2PClient.IsInitialized" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IsInitialized"></a><a id="IsInitialized:IsInitialized"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClient$.html#IsInitialized" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="A message that can be sent to p2p client that returns true if the peer is initialized (p2p handshake complete), false if not" href="P2PClient$$IsInitialized$.html"><span class="name">IsInitialized</span></a><span class="result"> extends <a href="P2PClient$$MetaMsg.html" class="extype" name="org.bitcoins.node.networking.P2PClient.MetaMsg">MetaMsg</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A message that can be sent to <a href="P2PClient.html" class="extype" name="org.bitcoins.node.networking.P2PClient">p2p client</a> that returns true
+if the peer is initialized (p2p handshake complete), false if not</p>
     </li>
               </ol>
             </div>

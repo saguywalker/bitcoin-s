@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 201-6258946f-SNAPSHOT - org.bitcoins.core.util.FutureUtil</title>
-          <meta name="description" content="Bitcoin - S 201 - 6258946f - SNAPSHOT - org.bitcoins.core.util.FutureUtil" />
-          <meta name="keywords" content="Bitcoin S 201 6258946f SNAPSHOT org.bitcoins.core.util.FutureUtil" />
+          <title>Bitcoin-S 195-76216812-SNAPSHOT - org.bitcoins.core.util.FutureUtil</title>
+          <meta name="description" content="Bitcoin - S 195 - 76216812 - SNAPSHOT - org.bitcoins.core.util.FutureUtil" />
+          <meta name="keywords" content="Bitcoin S 195 76216812 SNAPSHOT org.bitcoins.core.util.FutureUtil" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">201-6258946f-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">195-76216812-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -404,6 +404,22 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.bitcoins.core.util.FutureUtil#foldLeftAsync" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="foldLeftAsync[T,U](init:T,items:Seq[U])(fun:(T,U)=&gt;scala.concurrent.Future[T])(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[T]"></a><a id="foldLeftAsync[T,U](T,Seq[U])((T,U)⇒Future[T])(ExecutionContext):Future[T]"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/util/FutureUtil$.html#foldLeftAsync[T,U](init:T,items:Seq[U])(fun:(T,U)=&gt;scala.concurrent.Future[T])(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[T]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">foldLeftAsync</span><span class="tparams">[<span name="T">T</span>, <span name="U">U</span>]</span><span class="params">(<span name="init">init: <span class="extype" name="org.bitcoins.core.util.FutureUtil.foldLeftAsync.T">T</span></span>, <span name="items">items: <a href="../../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<span class="extype" name="org.bitcoins.core.util.FutureUtil.foldLeftAsync.U">U</span>]</span>)</span><span class="params">(<span name="fun">fun: (<span class="extype" name="org.bitcoins.core.util.FutureUtil.foldLeftAsync.T">T</span>, <span class="extype" name="org.bitcoins.core.util.FutureUtil.foldLeftAsync.U">U</span>) ⇒ <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<span class="extype" name="org.bitcoins.core.util.FutureUtil.foldLeftAsync.T">T</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/ExecutionContext.html#scala.concurrent.ExecutionContext" class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<span class="extype" name="org.bitcoins.core.util.FutureUtil.foldLeftAsync.T">T</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Folds over the given elements sequentially in a non-blocking async way</p><div class="fullcomment"><div class="comment cmt"><p>Folds over the given elements sequentially in a non-blocking async way</p></div><dl class="paramcmts block"><dt class="param">init</dt><dd class="cmt"><p>the initialized value for the accumulator</p></dd><dt class="param">items</dt><dd class="cmt"><p>the items we are folding over</p></dd><dt class="param">fun</dt><dd class="cmt"><p>the function we are applying to every element that returns a future</p></dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <span class="permalink">

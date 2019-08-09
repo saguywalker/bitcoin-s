@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 201-6258946f-SNAPSHOT - org.bitcoins.node.networking.P2PClientActor</title>
-          <meta name="description" content="Bitcoin - S 201 - 6258946f - SNAPSHOT - org.bitcoins.node.networking.P2PClientActor" />
-          <meta name="keywords" content="Bitcoin S 201 6258946f SNAPSHOT org.bitcoins.node.networking.P2PClientActor" />
+          <title>Bitcoin-S 195-76216812-SNAPSHOT - org.bitcoins.node.networking.P2PClientActor</title>
+          <meta name="description" content="Bitcoin - S 195 - 76216812 - SNAPSHOT - org.bitcoins.node.networking.P2PClientActor" />
+          <meta name="keywords" content="Bitcoin S 195 76216812 SNAPSHOT org.bitcoins.node.networking.P2PClientActor" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">201-6258946f-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">195-76216812-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -180,7 +180,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">P2PClientActor</span><span class="params">(<span name="peer">peer: <a href="../models/Peer.html" class="extype" name="org.bitcoins.node.models.Peer">Peer</a></span>, <span name="peerMsgHandlerReceiver">peerMsgHandlerReceiver: <a href="peer/PeerMessageReceiver.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiver">PeerMessageReceiver</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="../config/NodeAppConfig.html" class="extype" name="org.bitcoins.node.config.NodeAppConfig">NodeAppConfig</a></span>)</span><span class="result"> extends <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/Actor.html#akka.actor.Actor" class="extype" name="akka.actor.Actor">Actor</a> with <span class="extype" name="org.bitcoins.db.P2PLogger">P2PLogger</span> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <span class="name">P2PClientActor</span><span class="params">(<span name="peer">peer: <a href="../models/Peer.html" class="extype" name="org.bitcoins.node.models.Peer">Peer</a></span>, <span name="initPeerMsgHandlerReceiver">initPeerMsgHandlerReceiver: <a href="peer/PeerMessageReceiver.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiver">PeerMessageReceiver</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="../config/NodeAppConfig.html" class="extype" name="org.bitcoins.node.config.NodeAppConfig">NodeAppConfig</a></span>)</span><span class="result"> extends <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/Actor.html#akka.actor.Actor" class="extype" name="akka.actor.Actor">Actor</a> with <span class="extype" name="org.bitcoins.db.P2PLogger">P2PLogger</span> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       </h4>
 
@@ -203,7 +203,7 @@ This is because we cannot assume that a Bitcoin P2P message aligns with a TCP pa
 For instance, a large block message (up to 4MB in size)
 CANNOT fit in a single TCP packet. This means we must cache
 the bytes and wait for the rest of them to be sent.
-</p></div><dl class="paramcmts block"><dt class="param">peerMsgHandlerReceiver</dt><dd class="cmt"><p>The place we send messages that we successfully parsed
+</p></div><dl class="paramcmts block"><dt class="param">initPeerMsgHandlerReceiver</dt><dd class="cmt"><p>The place we send messages that we successfully parsed
                               from our peer on the P2P network. This is mostly likely
                               a <a href="peer/PeerMessageSender.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageSender">org.bitcoins.node.networking.peer.PeerMessageSender</a></p></dd></dl><div class="toggleContainer block">
           <span class="toggle">
@@ -256,9 +256,9 @@ the bytes and wait for the rest of them to be sent.
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="org.bitcoins.node.networking.P2PClientActor#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(peer:org.bitcoins.node.models.Peer,peerMsgHandlerReceiver:org.bitcoins.node.networking.peer.PeerMessageReceiver)(implicitconfig:org.bitcoins.node.config.NodeAppConfig):org.bitcoins.node.networking.P2PClientActor"></a><a id="&lt;init&gt;:P2PClientActor"></a>
+      <a id="&lt;init&gt;(peer:org.bitcoins.node.models.Peer,initPeerMsgHandlerReceiver:org.bitcoins.node.networking.peer.PeerMessageReceiver)(implicitconfig:org.bitcoins.node.config.NodeAppConfig):org.bitcoins.node.networking.P2PClientActor"></a><a id="&lt;init&gt;:P2PClientActor"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#&lt;init&gt;(peer:org.bitcoins.node.models.Peer,peerMsgHandlerReceiver:org.bitcoins.node.networking.peer.PeerMessageReceiver)(implicitconfig:org.bitcoins.node.config.NodeAppConfig):org.bitcoins.node.networking.P2PClientActor" title="Permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#&lt;init&gt;(peer:org.bitcoins.node.models.Peer,initPeerMsgHandlerReceiver:org.bitcoins.node.networking.peer.PeerMessageReceiver)(implicitconfig:org.bitcoins.node.config.NodeAppConfig):org.bitcoins.node.networking.P2PClientActor" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -267,10 +267,10 @@ the bytes and wait for the rest of them to be sent.
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">P2PClientActor</span><span class="params">(<span name="peer">peer: <a href="../models/Peer.html" class="extype" name="org.bitcoins.node.models.Peer">Peer</a></span>, <span name="peerMsgHandlerReceiver">peerMsgHandlerReceiver: <a href="peer/PeerMessageReceiver.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiver">PeerMessageReceiver</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="../config/NodeAppConfig.html" class="extype" name="org.bitcoins.node.config.NodeAppConfig">NodeAppConfig</a></span>)</span>
+        <span class="name">P2PClientActor</span><span class="params">(<span name="peer">peer: <a href="../models/Peer.html" class="extype" name="org.bitcoins.node.models.Peer">Peer</a></span>, <span name="initPeerMsgHandlerReceiver">initPeerMsgHandlerReceiver: <a href="peer/PeerMessageReceiver.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiver">PeerMessageReceiver</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="../config/NodeAppConfig.html" class="extype" name="org.bitcoins.node.config.NodeAppConfig">NodeAppConfig</a></span>)</span>
       </span>
       
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">peerMsgHandlerReceiver</dt><dd class="cmt"><p>The place we send messages that we successfully parsed
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">initPeerMsgHandlerReceiver</dt><dd class="cmt"><p>The place we send messages that we successfully parsed
                               from our peer on the P2P network. This is mostly likely
                               a <a href="peer/PeerMessageSender.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageSender">org.bitcoins.node.networking.peer.PeerMessageSender</a></p></dd></dl></div>
     </li></ol>
@@ -540,6 +540,22 @@ the bytes and wait for the rest of them to be sent.
                 <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="org.bitcoins.node.networking.P2PClientActor#initPeerMsgHandlerReceiver" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="initPeerMsgHandlerReceiver:org.bitcoins.node.networking.peer.PeerMessageReceiver"></a><a id="initPeerMsgHandlerReceiver:PeerMessageReceiver"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#initPeerMsgHandlerReceiver:org.bitcoins.node.networking.peer.PeerMessageReceiver" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">initPeerMsgHandlerReceiver</span><span class="result">: <a href="peer/PeerMessageReceiver.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiver">PeerMessageReceiver</a></span>
+      </span>
+      
+      
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <span class="permalink">
@@ -677,22 +693,6 @@ and instantiates workers for specific tasks, such as listening to incoming conne
       </span>
       <span class="symbol">
         <span class="name">peer</span><span class="result">: <a href="../models/Peer.html" class="extype" name="org.bitcoins.node.models.Peer">Peer</a></span>
-      </span>
-      
-      
-    </li><li name="org.bitcoins.node.networking.P2PClientActor#peerMsgHandlerReceiver" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="peerMsgHandlerReceiver:org.bitcoins.node.networking.peer.PeerMessageReceiver"></a><a id="peerMsgHandlerReceiver:PeerMessageReceiver"></a>
-      <span class="permalink">
-      <a href="../../../../org/bitcoins/node/networking/P2PClientActor.html#peerMsgHandlerReceiver:org.bitcoins.node.networking.peer.PeerMessageReceiver" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">peerMsgHandlerReceiver</span><span class="result">: <a href="peer/PeerMessageReceiver.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiver">PeerMessageReceiver</a></span>
       </span>
       
       

@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 201-6258946f-SNAPSHOT - org.bitcoins.node.networking.peer.PeerMessageReceiver</title>
-          <meta name="description" content="Bitcoin - S 201 - 6258946f - SNAPSHOT - org.bitcoins.node.networking.peer.PeerMessageReceiver" />
-          <meta name="keywords" content="Bitcoin S 201 6258946f SNAPSHOT org.bitcoins.node.networking.peer.PeerMessageReceiver" />
+          <title>Bitcoin-S 195-76216812-SNAPSHOT - org.bitcoins.node.networking.peer.PeerMessageReceiver</title>
+          <meta name="description" content="Bitcoin - S 195 - 76216812 - SNAPSHOT - org.bitcoins.node.networking.peer.PeerMessageReceiver" />
+          <meta name="keywords" content="Bitcoin S 195 76216812 SNAPSHOT org.bitcoins.node.networking.peer.PeerMessageReceiver" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">201-6258946f-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">195-76216812-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -255,9 +255,9 @@ operations. This is the entry point for handling all received
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="org.bitcoins.node.networking.peer.PeerMessageReceiver#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(state:org.bitcoins.node.networking.peer.PeerMessageReceiverState,callbacks:org.bitcoins.node.SpvNodeCallbacks,chainHandler:org.bitcoins.chain.api.ChainApi)(implicitref:akka.actor.ActorRefFactory,implicitnodeAppConfig:org.bitcoins.node.config.NodeAppConfig):org.bitcoins.node.networking.peer.PeerMessageReceiver"></a><a id="&lt;init&gt;:PeerMessageReceiver"></a>
+      <a id="&lt;init&gt;(dataMessageHandler:org.bitcoins.node.networking.peer.DataMessageHandler,state:org.bitcoins.node.networking.peer.PeerMessageReceiverState,peer:org.bitcoins.node.models.Peer,callbacks:org.bitcoins.node.SpvNodeCallbacks)(implicitref:akka.actor.ActorRefFactory,implicitnodeAppConfig:org.bitcoins.node.config.NodeAppConfig,implicitchainAppConfig:org.bitcoins.chain.config.ChainAppConfig):org.bitcoins.node.networking.peer.PeerMessageReceiver"></a><a id="&lt;init&gt;:PeerMessageReceiver"></a>
       <span class="permalink">
-      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageReceiver.html#&lt;init&gt;(state:org.bitcoins.node.networking.peer.PeerMessageReceiverState,callbacks:org.bitcoins.node.SpvNodeCallbacks,chainHandler:org.bitcoins.chain.api.ChainApi)(implicitref:akka.actor.ActorRefFactory,implicitnodeAppConfig:org.bitcoins.node.config.NodeAppConfig):org.bitcoins.node.networking.peer.PeerMessageReceiver" title="Permalink">
+      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageReceiver.html#&lt;init&gt;(dataMessageHandler:org.bitcoins.node.networking.peer.DataMessageHandler,state:org.bitcoins.node.networking.peer.PeerMessageReceiverState,peer:org.bitcoins.node.models.Peer,callbacks:org.bitcoins.node.SpvNodeCallbacks)(implicitref:akka.actor.ActorRefFactory,implicitnodeAppConfig:org.bitcoins.node.config.NodeAppConfig,implicitchainAppConfig:org.bitcoins.chain.config.ChainAppConfig):org.bitcoins.node.networking.peer.PeerMessageReceiver" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -266,7 +266,7 @@ operations. This is the entry point for handling all received
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">PeerMessageReceiver</span><span class="params">(<span name="state">state: <a href="PeerMessageReceiverState.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiverState">PeerMessageReceiverState</a></span>, <span name="callbacks">callbacks: <a href="../../SpvNodeCallbacks.html" class="extype" name="org.bitcoins.node.SpvNodeCallbacks">SpvNodeCallbacks</a></span>, <span name="chainHandler">chainHandler: <a href="../../../chain/api/ChainApi.html" class="extype" name="org.bitcoins.chain.api.ChainApi">ChainApi</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ref">ref: <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/ActorRefFactory.html#akka.actor.ActorRefFactory" class="extype" name="akka.actor.ActorRefFactory">ActorRefFactory</a></span>, <span name="nodeAppConfig">nodeAppConfig: <a href="../../config/NodeAppConfig.html" class="extype" name="org.bitcoins.node.config.NodeAppConfig">NodeAppConfig</a></span>)</span>
+        <span class="name">PeerMessageReceiver</span><span class="params">(<span name="dataMessageHandler">dataMessageHandler: <a href="DataMessageHandler.html" class="extype" name="org.bitcoins.node.networking.peer.DataMessageHandler">DataMessageHandler</a></span>, <span name="state">state: <a href="PeerMessageReceiverState.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiverState">PeerMessageReceiverState</a></span>, <span name="peer">peer: <a href="../../models/Peer.html" class="extype" name="org.bitcoins.node.models.Peer">Peer</a></span>, <span name="callbacks">callbacks: <a href="../../SpvNodeCallbacks.html" class="extype" name="org.bitcoins.node.SpvNodeCallbacks">SpvNodeCallbacks</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ref">ref: <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/ActorRefFactory.html#akka.actor.ActorRefFactory" class="extype" name="akka.actor.ActorRefFactory">ActorRefFactory</a></span>, <span name="nodeAppConfig">nodeAppConfig: <a href="../../config/NodeAppConfig.html" class="extype" name="org.bitcoins.node.config.NodeAppConfig">NodeAppConfig</a></span>, <span name="chainAppConfig">chainAppConfig: <a href="../../../chain/config/ChainAppConfig.html" class="extype" name="org.bitcoins.chain.config.ChainAppConfig">ChainAppConfig</a></span>)</span>
       </span>
       
       
@@ -371,9 +371,9 @@ operations. This is the entry point for handling all received
               
         </dd></dl></div>
     </li><li name="org.bitcoins.node.networking.peer.PeerMessageReceiver#connect" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="connect(client:org.bitcoins.node.networking.P2PClient):scala.util.Try[Unit]"></a><a id="connect(P2PClient):Try[Unit]"></a>
+      <a id="connect(client:org.bitcoins.node.networking.P2PClient):scala.concurrent.Future[org.bitcoins.node.networking.peer.PeerMessageReceiver]"></a><a id="connect(P2PClient):Future[PeerMessageReceiver]"></a>
       <span class="permalink">
-      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageReceiver.html#connect(client:org.bitcoins.node.networking.P2PClient):scala.util.Try[Unit]" title="Permalink">
+      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageReceiver.html#connect(client:org.bitcoins.node.networking.P2PClient):scala.concurrent.Future[org.bitcoins.node.networking.peer.PeerMessageReceiver]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -382,7 +382,7 @@ operations. This is the entry point for handling all received
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">connect</span><span class="params">(<span name="client">client: <a href="../P2PClient.html" class="extype" name="org.bitcoins.node.networking.P2PClient">P2PClient</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/util/Try.html#scala.util.Try" class="extype" name="scala.util.Try">Try</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a>]</span>
+        <span class="name">connect</span><span class="params">(<span name="client">client: <a href="../P2PClient.html" class="extype" name="org.bitcoins.node.networking.P2PClient">P2PClient</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiver">PeerMessageReceiver</a>]</span>
       </span>
       
       <p class="shortcomment cmt">This method is called when we have received
@@ -397,9 +397,9 @@ but have NOT started the handshake
 This method will initiate the handshake
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../index.html" class="extype" name="org.bitcoins.node.networking">org.bitcoins.node.networking</a>] </dd></dl></div>
     </li><li name="org.bitcoins.node.networking.peer.PeerMessageReceiver#disconnect" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="disconnect():scala.util.Try[Unit]"></a><a id="disconnect():Try[Unit]"></a>
+      <a id="disconnect():scala.concurrent.Future[org.bitcoins.node.networking.peer.PeerMessageReceiver]"></a><a id="disconnect():Future[PeerMessageReceiver]"></a>
       <span class="permalink">
-      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageReceiver.html#disconnect():scala.util.Try[Unit]" title="Permalink">
+      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageReceiver.html#disconnect():scala.concurrent.Future[org.bitcoins.node.networking.peer.PeerMessageReceiver]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -408,7 +408,7 @@ This method will initiate the handshake
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">disconnect</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/util/Try.html#scala.util.Try" class="extype" name="scala.util.Try">Try</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a>]</span>
+        <span class="name">disconnect</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiver">PeerMessageReceiver</a>]</span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../index.html" class="extype" name="org.bitcoins.node.networking">org.bitcoins.node.networking</a>] </dd></dl></div>
@@ -466,9 +466,9 @@ This method will initiate the handshake
               
         </dd></dl></div>
     </li><li name="org.bitcoins.node.networking.peer.PeerMessageReceiver#handleNetworkMessageReceived" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="handleNetworkMessageReceived(networkMsgRecv:org.bitcoins.node.networking.peer.PeerMessageReceiver.NetworkMessageReceived):Unit"></a><a id="handleNetworkMessageReceived(NetworkMessageReceived):Unit"></a>
+      <a id="handleNetworkMessageReceived(networkMsgRecv:org.bitcoins.node.networking.peer.PeerMessageReceiver.NetworkMessageReceived):scala.concurrent.Future[org.bitcoins.node.networking.peer.PeerMessageReceiver]"></a><a id="handleNetworkMessageReceived(NetworkMessageReceived):Future[PeerMessageReceiver]"></a>
       <span class="permalink">
-      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageReceiver.html#handleNetworkMessageReceived(networkMsgRecv:org.bitcoins.node.networking.peer.PeerMessageReceiver.NetworkMessageReceived):Unit" title="Permalink">
+      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageReceiver.html#handleNetworkMessageReceived(networkMsgRecv:org.bitcoins.node.networking.peer.PeerMessageReceiver.NetworkMessageReceived):scala.concurrent.Future[org.bitcoins.node.networking.peer.PeerMessageReceiver]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -477,39 +477,7 @@ This method will initiate the handshake
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">handleNetworkMessageReceived</span><span class="params">(<span name="networkMsgRecv">networkMsgRecv: <a href="PeerMessageReceiver$$NetworkMessageReceived.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiver.NetworkMessageReceived">NetworkMessageReceived</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
-      </span>
-      
-      
-    </li><li name="org.bitcoins.node.networking.peer.PeerMessageReceiver#hasReceivedVerackMsg" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="hasReceivedVerackMsg:Boolean"></a>
-      <span class="permalink">
-      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageReceiver.html#hasReceivedVerackMsg:Boolean" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">hasReceivedVerackMsg</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
-      </span>
-      
-      
-    </li><li name="org.bitcoins.node.networking.peer.PeerMessageReceiver#hasReceivedVersionMsg" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="hasReceivedVersionMsg:Boolean"></a>
-      <span class="permalink">
-      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageReceiver.html#hasReceivedVersionMsg:Boolean" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">hasReceivedVersionMsg</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span class="name">handleNetworkMessageReceived</span><span class="params">(<span name="networkMsgRecv">networkMsgRecv: <a href="PeerMessageReceiver$$NetworkMessageReceived.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiver.NetworkMessageReceived">NetworkMessageReceived</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiver">PeerMessageReceiver</a>]</span>
       </span>
       
       
@@ -534,54 +502,6 @@ This method will initiate the handshake
                 <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="org.bitcoins.node.networking.peer.PeerMessageReceiver#isConnected" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="isConnected:Boolean"></a>
-      <span class="permalink">
-      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageReceiver.html#isConnected:Boolean" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">isConnected</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
-      </span>
-      
-      
-    </li><li name="org.bitcoins.node.networking.peer.PeerMessageReceiver#isDisconnected" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="isDisconnected:Boolean"></a>
-      <span class="permalink">
-      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageReceiver.html#isDisconnected:Boolean" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">isDisconnected</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
-      </span>
-      
-      
-    </li><li name="org.bitcoins.node.networking.peer.PeerMessageReceiver#isInitialized" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="isInitialized:Boolean"></a>
-      <span class="permalink">
-      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageReceiver.html#isInitialized:Boolean" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">isInitialized</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
-      </span>
-      
-      
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <span class="permalink">
@@ -672,6 +592,22 @@ This method will initiate the handshake
                 <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="org.bitcoins.node.networking.peer.PeerMessageReceiver#state" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="state:org.bitcoins.node.networking.peer.PeerMessageReceiverState"></a><a id="state:PeerMessageReceiverState"></a>
+      <span class="permalink">
+      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageReceiver.html#state:org.bitcoins.node.networking.peer.PeerMessageReceiverState" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">state</span><span class="result">: <a href="PeerMessageReceiverState.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiverState">PeerMessageReceiverState</a></span>
+      </span>
+      
+      
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">
@@ -688,6 +624,22 @@ This method will initiate the handshake
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.bitcoins.node.networking.peer.PeerMessageReceiver#toState" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="toState(newState:org.bitcoins.node.networking.peer.PeerMessageReceiverState):org.bitcoins.node.networking.peer.PeerMessageReceiver"></a><a id="toState(PeerMessageReceiverState):PeerMessageReceiver"></a>
+      <span class="permalink">
+      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageReceiver.html#toState(newState:org.bitcoins.node.networking.peer.PeerMessageReceiverState):org.bitcoins.node.networking.peer.PeerMessageReceiver" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toState</span><span class="params">(<span name="newState">newState: <a href="PeerMessageReceiverState.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiverState">PeerMessageReceiverState</a></span>)</span><span class="result">: <a href="" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiver">PeerMessageReceiver</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Transitions our PeerMessageReceiver to a new state</p>
     </li><li name="scala.AnyRef#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
       <span class="permalink">
