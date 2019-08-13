@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 190-c8219793-SNAPSHOT - org.bitcoins.chain.blockchain.Blockchain</title>
-          <meta name="description" content="Bitcoin - S 190 - c8219793 - SNAPSHOT - org.bitcoins.chain.blockchain.Blockchain" />
-          <meta name="keywords" content="Bitcoin S 190 c8219793 SNAPSHOT org.bitcoins.chain.blockchain.Blockchain" />
+          <title>Bitcoin-S 188-c89cfea9-SNAPSHOT - org.bitcoins.chain.blockchain.Blockchain</title>
+          <meta name="description" content="Bitcoin - S 188 - c89cfea9 - SNAPSHOT - org.bitcoins.chain.blockchain.Blockchain" />
+          <meta name="keywords" content="Bitcoin S 188 c89cfea9 SNAPSHOT org.bitcoins.chain.blockchain.Blockchain" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">190-c8219793-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">188-c89cfea9-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -1000,6 +1000,22 @@ You can walk the chain by</p><pre>headers.map(h <span class="kw">=&gt;</span> pr
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>IterableLike → TraversableLike → TraversableOnce → GenTraversableOnce</dd></dl></div>
+    </li><li name="org.bitcoins.chain.blockchain.Blockchain#findAtHeight" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="findAtHeight(height:Int):Option[org.bitcoins.chain.models.BlockHeaderDb]"></a><a id="findAtHeight(Int):Option[BlockHeaderDb]"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/chain/blockchain/Blockchain.html#findAtHeight(height:Int):Option[org.bitcoins.chain.models.BlockHeaderDb]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">findAtHeight</span><span class="params">(<span name="height">height: <a href="http://www.scala-lang.org/api/2.12.8/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<a href="../models/BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">BlockHeaderDb</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Finds a block header at a given height</p>
     </li><li name="scala.collection.TraversableLike#flatMap" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="flatMap[B,That](f:A=&gt;scala.collection.GenTraversableOnce[B])(implicitbf:scala.collection.generic.CanBuildFrom[Repr,B,That]):That"></a><a id="flatMap[B,That]((BlockHeaderDb)⇒GenTraversableOnce[B])(CanBuildFrom[Vector[BlockHeaderDb],B,That]):That"></a>
       <span class="permalink">
@@ -1096,6 +1112,22 @@ You can walk the chain by</p><pre>headers.map(h <span class="kw">=&gt;</span> pr
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>IterableLike → TraversableLike → GenTraversableLike → TraversableOnce → GenTraversableOnce → FilterMonadic</dd></dl></div>
+    </li><li name="org.bitcoins.chain.blockchain.Blockchain#fromHeader" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="fromHeader(header:org.bitcoins.chain.models.BlockHeaderDb):Option[org.bitcoins.chain.blockchain.Blockchain]"></a><a id="fromHeader(BlockHeaderDb):Option[Blockchain]"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/chain/blockchain/Blockchain.html#fromHeader(header:org.bitcoins.chain.models.BlockHeaderDb):Option[org.bitcoins.chain.blockchain.Blockchain]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fromHeader</span><span class="params">(<span name="header">header: <a href="../models/BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">BlockHeaderDb</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<a href="" class="extype" name="org.bitcoins.chain.blockchain.Blockchain">Blockchain</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Splits the blockchain at the header, returning a new blockchain where the best tip is the given header</p>
     </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <span class="permalink">

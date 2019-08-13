@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 190-c8219793-SNAPSHOT - org.bitcoins.chain.pow.Pow</title>
-          <meta name="description" content="Bitcoin - S 190 - c8219793 - SNAPSHOT - org.bitcoins.chain.pow.Pow" />
-          <meta name="keywords" content="Bitcoin S 190 c8219793 SNAPSHOT org.bitcoins.chain.pow.Pow" />
+          <title>Bitcoin-S 188-c89cfea9-SNAPSHOT - org.bitcoins.chain.pow.Pow</title>
+          <meta name="description" content="Bitcoin - S 188 - c89cfea9 - SNAPSHOT - org.bitcoins.chain.pow.Pow" />
+          <meta name="keywords" content="Bitcoin S 188 c89cfea9 SNAPSHOT org.bitcoins.chain.pow.Pow" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">190-c8219793-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">188-c89cfea9-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -289,9 +289,9 @@
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="org.bitcoins.chain.pow.Pow#calculateNextWorkRequired" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="calculateNextWorkRequired(currentTip:org.bitcoins.chain.models.BlockHeaderDb,firstBlock:org.bitcoins.chain.models.BlockHeaderDb,chainParams:org.bitcoins.core.protocol.blockchain.ChainParams):scala.concurrent.Future[org.bitcoins.core.number.UInt32]"></a><a id="calculateNextWorkRequired(BlockHeaderDb,BlockHeaderDb,ChainParams):Future[UInt32]"></a>
+      <a id="calculateNextWorkRequired(currentTip:org.bitcoins.chain.models.BlockHeaderDb,firstBlock:org.bitcoins.chain.models.BlockHeaderDb,chainParams:org.bitcoins.core.protocol.blockchain.ChainParams):org.bitcoins.core.number.UInt32"></a><a id="calculateNextWorkRequired(BlockHeaderDb,BlockHeaderDb,ChainParams):UInt32"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/chain/pow/Pow$.html#calculateNextWorkRequired(currentTip:org.bitcoins.chain.models.BlockHeaderDb,firstBlock:org.bitcoins.chain.models.BlockHeaderDb,chainParams:org.bitcoins.core.protocol.blockchain.ChainParams):scala.concurrent.Future[org.bitcoins.core.number.UInt32]" title="Permalink">
+      <a href="../../../../org/bitcoins/chain/pow/Pow$.html#calculateNextWorkRequired(currentTip:org.bitcoins.chain.models.BlockHeaderDb,firstBlock:org.bitcoins.chain.models.BlockHeaderDb,chainParams:org.bitcoins.core.protocol.blockchain.ChainParams):org.bitcoins.core.number.UInt32" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -300,7 +300,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">calculateNextWorkRequired</span><span class="params">(<span name="currentTip">currentTip: <a href="../models/BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">BlockHeaderDb</a></span>, <span name="firstBlock">firstBlock: <a href="../models/BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">BlockHeaderDb</a></span>, <span name="chainParams">chainParams: <a href="../../core/protocol/blockchain/ChainParams.html" class="extype" name="org.bitcoins.core.protocol.blockchain.ChainParams">ChainParams</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../../core/number/UInt32.html" class="extype" name="org.bitcoins.core.number.UInt32">UInt32</a>]</span>
+        <span class="name">calculateNextWorkRequired</span><span class="params">(<span name="currentTip">currentTip: <a href="../models/BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">BlockHeaderDb</a></span>, <span name="firstBlock">firstBlock: <a href="../models/BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">BlockHeaderDb</a></span>, <span name="chainParams">chainParams: <a href="../../core/protocol/blockchain/ChainParams.html" class="extype" name="org.bitcoins.core.protocol.blockchain.ChainParams">ChainParams</a></span>)</span><span class="result">: <a href="../../core/number/UInt32.html" class="extype" name="org.bitcoins.core.number.UInt32">UInt32</a></span>
       </span>
       
       <p class="shortcomment cmt">Calculate the next proof of work requirement for our blockchain</p><div class="fullcomment"><div class="comment cmt"><p>Calculate the next proof of work requirement for our blockchain</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Pow.html" class="extype" name="org.bitcoins.chain.pow.Pow">Pow</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://github.com/bitcoin/bitcoin/blob/35477e9e4e3f0f207ac6fa5764886b15bf9af8d0/src/pow.cpp#L49" target="_blank">bitcoin core implementation</a></p></span></dd></dl></div>
@@ -384,9 +384,9 @@
               
         </dd></dl></div>
     </li><li name="org.bitcoins.chain.pow.Pow#getNetworkWorkRequired" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getNetworkWorkRequired(tip:org.bitcoins.chain.models.BlockHeaderDb,newPotentialTip:org.bitcoins.core.protocol.blockchain.BlockHeader,blockHeaderDAO:org.bitcoins.chain.models.BlockHeaderDAO)(implicitec:scala.concurrent.ExecutionContext,implicitconfig:org.bitcoins.chain.config.ChainAppConfig):scala.concurrent.Future[org.bitcoins.core.number.UInt32]"></a><a id="getNetworkWorkRequired(BlockHeaderDb,BlockHeader,BlockHeaderDAO)(ExecutionContext,ChainAppConfig):Future[UInt32]"></a>
+      <a id="getNetworkWorkRequired(newPotentialTip:org.bitcoins.core.protocol.blockchain.BlockHeader,blockchain:org.bitcoins.chain.blockchain.Blockchain)(implicitconfig:org.bitcoins.chain.config.ChainAppConfig):org.bitcoins.core.number.UInt32"></a><a id="getNetworkWorkRequired(BlockHeader,Blockchain)(ChainAppConfig):UInt32"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/chain/pow/Pow$.html#getNetworkWorkRequired(tip:org.bitcoins.chain.models.BlockHeaderDb,newPotentialTip:org.bitcoins.core.protocol.blockchain.BlockHeader,blockHeaderDAO:org.bitcoins.chain.models.BlockHeaderDAO)(implicitec:scala.concurrent.ExecutionContext,implicitconfig:org.bitcoins.chain.config.ChainAppConfig):scala.concurrent.Future[org.bitcoins.core.number.UInt32]" title="Permalink">
+      <a href="../../../../org/bitcoins/chain/pow/Pow$.html#getNetworkWorkRequired(newPotentialTip:org.bitcoins.core.protocol.blockchain.BlockHeader,blockchain:org.bitcoins.chain.blockchain.Blockchain)(implicitconfig:org.bitcoins.chain.config.ChainAppConfig):org.bitcoins.core.number.UInt32" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -395,7 +395,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getNetworkWorkRequired</span><span class="params">(<span name="tip">tip: <a href="../models/BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">BlockHeaderDb</a></span>, <span name="newPotentialTip">newPotentialTip: <a href="../../core/protocol/blockchain/BlockHeader.html" class="extype" name="org.bitcoins.core.protocol.blockchain.BlockHeader">BlockHeader</a></span>, <span name="blockHeaderDAO">blockHeaderDAO: <a href="../models/BlockHeaderDAO.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDAO">BlockHeaderDAO</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/ExecutionContext.html#scala.concurrent.ExecutionContext" class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</a></span>, <span name="config">config: <a href="../config/ChainAppConfig.html" class="extype" name="org.bitcoins.chain.config.ChainAppConfig">ChainAppConfig</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../../core/number/UInt32.html" class="extype" name="org.bitcoins.core.number.UInt32">UInt32</a>]</span>
+        <span class="name">getNetworkWorkRequired</span><span class="params">(<span name="newPotentialTip">newPotentialTip: <a href="../../core/protocol/blockchain/BlockHeader.html" class="extype" name="org.bitcoins.core.protocol.blockchain.BlockHeader">BlockHeader</a></span>, <span name="blockchain">blockchain: <a href="../blockchain/Blockchain.html" class="extype" name="org.bitcoins.chain.blockchain.Blockchain">Blockchain</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="../config/ChainAppConfig.html" class="extype" name="org.bitcoins.chain.config.ChainAppConfig">ChainAppConfig</a></span>)</span><span class="result">: <a href="../../core/number/UInt32.html" class="extype" name="org.bitcoins.core.number.UInt32">UInt32</a></span>
       </span>
       
       <p class="shortcomment cmt">Gets the next proof of work requirement for a block</p><div class="fullcomment"><div class="comment cmt"><p>Gets the next proof of work requirement for a block</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Pow.html" class="extype" name="org.bitcoins.chain.pow.Pow">Pow</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://github.com/bitcoin/bitcoin/blob/35477e9e4e3f0f207ac6fa5764886b15bf9af8d0/src/pow.cpp#L13" target="_blank">Mimics bitcoin core implmentation</a></p></span></dd></dl></div>

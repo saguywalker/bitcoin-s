@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 190-c8219793-SNAPSHOT - org.bitcoins.chain.blockchain.Blockchain</title>
-          <meta name="description" content="Bitcoin - S 190 - c8219793 - SNAPSHOT - org.bitcoins.chain.blockchain.Blockchain" />
-          <meta name="keywords" content="Bitcoin S 190 c8219793 SNAPSHOT org.bitcoins.chain.blockchain.Blockchain" />
+          <title>Bitcoin-S 188-c89cfea9-SNAPSHOT - org.bitcoins.chain.blockchain.Blockchain</title>
+          <meta name="description" content="Bitcoin - S 188 - c89cfea9 - SNAPSHOT - org.bitcoins.chain.blockchain.Blockchain" />
+          <meta name="keywords" content="Bitcoin S 188 c89cfea9 SNAPSHOT org.bitcoins.chain.blockchain.Blockchain" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">190-c8219793-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">188-c89cfea9-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -347,9 +347,9 @@
               
         </dd></dl></div>
     </li><li name="org.bitcoins.chain.blockchain.Blockchain#connectTip" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="connectTip(header:org.bitcoins.core.protocol.blockchain.BlockHeader,blockHeaderDAO:org.bitcoins.chain.models.BlockHeaderDAO,blockchains:Vector[org.bitcoins.chain.blockchain.Blockchain])(implicitec:scala.concurrent.ExecutionContext,implicitconf:org.bitcoins.chain.config.ChainAppConfig):scala.concurrent.Future[org.bitcoins.chain.blockchain.BlockchainUpdate]"></a><a id="connectTip(BlockHeader,BlockHeaderDAO,Vector[Blockchain])(ExecutionContext,ChainAppConfig):Future[BlockchainUpdate]"></a>
+      <a id="connectTip(header:org.bitcoins.core.protocol.blockchain.BlockHeader,blockchains:Vector[org.bitcoins.chain.blockchain.Blockchain])(implicitconf:org.bitcoins.chain.config.ChainAppConfig):org.bitcoins.chain.blockchain.BlockchainUpdate"></a><a id="connectTip(BlockHeader,Vector[Blockchain])(ChainAppConfig):BlockchainUpdate"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/chain/blockchain/Blockchain$.html#connectTip(header:org.bitcoins.core.protocol.blockchain.BlockHeader,blockHeaderDAO:org.bitcoins.chain.models.BlockHeaderDAO,blockchains:Vector[org.bitcoins.chain.blockchain.Blockchain])(implicitec:scala.concurrent.ExecutionContext,implicitconf:org.bitcoins.chain.config.ChainAppConfig):scala.concurrent.Future[org.bitcoins.chain.blockchain.BlockchainUpdate]" title="Permalink">
+      <a href="../../../../org/bitcoins/chain/blockchain/Blockchain$.html#connectTip(header:org.bitcoins.core.protocol.blockchain.BlockHeader,blockchains:Vector[org.bitcoins.chain.blockchain.Blockchain])(implicitconf:org.bitcoins.chain.config.ChainAppConfig):org.bitcoins.chain.blockchain.BlockchainUpdate" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -358,7 +358,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">connectTip</span><span class="params">(<span name="header">header: <a href="../../core/protocol/blockchain/BlockHeader.html" class="extype" name="org.bitcoins.core.protocol.blockchain.BlockHeader">BlockHeader</a></span>, <span name="blockHeaderDAO">blockHeaderDAO: <a href="../models/BlockHeaderDAO.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDAO">BlockHeaderDAO</a></span>, <span name="blockchains">blockchains: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="Blockchain.html" class="extype" name="org.bitcoins.chain.blockchain.Blockchain">Blockchain</a>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/ExecutionContext.html#scala.concurrent.ExecutionContext" class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</a></span>, <span name="conf">conf: <a href="../config/ChainAppConfig.html" class="extype" name="org.bitcoins.chain.config.ChainAppConfig">ChainAppConfig</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="BlockchainUpdate.html" class="extype" name="org.bitcoins.chain.blockchain.BlockchainUpdate">BlockchainUpdate</a>]</span>
+        <span class="name">connectTip</span><span class="params">(<span name="header">header: <a href="../../core/protocol/blockchain/BlockHeader.html" class="extype" name="org.bitcoins.core.protocol.blockchain.BlockHeader">BlockHeader</a></span>, <span name="blockchains">blockchains: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="Blockchain.html" class="extype" name="org.bitcoins.chain.blockchain.Blockchain">Blockchain</a>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="conf">conf: <a href="../config/ChainAppConfig.html" class="extype" name="org.bitcoins.chain.config.ChainAppConfig">ChainAppConfig</a></span>)</span><span class="result">: <a href="BlockchainUpdate.html" class="extype" name="org.bitcoins.chain.blockchain.BlockchainUpdate">BlockchainUpdate</a></span>
       </span>
       
       <p class="shortcomment cmt">Attempts to connect the given block header with the given blockchain
@@ -369,7 +369,7 @@ chain tips.</p><div class="fullcomment"><div class="comment cmt"><p>Attempts to 
 This is done via the companion object for blockchain because
 we query <a href="../models/BlockHeaderDAO.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDAO">BlockHeaderDAO</a> for the chain tips
 We then attempt to connect this block header to all of our current
-chain tips.</p></div><dl class="paramcmts block"><dt class="param">header</dt><dd class="cmt"><p>the block header to connect to our chain</p></dd><dt class="param">blockHeaderDAO</dt><dd class="cmt"><p>where we can find our blockchain</p></dd><dt>returns</dt><dd class="cmt"><p>a <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html" class="extype" name="scala.concurrent.Future">Future</a> that contains a <a href="BlockchainUpdate.html" class="extype" name="org.bitcoins.chain.blockchain.BlockchainUpdate">BlockchainUpdate</a> indicating
+chain tips.</p></div><dl class="paramcmts block"><dt class="param">header</dt><dd class="cmt"><p>the block header to connect to our chain</p></dd><dt class="param">blockchains</dt><dd class="cmt"><p>the blockchain we are attempting to connect to</p></dd><dt>returns</dt><dd class="cmt"><p>a <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html" class="extype" name="scala.concurrent.Future">Future</a> that contains a <a href="BlockchainUpdate.html" class="extype" name="org.bitcoins.chain.blockchain.BlockchainUpdate">BlockchainUpdate</a> indicating
         we <a href="BlockchainUpdate$$Successful.html" class="extype" name="org.bitcoins.chain.blockchain.BlockchainUpdate.Successful">successful</a> connected the tip,
         or <a href="BlockchainUpdate$$Failed.html" class="extype" name="org.bitcoins.chain.blockchain.BlockchainUpdate.Failed">Failed</a> to connect to a tip</p></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
