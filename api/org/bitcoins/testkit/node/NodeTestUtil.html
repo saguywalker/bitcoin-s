@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 185-999d3aeb-SNAPSHOT - org.bitcoins.testkit.node.NodeTestUtil</title>
-          <meta name="description" content="Bitcoin - S 185 - 999d3aeb - SNAPSHOT - org.bitcoins.testkit.node.NodeTestUtil" />
-          <meta name="keywords" content="Bitcoin S 185 999d3aeb SNAPSHOT org.bitcoins.testkit.node.NodeTestUtil" />
+          <title>Bitcoin-S 183-4afdccb0-SNAPSHOT - org.bitcoins.testkit.node.NodeTestUtil</title>
+          <meta name="description" content="Bitcoin - S 183 - 4afdccb0 - SNAPSHOT - org.bitcoins.testkit.node.NodeTestUtil" />
+          <meta name="keywords" content="Bitcoin S 183 4afdccb0 SNAPSHOT org.bitcoins.testkit.node.NodeTestUtil" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">185-999d3aeb-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">183-4afdccb0-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -332,7 +332,23 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="org.bitcoins.testkit.node.NodeTestUtil#awaitSync" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="org.bitcoins.testkit.node.NodeTestUtil#awaitBestHash" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="awaitBestHash(hash:org.bitcoins.core.crypto.DoubleSha256DigestBE,spvNode:org.bitcoins.node.SpvNode)(implicitsystem:akka.actor.ActorSystem):scala.concurrent.Future[Unit]"></a><a id="awaitBestHash(DoubleSha256DigestBE,SpvNode)(ActorSystem):Future[Unit]"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/testkit/node/NodeTestUtil.html#awaitBestHash(hash:org.bitcoins.core.crypto.DoubleSha256DigestBE,spvNode:org.bitcoins.node.SpvNode)(implicitsystem:akka.actor.ActorSystem):scala.concurrent.Future[Unit]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">awaitBestHash</span><span class="params">(<span name="hash">hash: <a href="../../core/crypto/DoubleSha256DigestBE.html" class="extype" name="org.bitcoins.core.crypto.DoubleSha256DigestBE">DoubleSha256DigestBE</a></span>, <span name="spvNode">spvNode: <a href="../../node/SpvNode.html" class="extype" name="org.bitcoins.node.SpvNode">SpvNode</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="system">system: <a href="https://doc.akka.io/api/akka/2.5.24/akka/actor/ActorSystem.html#akka.actor.ActorSystem" class="extype" name="akka.actor.ActorSystem">ActorSystem</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">The future doesn't complete until the spv nodes best hash is the given hash</p>
+    </li><li name="org.bitcoins.testkit.node.NodeTestUtil#awaitSync" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="awaitSync(node:org.bitcoins.node.SpvNode,rpc:org.bitcoins.rpc.client.common.BitcoindRpcClient)(implicitsys:akka.actor.ActorSystem):scala.concurrent.Future[Unit]"></a><a id="awaitSync(SpvNode,BitcoindRpcClient)(ActorSystem):Future[Unit]"></a>
       <span class="permalink">
       <a href="../../../../org/bitcoins/testkit/node/NodeTestUtil.html#awaitSync(node:org.bitcoins.node.SpvNode,rpc:org.bitcoins.rpc.client.common.BitcoindRpcClient)(implicitsys:akka.actor.ActorSystem):scala.concurrent.Future[Unit]" title="Permalink">
@@ -347,10 +363,7 @@
         <span class="name">awaitSync</span><span class="params">(<span name="node">node: <a href="../../node/SpvNode.html" class="extype" name="org.bitcoins.node.SpvNode">SpvNode</a></span>, <span name="rpc">rpc: <a href="../../rpc/client/common/BitcoindRpcClient.html" class="extype" name="org.bitcoins.rpc.client.common.BitcoindRpcClient">BitcoindRpcClient</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="sys">sys: <a href="https://doc.akka.io/api/akka/2.5.24/akka/actor/ActorSystem.html#akka.actor.ActorSystem" class="extype" name="akka.actor.ActorSystem">ActorSystem</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a>]</span>
       </span>
       
-      <p class="shortcomment cmt">Awaits sync between the given SPV node and bitcoind client</p><div class="fullcomment"><div class="comment cmt"><p>Awaits sync between the given SPV node and bitcoind client</p><p>TODO: We should check for hash, not block height. however,
-our way of determining what the best hash is when having
-multiple tips is not good enough yet
-</p></div></div>
+      <p class="shortcomment cmt">Awaits sync between the given SPV node and bitcoind client</p>
     </li><li name="org.bitcoins.testkit.node.NodeTestUtil#client" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="client(peer:org.bitcoins.node.models.Peer,peerMsgReceiver:org.bitcoins.node.networking.peer.PeerMessageReceiver)(implicitref:akka.actor.ActorRefFactory,implicitconf:org.bitcoins.node.config.NodeAppConfig):org.bitcoins.node.networking.P2PClient"></a><a id="client(Peer,PeerMessageReceiver)(ActorRefFactory,NodeAppConfig):P2PClient"></a>
       <span class="permalink">

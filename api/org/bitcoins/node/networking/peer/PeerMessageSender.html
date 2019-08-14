@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 185-999d3aeb-SNAPSHOT - org.bitcoins.node.networking.peer.PeerMessageSender</title>
-          <meta name="description" content="Bitcoin - S 185 - 999d3aeb - SNAPSHOT - org.bitcoins.node.networking.peer.PeerMessageSender" />
-          <meta name="keywords" content="Bitcoin S 185 999d3aeb SNAPSHOT org.bitcoins.node.networking.peer.PeerMessageSender" />
+          <title>Bitcoin-S 183-4afdccb0-SNAPSHOT - org.bitcoins.node.networking.peer.PeerMessageSender</title>
+          <meta name="description" content="Bitcoin - S 183 - 4afdccb0 - SNAPSHOT - org.bitcoins.node.networking.peer.PeerMessageSender" />
+          <meta name="keywords" content="Bitcoin S 183 4afdccb0 SNAPSHOT org.bitcoins.node.networking.peer.PeerMessageSender" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">185-999d3aeb-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">183-4afdccb0-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -398,9 +398,9 @@
       
       <p class="shortcomment cmt">Initiates a connection with the given peer</p>
     </li><li name="org.bitcoins.node.networking.peer.PeerMessageSender#disconnect" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="disconnect():Unit"></a>
+      <a id="disconnect()(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Unit]"></a><a id="disconnect()(ExecutionContext):Future[Unit]"></a>
       <span class="permalink">
-      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageSender.html#disconnect():Unit" title="Permalink">
+      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageSender.html#disconnect()(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Unit]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -409,7 +409,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">disconnect</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">disconnect</span><span class="params">()</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/ExecutionContext.html#scala.concurrent.ExecutionContext" class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a>]</span>
       </span>
       
       <p class="shortcomment cmt">Disconnects the given peer</p>
@@ -450,6 +450,54 @@
                 <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="org.bitcoins.node.networking.peer.PeerMessageSender#isConnected" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isConnected()(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Boolean]"></a><a id="isConnected()(ExecutionContext):Future[Boolean]"></a>
+      <span class="permalink">
+      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageSender.html#isConnected()(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Boolean]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isConnected</span><span class="params">()</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/ExecutionContext.html#scala.concurrent.ExecutionContext" class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a>]</span>
+      </span>
+      
+      
+    </li><li name="org.bitcoins.node.networking.peer.PeerMessageSender#isDisconnected" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isDisconnected()(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Boolean]"></a><a id="isDisconnected()(ExecutionContext):Future[Boolean]"></a>
+      <span class="permalink">
+      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageSender.html#isDisconnected()(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Boolean]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isDisconnected</span><span class="params">()</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/ExecutionContext.html#scala.concurrent.ExecutionContext" class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a>]</span>
+      </span>
+      
+      
+    </li><li name="org.bitcoins.node.networking.peer.PeerMessageSender#isInitialized" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isInitialized()(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Boolean]"></a><a id="isInitialized()(ExecutionContext):Future[Boolean]"></a>
+      <span class="permalink">
+      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageSender.html#isInitialized()(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Boolean]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInitialized</span><span class="params">()</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/ExecutionContext.html#scala.concurrent.ExecutionContext" class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a>]</span>
+      </span>
+      
+      
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <span class="permalink">
@@ -541,9 +589,9 @@
               
         </dd></dl></div>
     </li><li name="org.bitcoins.node.networking.peer.PeerMessageSender#sendFilterAddMessage" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="sendFilterAddMessage(hash:org.bitcoins.core.crypto.HashDigest):Unit"></a><a id="sendFilterAddMessage(HashDigest):Unit"></a>
+      <a id="sendFilterAddMessage(hash:org.bitcoins.core.crypto.HashDigest)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Unit]"></a><a id="sendFilterAddMessage(HashDigest)(ExecutionContext):Future[Unit]"></a>
       <span class="permalink">
-      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageSender.html#sendFilterAddMessage(hash:org.bitcoins.core.crypto.HashDigest):Unit" title="Permalink">
+      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageSender.html#sendFilterAddMessage(hash:org.bitcoins.core.crypto.HashDigest)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Unit]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -552,14 +600,14 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">sendFilterAddMessage</span><span class="params">(<span name="hash">hash: <a href="../../../core/crypto/HashDigest.html" class="extype" name="org.bitcoins.core.crypto.HashDigest">HashDigest</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">sendFilterAddMessage</span><span class="params">(<span name="hash">hash: <a href="../../../core/crypto/HashDigest.html" class="extype" name="org.bitcoins.core.crypto.HashDigest">HashDigest</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/ExecutionContext.html#scala.concurrent.ExecutionContext" class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a>]</span>
       </span>
       
       
     </li><li name="org.bitcoins.node.networking.peer.PeerMessageSender#sendFilterClearMessage" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="sendFilterClearMessage():Unit"></a>
+      <a id="sendFilterClearMessage()(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Unit]"></a><a id="sendFilterClearMessage()(ExecutionContext):Future[Unit]"></a>
       <span class="permalink">
-      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageSender.html#sendFilterClearMessage():Unit" title="Permalink">
+      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageSender.html#sendFilterClearMessage()(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Unit]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -568,14 +616,14 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">sendFilterClearMessage</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">sendFilterClearMessage</span><span class="params">()</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/ExecutionContext.html#scala.concurrent.ExecutionContext" class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a>]</span>
       </span>
       
       
     </li><li name="org.bitcoins.node.networking.peer.PeerMessageSender#sendFilterLoadMessage" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="sendFilterLoadMessage(bloom:org.bitcoins.core.bloom.BloomFilter):Unit"></a><a id="sendFilterLoadMessage(BloomFilter):Unit"></a>
+      <a id="sendFilterLoadMessage(bloom:org.bitcoins.core.bloom.BloomFilter)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Unit]"></a><a id="sendFilterLoadMessage(BloomFilter)(ExecutionContext):Future[Unit]"></a>
       <span class="permalink">
-      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageSender.html#sendFilterLoadMessage(bloom:org.bitcoins.core.bloom.BloomFilter):Unit" title="Permalink">
+      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageSender.html#sendFilterLoadMessage(bloom:org.bitcoins.core.bloom.BloomFilter)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Unit]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -584,14 +632,14 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">sendFilterLoadMessage</span><span class="params">(<span name="bloom">bloom: <a href="../../../core/bloom/BloomFilter.html" class="extype" name="org.bitcoins.core.bloom.BloomFilter">BloomFilter</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">sendFilterLoadMessage</span><span class="params">(<span name="bloom">bloom: <a href="../../../core/bloom/BloomFilter.html" class="extype" name="org.bitcoins.core.bloom.BloomFilter">BloomFilter</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/ExecutionContext.html#scala.concurrent.ExecutionContext" class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a>]</span>
       </span>
       
       
     </li><li name="org.bitcoins.node.networking.peer.PeerMessageSender#sendGetDataMessage" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="sendGetDataMessage(headers:org.bitcoins.core.protocol.blockchain.BlockHeader*):Unit"></a><a id="sendGetDataMessage(BlockHeader*):Unit"></a>
+      <a id="sendGetDataMessage(headers:org.bitcoins.core.protocol.blockchain.BlockHeader*)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Unit]"></a><a id="sendGetDataMessage(BlockHeader*)(ExecutionContext):Future[Unit]"></a>
       <span class="permalink">
-      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageSender.html#sendGetDataMessage(headers:org.bitcoins.core.protocol.blockchain.BlockHeader*):Unit" title="Permalink">
+      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageSender.html#sendGetDataMessage(headers:org.bitcoins.core.protocol.blockchain.BlockHeader*)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Unit]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -600,14 +648,14 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">sendGetDataMessage</span><span class="params">(<span name="headers">headers: <a href="../../../core/protocol/blockchain/BlockHeader.html" class="extype" name="org.bitcoins.core.protocol.blockchain.BlockHeader">BlockHeader</a>*</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">sendGetDataMessage</span><span class="params">(<span name="headers">headers: <a href="../../../core/protocol/blockchain/BlockHeader.html" class="extype" name="org.bitcoins.core.protocol.blockchain.BlockHeader">BlockHeader</a>*</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/ExecutionContext.html#scala.concurrent.ExecutionContext" class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a>]</span>
       </span>
       
       <p class="shortcomment cmt">Sends a request for filtered blocks matching the given headers</p>
     </li><li name="org.bitcoins.node.networking.peer.PeerMessageSender#sendGetHeadersMessage" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="sendGetHeadersMessage(lastHash:org.bitcoins.core.crypto.DoubleSha256Digest):Unit"></a><a id="sendGetHeadersMessage(DoubleSha256Digest):Unit"></a>
+      <a id="sendGetHeadersMessage(lastHash:org.bitcoins.core.crypto.DoubleSha256Digest)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Unit]"></a><a id="sendGetHeadersMessage(DoubleSha256Digest)(ExecutionContext):Future[Unit]"></a>
       <span class="permalink">
-      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageSender.html#sendGetHeadersMessage(lastHash:org.bitcoins.core.crypto.DoubleSha256Digest):Unit" title="Permalink">
+      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageSender.html#sendGetHeadersMessage(lastHash:org.bitcoins.core.crypto.DoubleSha256Digest)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Unit]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -616,14 +664,14 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">sendGetHeadersMessage</span><span class="params">(<span name="lastHash">lastHash: <a href="../../../core/crypto/DoubleSha256Digest.html" class="extype" name="org.bitcoins.core.crypto.DoubleSha256Digest">DoubleSha256Digest</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">sendGetHeadersMessage</span><span class="params">(<span name="lastHash">lastHash: <a href="../../../core/crypto/DoubleSha256Digest.html" class="extype" name="org.bitcoins.core.crypto.DoubleSha256Digest">DoubleSha256Digest</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/ExecutionContext.html#scala.concurrent.ExecutionContext" class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a>]</span>
       </span>
       
       
     </li><li name="org.bitcoins.node.networking.peer.PeerMessageSender#sendHeadersMessage" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="sendHeadersMessage():Unit"></a>
+      <a id="sendHeadersMessage()(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Unit]"></a><a id="sendHeadersMessage()(ExecutionContext):Future[Unit]"></a>
       <span class="permalink">
-      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageSender.html#sendHeadersMessage():Unit" title="Permalink">
+      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageSender.html#sendHeadersMessage()(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Unit]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -632,14 +680,14 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">sendHeadersMessage</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">sendHeadersMessage</span><span class="params">()</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/ExecutionContext.html#scala.concurrent.ExecutionContext" class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a>]</span>
       </span>
       
       
     </li><li name="org.bitcoins.node.networking.peer.PeerMessageSender#sendInventoryMessage" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="sendInventoryMessage(transactions:org.bitcoins.core.protocol.transaction.Transaction*):Unit"></a><a id="sendInventoryMessage(Transaction*):Unit"></a>
+      <a id="sendInventoryMessage(transactions:org.bitcoins.core.protocol.transaction.Transaction*)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Unit]"></a><a id="sendInventoryMessage(Transaction*)(ExecutionContext):Future[Unit]"></a>
       <span class="permalink">
-      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageSender.html#sendInventoryMessage(transactions:org.bitcoins.core.protocol.transaction.Transaction*):Unit" title="Permalink">
+      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageSender.html#sendInventoryMessage(transactions:org.bitcoins.core.protocol.transaction.Transaction*)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Unit]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -648,15 +696,15 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">sendInventoryMessage</span><span class="params">(<span name="transactions">transactions: <a href="../../../core/protocol/transaction/Transaction.html" class="extype" name="org.bitcoins.core.protocol.transaction.Transaction">Transaction</a>*</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">sendInventoryMessage</span><span class="params">(<span name="transactions">transactions: <a href="../../../core/protocol/transaction/Transaction.html" class="extype" name="org.bitcoins.core.protocol.transaction.Transaction">Transaction</a>*</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/ExecutionContext.html#scala.concurrent.ExecutionContext" class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a>]</span>
       </span>
       
       <p class="shortcomment cmt">Sends a inventory message with the given transactions
 </p>
     </li><li name="org.bitcoins.node.networking.peer.PeerMessageSender#sendPong" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="sendPong(ping:org.bitcoins.core.p2p.PingMessage):Unit"></a><a id="sendPong(PingMessage):Unit"></a>
+      <a id="sendPong(ping:org.bitcoins.core.p2p.PingMessage)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Unit]"></a><a id="sendPong(PingMessage)(ExecutionContext):Future[Unit]"></a>
       <span class="permalink">
-      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageSender.html#sendPong(ping:org.bitcoins.core.p2p.PingMessage):Unit" title="Permalink">
+      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageSender.html#sendPong(ping:org.bitcoins.core.p2p.PingMessage)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Unit]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -665,14 +713,14 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">sendPong</span><span class="params">(<span name="ping">ping: <a href="../../../core/p2p/PingMessage.html" class="extype" name="org.bitcoins.core.p2p.PingMessage">PingMessage</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">sendPong</span><span class="params">(<span name="ping">ping: <a href="../../../core/p2p/PingMessage.html" class="extype" name="org.bitcoins.core.p2p.PingMessage">PingMessage</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/ExecutionContext.html#scala.concurrent.ExecutionContext" class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a>]</span>
       </span>
       
       <p class="shortcomment cmt">Responds to a ping message</p>
     </li><li name="org.bitcoins.node.networking.peer.PeerMessageSender#sendTransactionMessage" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="sendTransactionMessage(transaction:org.bitcoins.core.protocol.transaction.Transaction):Unit"></a><a id="sendTransactionMessage(Transaction):Unit"></a>
+      <a id="sendTransactionMessage(transaction:org.bitcoins.core.protocol.transaction.Transaction)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Unit]"></a><a id="sendTransactionMessage(Transaction)(ExecutionContext):Future[Unit]"></a>
       <span class="permalink">
-      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageSender.html#sendTransactionMessage(transaction:org.bitcoins.core.protocol.transaction.Transaction):Unit" title="Permalink">
+      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageSender.html#sendTransactionMessage(transaction:org.bitcoins.core.protocol.transaction.Transaction)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Unit]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -681,14 +729,14 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">sendTransactionMessage</span><span class="params">(<span name="transaction">transaction: <a href="../../../core/protocol/transaction/Transaction.html" class="extype" name="org.bitcoins.core.protocol.transaction.Transaction">Transaction</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">sendTransactionMessage</span><span class="params">(<span name="transaction">transaction: <a href="../../../core/protocol/transaction/Transaction.html" class="extype" name="org.bitcoins.core.protocol.transaction.Transaction">Transaction</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/ExecutionContext.html#scala.concurrent.ExecutionContext" class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a>]</span>
       </span>
       
       
     </li><li name="org.bitcoins.node.networking.peer.PeerMessageSender#sendVerackMessage" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="sendVerackMessage():Unit"></a>
+      <a id="sendVerackMessage()(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Unit]"></a><a id="sendVerackMessage()(ExecutionContext):Future[Unit]"></a>
       <span class="permalink">
-      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageSender.html#sendVerackMessage():Unit" title="Permalink">
+      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageSender.html#sendVerackMessage()(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Unit]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -697,14 +745,14 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">sendVerackMessage</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">sendVerackMessage</span><span class="params">()</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/ExecutionContext.html#scala.concurrent.ExecutionContext" class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a>]</span>
       </span>
       
       
     </li><li name="org.bitcoins.node.networking.peer.PeerMessageSender#sendVersionMessage" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="sendVersionMessage():Unit"></a>
+      <a id="sendVersionMessage()(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Unit]"></a><a id="sendVersionMessage()(ExecutionContext):Future[Unit]"></a>
       <span class="permalink">
-      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageSender.html#sendVersionMessage():Unit" title="Permalink">
+      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageSender.html#sendVersionMessage()(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Unit]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -713,7 +761,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">sendVersionMessage</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">sendVersionMessage</span><span class="params">()</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/ExecutionContext.html#scala.concurrent.ExecutionContext" class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a>]</span>
       </span>
       
       <p class="shortcomment cmt">Sends a <a href="../../../core/p2p/VersionMessage.html" class="extype" name="org.bitcoins.core.p2p.VersionMessage">VersionMessage</a> to our peer</p>
