@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 188-c89cfea9-SNAPSHOT - org.bitcoins.core.script.locktime</title>
-          <meta name="description" content="Bitcoin - S 188 - c89cfea9 - SNAPSHOT - org.bitcoins.core.script.locktime" />
-          <meta name="keywords" content="Bitcoin S 188 c89cfea9 SNAPSHOT org.bitcoins.core.script.locktime" />
+          <title>Bitcoin-S 185-999d3aeb-SNAPSHOT - org.bitcoins.core.script.locktime</title>
+          <meta name="description" content="Bitcoin - S 185 - 999d3aeb - SNAPSHOT - org.bitcoins.core.script.locktime" />
+          <meta name="keywords" content="Bitcoin S 185 999d3aeb SNAPSHOT org.bitcoins.core.script.locktime" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">188-c89cfea9-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">185-999d3aeb-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -421,9 +421,9 @@
       
       <p class="shortcomment cmt">Created by chris on 2/8/16.</p>
     </li><li name="org.bitcoins.core.script.locktime.LocktimeOperation" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="LocktimeOperationextendsNetworkElementwithScriptOperation"></a><a id="LocktimeOperation:LocktimeOperation"></a>
+      <a id="LocktimeOperationextendsScriptOperation"></a><a id="LocktimeOperation:LocktimeOperation"></a>
       <span class="permalink">
-      <a href="../../../../../org/bitcoins/core/script/locktime/index.html#LocktimeOperationextendsNetworkElementwithScriptOperation" title="Permalink">
+      <a href="../../../../../org/bitcoins/core/script/locktime/index.html#LocktimeOperationextendsScriptOperation" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -432,7 +432,7 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="Created by chris on 1/6/16." href="LocktimeOperation.html"><span class="name">LocktimeOperation</span></a><span class="result"> extends <a href="../../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="../constant/ScriptOperation.html" class="extype" name="org.bitcoins.core.script.constant.ScriptOperation">constant.ScriptOperation</a></span>
+        <a title="Created by chris on 1/6/16." href="LocktimeOperation.html"><span class="name">LocktimeOperation</span></a><span class="result"> extends <a href="../constant/ScriptOperation.html" class="extype" name="org.bitcoins.core.script.constant.ScriptOperation">constant.ScriptOperation</a></span>
       </span>
       
       <p class="shortcomment cmt">Created by chris on 1/6/16.</p>
@@ -488,7 +488,7 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="Marks transaction as invalid if the top stack item is greater than the transaction's nLockTime field, otherwise script evaluation continues as though an OP_NOP was executed." href="OP_CHECKLOCKTIMEVERIFY$.html"><span class="name">OP_CHECKLOCKTIMEVERIFY</span></a><span class="result"> extends <a href="../../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="LocktimeOperation.html" class="extype" name="org.bitcoins.core.script.locktime.LocktimeOperation">LocktimeOperation</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="Marks transaction as invalid if the top stack item is greater than the transaction's nLockTime field, otherwise script evaluation continues as though an OP_NOP was executed." href="OP_CHECKLOCKTIMEVERIFY$.html"><span class="name">OP_CHECKLOCKTIMEVERIFY</span></a><span class="result"> extends <a href="LocktimeOperation.html" class="extype" name="org.bitcoins.core.script.locktime.LocktimeOperation">LocktimeOperation</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">Marks transaction as invalid if the top stack item is greater than the transaction's nLockTime field,
@@ -512,7 +512,7 @@ The precise semantics are described in BIP 0065
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="When executed, if any of the following conditions are true, the script interpreter will terminate with an error: 1.) the stack is empty; or 2.) the top item on the stack is less than 0; or 3.) the top item on the stack has the disable flag (1 &lt;&lt; 31) unset; and the transaction version is less than 2; or the transaction input sequence number disable flag (1 &lt;&lt; 31) is set; or the relative lock-time type is not the same; or the top stack item is greater than the transaction sequence (when masked according to the BIP68); Otherwise, script execution will continue as if a NOP had been executed." href="OP_CHECKSEQUENCEVERIFY$.html"><span class="name">OP_CHECKSEQUENCEVERIFY</span></a><span class="result"> extends <a href="../../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="LocktimeOperation.html" class="extype" name="org.bitcoins.core.script.locktime.LocktimeOperation">LocktimeOperation</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="When executed, if any of the following conditions are true, the script interpreter will terminate with an error: 1.) the stack is empty; or 2.) the top item on the stack is less than 0; or 3.) the top item on the stack has the disable flag (1 &lt;&lt; 31) unset; and the transaction version is less than 2; or the transaction input sequence number disable flag (1 &lt;&lt; 31) is set; or the relative lock-time type is not the same; or the top stack item is greater than the transaction sequence (when masked according to the BIP68); Otherwise, script execution will continue as if a NOP had been executed." href="OP_CHECKSEQUENCEVERIFY$.html"><span class="name">OP_CHECKSEQUENCEVERIFY</span></a><span class="result"> extends <a href="LocktimeOperation.html" class="extype" name="org.bitcoins.core.script.locktime.LocktimeOperation">LocktimeOperation</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">When executed, if any of the following conditions are true, the script interpreter will terminate with an error:

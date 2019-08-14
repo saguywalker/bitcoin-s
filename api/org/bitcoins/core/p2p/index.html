@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 188-c89cfea9-SNAPSHOT - org.bitcoins.core.p2p</title>
-          <meta name="description" content="Bitcoin - S 188 - c89cfea9 - SNAPSHOT - org.bitcoins.core.p2p" />
-          <meta name="keywords" content="Bitcoin S 188 c89cfea9 SNAPSHOT org.bitcoins.core.p2p" />
+          <title>Bitcoin-S 185-999d3aeb-SNAPSHOT - org.bitcoins.core.p2p</title>
+          <meta name="description" content="Bitcoin - S 185 - 999d3aeb - SNAPSHOT - org.bitcoins.core.p2p" />
+          <meta name="keywords" content="Bitcoin S 185 999d3aeb SNAPSHOT org.bitcoins.core.p2p" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">188-c89cfea9-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">185-999d3aeb-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -618,9 +618,9 @@ key derivation paths.
         <div id="types" class="types members">
               <h3>Type Members</h3>
               <ol><li name="org.bitcoins.core.p2p.AddrMessage" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="AddrMessageextendsNetworkElementwithControlPayload"></a><a id="AddrMessage:AddrMessage"></a>
+      <a id="AddrMessageextendsControlPayload"></a><a id="AddrMessage:AddrMessage"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/index.html#AddrMessageextendsNetworkElementwithControlPayload" title="Permalink">
+      <a href="../../../../org/bitcoins/core/p2p/index.html#AddrMessageextendsControlPayload" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -629,7 +629,7 @@ key derivation paths.
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="The addr (IP address) message relays connection information for peers on the network." href="AddrMessage.html"><span class="name">AddrMessage</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ControlPayload.html" class="extype" name="org.bitcoins.core.p2p.ControlPayload">ControlPayload</a></span>
+        <a title="The addr (IP address) message relays connection information for peers on the network." href="AddrMessage.html"><span class="name">AddrMessage</span></a><span class="result"> extends <a href="ControlPayload.html" class="extype" name="org.bitcoins.core.p2p.ControlPayload">ControlPayload</a></span>
       </span>
       
       <p class="shortcomment cmt">The addr (IP address) message relays connection information for peers on the network.</p><div class="fullcomment"><div class="comment cmt"><p>The addr (IP address) message relays connection information for peers on the network.
@@ -639,9 +639,9 @@ Some of its peers send that information to their peers (also unsolicited),
 some of which further distribute it, allowing decentralized peer discovery for
 any program already on the network.</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://bitcoin.org/en/developer-reference#addr" target="_blank">https://bitcoin.org/en/developer-reference#addr</a></p></span></dd></dl></div>
     </li><li name="org.bitcoins.core.p2p.BlockMessage" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="BlockMessageextendsNetworkElementwithDataPayloadwithProductwithSerializable"></a><a id="BlockMessage:BlockMessage"></a>
+      <a id="BlockMessageextendsDataPayloadwithProductwithSerializable"></a><a id="BlockMessage:BlockMessage"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/index.html#BlockMessageextendsNetworkElementwithDataPayloadwithProductwithSerializable" title="Permalink">
+      <a href="../../../../org/bitcoins/core/p2p/index.html#BlockMessageextendsDataPayloadwithProductwithSerializable" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -650,16 +650,16 @@ any program already on the network.</p></div><dl class="attributes block"> <dt>S
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="The block message transmits a single serialized block" href="BlockMessage.html"><span class="name">BlockMessage</span></a><span class="params">(<span name="block">block: <a href="../protocol/blockchain/Block.html" class="extype" name="org.bitcoins.core.protocol.blockchain.Block">Block</a></span>)</span><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="DataPayload.html" class="extype" name="org.bitcoins.core.p2p.DataPayload">DataPayload</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="The block message transmits a single serialized block" href="BlockMessage.html"><span class="name">BlockMessage</span></a><span class="params">(<span name="block">block: <a href="../protocol/blockchain/Block.html" class="extype" name="org.bitcoins.core.protocol.blockchain.Block">Block</a></span>)</span><span class="result"> extends <a href="DataPayload.html" class="extype" name="org.bitcoins.core.p2p.DataPayload">DataPayload</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">The block message transmits a single serialized block
 </p><div class="fullcomment"><div class="comment cmt"><p>The block message transmits a single serialized block
 </p></div><dl class="paramcmts block"><dt class="param">block</dt><dd class="cmt"><p>The block being transmitted inside of this message</p></dd></dl><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://bitcoin.org/en/developer-reference#block" target="_blank">https://bitcoin.org/en/developer-reference#block</a></p></span></dd></dl></div>
     </li><li name="org.bitcoins.core.p2p.ControlPayload" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="ControlPayloadextendsNetworkElementwithNetworkPayload"></a><a id="ControlPayload:ControlPayload"></a>
+      <a id="ControlPayloadextendsNetworkPayload"></a><a id="ControlPayload:ControlPayload"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/index.html#ControlPayloadextendsNetworkElementwithNetworkPayload" title="Permalink">
+      <a href="../../../../org/bitcoins/core/p2p/index.html#ControlPayloadextendsNetworkPayload" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -668,16 +668,16 @@ any program already on the network.</p></div><dl class="attributes block"> <dt>S
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="Represents a control message on this network https://bitcoin.org/en/developer-reference#control-messages" href="ControlPayload.html"><span class="name">ControlPayload</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="NetworkPayload.html" class="extype" name="org.bitcoins.core.p2p.NetworkPayload">NetworkPayload</a></span>
+        <a title="Represents a control message on this network https://bitcoin.org/en/developer-reference#control-messages" href="ControlPayload.html"><span class="name">ControlPayload</span></a><span class="result"> extends <a href="NetworkPayload.html" class="extype" name="org.bitcoins.core.p2p.NetworkPayload">NetworkPayload</a></span>
       </span>
       
       <p class="shortcomment cmt">Represents a control message on this network
 <a href="https://bitcoin.org/en/developer-reference#control-messages" target="_blank">https://bitcoin.org/en/developer-reference#control-messages</a>
 </p>
     </li><li name="org.bitcoins.core.p2p.DataPayload" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="DataPayloadextendsNetworkElementwithNetworkPayload"></a><a id="DataPayload:DataPayload"></a>
+      <a id="DataPayloadextendsNetworkPayload"></a><a id="DataPayload:DataPayload"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/index.html#DataPayloadextendsNetworkElementwithNetworkPayload" title="Permalink">
+      <a href="../../../../org/bitcoins/core/p2p/index.html#DataPayloadextendsNetworkPayload" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -686,16 +686,16 @@ any program already on the network.</p></div><dl class="attributes block"> <dt>S
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="Represents a data message inside of bitcoin core" href="DataPayload.html"><span class="name">DataPayload</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="NetworkPayload.html" class="extype" name="org.bitcoins.core.p2p.NetworkPayload">NetworkPayload</a></span>
+        <a title="Represents a data message inside of bitcoin core" href="DataPayload.html"><span class="name">DataPayload</span></a><span class="result"> extends <a href="NetworkPayload.html" class="extype" name="org.bitcoins.core.p2p.NetworkPayload">NetworkPayload</a></span>
       </span>
       
       <p class="shortcomment cmt">Represents a data message inside of bitcoin core
 </p><div class="fullcomment"><div class="comment cmt"><p>Represents a data message inside of bitcoin core
 </p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://bitcoin.org/en/developer-reference#data-messages" target="_blank">https://bitcoin.org/en/developer-reference#data-messages</a></p></span></dd></dl></div>
     </li><li name="org.bitcoins.core.p2p.FeeFilterMessage" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="FeeFilterMessageextendsNetworkElementwithControlPayload"></a><a id="FeeFilterMessage:FeeFilterMessage"></a>
+      <a id="FeeFilterMessageextendsControlPayload"></a><a id="FeeFilterMessage:FeeFilterMessage"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/index.html#FeeFilterMessageextendsNetworkElementwithControlPayload" title="Permalink">
+      <a href="../../../../org/bitcoins/core/p2p/index.html#FeeFilterMessageextendsControlPayload" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -704,7 +704,7 @@ any program already on the network.</p></div><dl class="attributes block"> <dt>S
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="The feefilter message is a request to the receiving peer to not relay any transaction inv messages to the sending peer where the fee rate for the transaction is below the fee rate specified in the feefilter message." href="FeeFilterMessage.html"><span class="name">FeeFilterMessage</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ControlPayload.html" class="extype" name="org.bitcoins.core.p2p.ControlPayload">ControlPayload</a></span>
+        <a title="The feefilter message is a request to the receiving peer to not relay any transaction inv messages to the sending peer where the fee rate for the transaction is below the fee rate specified in the feefilter message." href="FeeFilterMessage.html"><span class="name">FeeFilterMessage</span></a><span class="result"> extends <a href="ControlPayload.html" class="extype" name="org.bitcoins.core.p2p.ControlPayload">ControlPayload</a></span>
       </span>
       
       <p class="shortcomment cmt">The feefilter message is a request to the receiving peer to not relay any transaction inv messages
@@ -719,9 +719,9 @@ into its mempool, and therefore that the peers can skip relaying inv messages fo
 that fee rate to that node.
 </p></div></div>
     </li><li name="org.bitcoins.core.p2p.FilterAddMessage" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="FilterAddMessageextendsNetworkElementwithControlPayload"></a><a id="FilterAddMessage:FilterAddMessage"></a>
+      <a id="FilterAddMessageextendsControlPayload"></a><a id="FilterAddMessage:FilterAddMessage"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/index.html#FilterAddMessageextendsNetworkElementwithControlPayload" title="Permalink">
+      <a href="../../../../org/bitcoins/core/p2p/index.html#FilterAddMessageextendsControlPayload" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -730,7 +730,7 @@ that fee rate to that node.
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="The filteradd message tells the receiving peer to add a single element to a previously-set bloom filter, such as a new public key." href="FilterAddMessage.html"><span class="name">FilterAddMessage</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ControlPayload.html" class="extype" name="org.bitcoins.core.p2p.ControlPayload">ControlPayload</a></span>
+        <a title="The filteradd message tells the receiving peer to add a single element to a previously-set bloom filter, such as a new public key." href="FilterAddMessage.html"><span class="name">FilterAddMessage</span></a><span class="result"> extends <a href="ControlPayload.html" class="extype" name="org.bitcoins.core.p2p.ControlPayload">ControlPayload</a></span>
       </span>
       
       <p class="shortcomment cmt">The filteradd message tells the receiving peer to add a single element to a
@@ -739,9 +739,9 @@ previously-set bloom filter, such as a new public key.
 The element is sent directly to the receiving peer; the peer then uses the parameters
 set in the filterload message to add the element to the bloom filter.</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://bitcoin.org/en/developer-reference#filteradd" target="_blank">https://bitcoin.org/en/developer-reference#filteradd</a></p></span></dd></dl></div>
     </li><li name="org.bitcoins.core.p2p.FilterLoadMessage" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="FilterLoadMessageextendsNetworkElementwithControlPayload"></a><a id="FilterLoadMessage:FilterLoadMessage"></a>
+      <a id="FilterLoadMessageextendsControlPayload"></a><a id="FilterLoadMessage:FilterLoadMessage"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/index.html#FilterLoadMessageextendsNetworkElementwithControlPayload" title="Permalink">
+      <a href="../../../../org/bitcoins/core/p2p/index.html#FilterLoadMessageextendsControlPayload" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -750,7 +750,7 @@ set in the filterload message to add the element to the bloom filter.</p></div><
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="The filterload message tells the receiving peer to filter all relayed transactions and requested merkle blocks through the provided filter." href="FilterLoadMessage.html"><span class="name">FilterLoadMessage</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ControlPayload.html" class="extype" name="org.bitcoins.core.p2p.ControlPayload">ControlPayload</a></span>
+        <a title="The filterload message tells the receiving peer to filter all relayed transactions and requested merkle blocks through the provided filter." href="FilterLoadMessage.html"><span class="name">FilterLoadMessage</span></a><span class="result"> extends <a href="ControlPayload.html" class="extype" name="org.bitcoins.core.p2p.ControlPayload">ControlPayload</a></span>
       </span>
       
       <p class="shortcomment cmt">The filterload message tells the receiving peer to filter all relayed transactions and
@@ -759,9 +759,9 @@ requested merkle blocks through the provided filter.
 This allows clients to receive transactions relevant to their wallet plus a configurable
 rate of false positive transactions which can provide plausible-deniability privacy.</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://bitcoin.org/en/developer-reference#filterload" target="_blank">https://bitcoin.org/en/developer-reference#filterload</a></p></span></dd></dl></div>
     </li><li name="org.bitcoins.core.p2p.GetBlocksMessage" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="GetBlocksMessageextendsNetworkElementwithDataPayload"></a><a id="GetBlocksMessage:GetBlocksMessage"></a>
+      <a id="GetBlocksMessageextendsDataPayload"></a><a id="GetBlocksMessage:GetBlocksMessage"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/index.html#GetBlocksMessageextendsNetworkElementwithDataPayload" title="Permalink">
+      <a href="../../../../org/bitcoins/core/p2p/index.html#GetBlocksMessageextendsDataPayload" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -770,7 +770,7 @@ rate of false positive transactions which can provide plausible-deniability priv
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="The getblocks message requests an inv message that provides block header hashes starting from a particular point in the block chain." href="GetBlocksMessage.html"><span class="name">GetBlocksMessage</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="DataPayload.html" class="extype" name="org.bitcoins.core.p2p.DataPayload">DataPayload</a></span>
+        <a title="The getblocks message requests an inv message that provides block header hashes starting from a particular point in the block chain." href="GetBlocksMessage.html"><span class="name">GetBlocksMessage</span></a><span class="result"> extends <a href="DataPayload.html" class="extype" name="org.bitcoins.core.p2p.DataPayload">DataPayload</a></span>
       </span>
       
       <p class="shortcomment cmt">The <code>getblocks</code> message requests an inv message that provides block header hashes
@@ -779,9 +779,9 @@ starting from a particular point in the block chain.
 It allows a peer which has been disconnected or started for the first time to get the data
 it needs to request the blocks it hasn’t seen.</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p>[https://bitcoin.org/en/developer-reference#getblocks]]</p></span></dd></dl></div>
     </li><li name="org.bitcoins.core.p2p.GetDataMessage" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="GetDataMessageextendsNetworkElementwithDataPayloadwithProductwithSerializable"></a><a id="GetDataMessage:GetDataMessage"></a>
+      <a id="GetDataMessageextendsDataPayloadwithProductwithSerializable"></a><a id="GetDataMessage:GetDataMessage"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/index.html#GetDataMessageextendsNetworkElementwithDataPayloadwithProductwithSerializable" title="Permalink">
+      <a href="../../../../org/bitcoins/core/p2p/index.html#GetDataMessageextendsDataPayloadwithProductwithSerializable" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -790,7 +790,7 @@ it needs to request the blocks it hasn’t seen.</p></div><dl class="attributes 
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="The getdata message requests one or more data objects from another node." href="GetDataMessage.html"><span class="name">GetDataMessage</span></a><span class="params">(<span name="inventoryCount">inventoryCount: <a href="../protocol/CompactSizeUInt.html" class="extype" name="org.bitcoins.core.protocol.CompactSizeUInt">CompactSizeUInt</a></span>, <span name="inventories">inventories: <a href="../../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="Inventory.html" class="extype" name="org.bitcoins.core.p2p.Inventory">Inventory</a>]</span>)</span><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="DataPayload.html" class="extype" name="org.bitcoins.core.p2p.DataPayload">DataPayload</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="The getdata message requests one or more data objects from another node." href="GetDataMessage.html"><span class="name">GetDataMessage</span></a><span class="params">(<span name="inventoryCount">inventoryCount: <a href="../protocol/CompactSizeUInt.html" class="extype" name="org.bitcoins.core.protocol.CompactSizeUInt">CompactSizeUInt</a></span>, <span name="inventories">inventories: <a href="../../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="Inventory.html" class="extype" name="org.bitcoins.core.p2p.Inventory">Inventory</a>]</span>)</span><span class="result"> extends <a href="DataPayload.html" class="extype" name="org.bitcoins.core.p2p.DataPayload">DataPayload</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">The getdata message requests one or more data objects from another node.</p><div class="fullcomment"><div class="comment cmt"><p>The getdata message requests one or more data objects from another node.
@@ -798,9 +798,9 @@ The objects are requested by an inventory,
 which the requesting node typically previously received by way of an inv message.
 </p></div><dl class="paramcmts block"><dt class="param">inventoryCount</dt><dd class="cmt"><p>The number of inventory enteries</p></dd><dt class="param">inventories</dt><dd class="cmt"><p>One or more inventory entries up to a maximum of 50,000 entries.</p></dd></dl><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://bitcoin.org/en/developer-reference#getdata" target="_blank">https://bitcoin.org/en/developer-reference#getdata</a></p></span></dd></dl></div>
     </li><li name="org.bitcoins.core.p2p.GetHeadersMessage" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="GetHeadersMessageextendsNetworkElementwithDataPayload"></a><a id="GetHeadersMessage:GetHeadersMessage"></a>
+      <a id="GetHeadersMessageextendsDataPayload"></a><a id="GetHeadersMessage:GetHeadersMessage"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/index.html#GetHeadersMessageextendsNetworkElementwithDataPayload" title="Permalink">
+      <a href="../../../../org/bitcoins/core/p2p/index.html#GetHeadersMessageextendsDataPayload" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -809,7 +809,7 @@ which the requesting node typically previously received by way of an inv message
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="The getheaders message requests a headers message that provides block headers starting from a particular point in the block chain." href="GetHeadersMessage.html"><span class="name">GetHeadersMessage</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="DataPayload.html" class="extype" name="org.bitcoins.core.p2p.DataPayload">DataPayload</a></span>
+        <a title="The getheaders message requests a headers message that provides block headers starting from a particular point in the block chain." href="GetHeadersMessage.html"><span class="name">GetHeadersMessage</span></a><span class="result"> extends <a href="DataPayload.html" class="extype" name="org.bitcoins.core.p2p.DataPayload">DataPayload</a></span>
       </span>
       
       <p class="shortcomment cmt">The getheaders message requests a headers message that provides block headers starting
@@ -818,9 +818,9 @@ from a particular point in the block chain.
 It allows a peer which has been disconnected or started for the first time to get the
 headers it hasn’t seen yet.</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://bitcoin.org/en/developer-reference#getheaders" target="_blank">https://bitcoin.org/en/developer-reference#getheaders</a></p></span></dd></dl></div>
     </li><li name="org.bitcoins.core.p2p.HeadersMessage" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="HeadersMessageextendsNetworkElementwithDataPayloadwithProductwithSerializable"></a><a id="HeadersMessage:HeadersMessage"></a>
+      <a id="HeadersMessageextendsDataPayloadwithProductwithSerializable"></a><a id="HeadersMessage:HeadersMessage"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/index.html#HeadersMessageextendsNetworkElementwithDataPayloadwithProductwithSerializable" title="Permalink">
+      <a href="../../../../org/bitcoins/core/p2p/index.html#HeadersMessageextendsDataPayloadwithProductwithSerializable" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -829,7 +829,7 @@ headers it hasn’t seen yet.</p></div><dl class="attributes block"> <dt>See als
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="The headers message sends one or more block headers to a node which previously requested certain headers with a getheaders message." href="HeadersMessage.html"><span class="name">HeadersMessage</span></a><span class="params">(<span name="count">count: <a href="../protocol/CompactSizeUInt.html" class="extype" name="org.bitcoins.core.protocol.CompactSizeUInt">CompactSizeUInt</a></span>, <span name="headers">headers: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../protocol/blockchain/BlockHeader.html" class="extype" name="org.bitcoins.core.protocol.blockchain.BlockHeader">BlockHeader</a>]</span>)</span><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="DataPayload.html" class="extype" name="org.bitcoins.core.p2p.DataPayload">DataPayload</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="The headers message sends one or more block headers to a node which previously requested certain headers with a getheaders message." href="HeadersMessage.html"><span class="name">HeadersMessage</span></a><span class="params">(<span name="count">count: <a href="../protocol/CompactSizeUInt.html" class="extype" name="org.bitcoins.core.protocol.CompactSizeUInt">CompactSizeUInt</a></span>, <span name="headers">headers: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../protocol/blockchain/BlockHeader.html" class="extype" name="org.bitcoins.core.protocol.blockchain.BlockHeader">BlockHeader</a>]</span>)</span><span class="result"> extends <a href="DataPayload.html" class="extype" name="org.bitcoins.core.p2p.DataPayload">DataPayload</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">The headers message sends one or more block headers to a node
@@ -859,9 +859,9 @@ which previously requested certain headers with a getheaders message.</p></div><
 </p><div class="fullcomment"><div class="comment cmt"><p>These are used as unique identifiers inside the peer-to-peer network
 </p></div><dl class="paramcmts block"><dt class="param">typeIdentifier</dt><dd class="cmt"><p>The type of object which was hashed</p></dd><dt class="param">hash</dt><dd class="cmt"><p>SHA256(SHA256()) hash of the object in internal byte order.</p></dd></dl><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://bitcoin.org/en/developer-reference#term-inventory" target="_blank">https://bitcoin.org/en/developer-reference#term-inventory</a></p></span></dd></dl></div>
     </li><li name="org.bitcoins.core.p2p.InventoryMessage" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="InventoryMessageextendsNetworkElementwithDataPayload"></a><a id="InventoryMessage:InventoryMessage"></a>
+      <a id="InventoryMessageextendsDataPayload"></a><a id="InventoryMessage:InventoryMessage"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/index.html#InventoryMessageextendsNetworkElementwithDataPayload" title="Permalink">
+      <a href="../../../../org/bitcoins/core/p2p/index.html#InventoryMessageextendsDataPayload" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -870,16 +870,16 @@ which previously requested certain headers with a getheaders message.</p></div><
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="The inv message (inventory message) transmits one or more inventories of objects known to the transmitting peer." href="InventoryMessage.html"><span class="name">InventoryMessage</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="DataPayload.html" class="extype" name="org.bitcoins.core.p2p.DataPayload">DataPayload</a></span>
+        <a title="The inv message (inventory message) transmits one or more inventories of objects known to the transmitting peer." href="InventoryMessage.html"><span class="name">InventoryMessage</span></a><span class="result"> extends <a href="DataPayload.html" class="extype" name="org.bitcoins.core.p2p.DataPayload">DataPayload</a></span>
       </span>
       
       <p class="shortcomment cmt">The inv message (inventory message) transmits one or more inventories of objects known to the transmitting peer.</p><div class="fullcomment"><div class="comment cmt"><p>The inv message (inventory message) transmits one or more inventories of objects known to the transmitting peer.
 It can be sent unsolicited to announce new transactions or blocks,
 or it can be sent in reply to a getblocks message or mempool message.</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://bitcoin.org/en/developer-reference#inv" target="_blank">https://bitcoin.org/en/developer-reference#inv</a></p></span></dd></dl></div>
     </li><li name="org.bitcoins.core.p2p.MerkleBlockMessage" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="MerkleBlockMessageextendsNetworkElementwithDataPayloadwithProductwithSerializable"></a><a id="MerkleBlockMessage:MerkleBlockMessage"></a>
+      <a id="MerkleBlockMessageextendsDataPayloadwithProductwithSerializable"></a><a id="MerkleBlockMessage:MerkleBlockMessage"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/index.html#MerkleBlockMessageextendsNetworkElementwithDataPayloadwithProductwithSerializable" title="Permalink">
+      <a href="../../../../org/bitcoins/core/p2p/index.html#MerkleBlockMessageextendsDataPayloadwithProductwithSerializable" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -888,7 +888,7 @@ or it can be sent in reply to a getblocks message or mempool message.</p></div><
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="The merkleblock message is a reply to a getdata message which requested a block using the inventory type MSG_MERKLEBLOCK." href="MerkleBlockMessage.html"><span class="name">MerkleBlockMessage</span></a><span class="params">(<span name="merkleBlock">merkleBlock: <a href="../protocol/blockchain/MerkleBlock.html" class="extype" name="org.bitcoins.core.protocol.blockchain.MerkleBlock">MerkleBlock</a></span>)</span><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="DataPayload.html" class="extype" name="org.bitcoins.core.p2p.DataPayload">DataPayload</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="The merkleblock message is a reply to a getdata message which requested a block using the inventory type MSG_MERKLEBLOCK." href="MerkleBlockMessage.html"><span class="name">MerkleBlockMessage</span></a><span class="params">(<span name="merkleBlock">merkleBlock: <a href="../protocol/blockchain/MerkleBlock.html" class="extype" name="org.bitcoins.core.protocol.blockchain.MerkleBlock">MerkleBlock</a></span>)</span><span class="result"> extends <a href="DataPayload.html" class="extype" name="org.bitcoins.core.p2p.DataPayload">DataPayload</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">The merkleblock message is a reply to a getdata message which requested a
@@ -898,9 +898,9 @@ It is only part of the reply: if any matching transactions are found,
 they will be sent separately as tx messages.
 </p></div><dl class="paramcmts block"><dt class="param">merkleBlock</dt><dd class="cmt"><p>The actual <a href="../protocol/blockchain/MerkleBlock.html" class="extype" name="org.bitcoins.core.protocol.blockchain.MerkleBlock">MerkleBlock</a> that this message represents</p></dd></dl><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://bitcoin.org/en/developer-reference#merkleblock" target="_blank">https://bitcoin.org/en/developer-reference#merkleblock</a></p></span></dd></dl></div>
     </li><li name="org.bitcoins.core.p2p.MsgUnassigned" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="MsgUnassignedextendsNetworkElementwithTypeIdentifier"></a><a id="MsgUnassigned:MsgUnassigned"></a>
+      <a id="MsgUnassignedextendsTypeIdentifier"></a><a id="MsgUnassigned:MsgUnassigned"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/index.html#MsgUnassignedextendsNetworkElementwithTypeIdentifier" title="Permalink">
+      <a href="../../../../org/bitcoins/core/p2p/index.html#MsgUnassignedextendsTypeIdentifier" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -909,7 +909,7 @@ they will be sent separately as tx messages.
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="" href="MsgUnassigned.html"><span class="name">MsgUnassigned</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="TypeIdentifier.html" class="extype" name="org.bitcoins.core.p2p.TypeIdentifier">TypeIdentifier</a></span>
+        <a title="" href="MsgUnassigned.html"><span class="name">MsgUnassigned</span></a><span class="result"> extends <a href="TypeIdentifier.html" class="extype" name="org.bitcoins.core.p2p.TypeIdentifier">TypeIdentifier</a></span>
       </span>
       
       
@@ -985,9 +985,9 @@ they will be sent separately as tx messages.
       
       <p class="shortcomment cmt">Trait that represents a payload for a message on the Bitcoin p2p network</p><div class="fullcomment"><div class="comment cmt"><p>Trait that represents a payload for a message on the Bitcoin p2p network</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://bitcoin.org/en/developer-reference#p2p-network" target="_blank">https://bitcoin.org/en/developer-reference#p2p-network</a></p></span></dd></dl></div>
     </li><li name="org.bitcoins.core.p2p.NotFoundMessage" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="NotFoundMessageextendsNetworkElementwithDataPayloadwithInventoryMessage"></a><a id="NotFoundMessage:NotFoundMessage"></a>
+      <a id="NotFoundMessageextendsDataPayloadwithInventoryMessage"></a><a id="NotFoundMessage:NotFoundMessage"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/index.html#NotFoundMessageextendsNetworkElementwithDataPayloadwithInventoryMessage" title="Permalink">
+      <a href="../../../../org/bitcoins/core/p2p/index.html#NotFoundMessageextendsDataPayloadwithInventoryMessage" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -996,7 +996,7 @@ they will be sent separately as tx messages.
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="The notfound message is a reply to a getdata message which requested an object the receiving node does not have available for relay." href="NotFoundMessage.html"><span class="name">NotFoundMessage</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="DataPayload.html" class="extype" name="org.bitcoins.core.p2p.DataPayload">DataPayload</a> with <a href="InventoryMessage.html" class="extype" name="org.bitcoins.core.p2p.InventoryMessage">InventoryMessage</a></span>
+        <a title="The notfound message is a reply to a getdata message which requested an object the receiving node does not have available for relay." href="NotFoundMessage.html"><span class="name">NotFoundMessage</span></a><span class="result"> extends <a href="DataPayload.html" class="extype" name="org.bitcoins.core.p2p.DataPayload">DataPayload</a> with <a href="InventoryMessage.html" class="extype" name="org.bitcoins.core.p2p.InventoryMessage">InventoryMessage</a></span>
       </span>
       
       <p class="shortcomment cmt">The notfound message is a reply to a getdata message which requested an object the receiving
@@ -1006,9 +1006,9 @@ which are no longer in the memory pool or relay set.
 Nodes may also have pruned spent transactions from older blocks, making them unable to send those blocks.)
 </p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://bitcoin.org/en/developer-reference#notfound" target="_blank">https://bitcoin.org/en/developer-reference#notfound</a></p></span></dd></dl></div>
     </li><li name="org.bitcoins.core.p2p.PingMessage" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="PingMessageextendsNetworkElementwithControlPayload"></a><a id="PingMessage:PingMessage"></a>
+      <a id="PingMessageextendsControlPayload"></a><a id="PingMessage:PingMessage"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/index.html#PingMessageextendsNetworkElementwithControlPayload" title="Permalink">
+      <a href="../../../../org/bitcoins/core/p2p/index.html#PingMessageextendsControlPayload" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1017,7 +1017,7 @@ Nodes may also have pruned spent transactions from older blocks, making them una
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="The ping message helps confirm that the receiving peer is still connected." href="PingMessage.html"><span class="name">PingMessage</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ControlPayload.html" class="extype" name="org.bitcoins.core.p2p.ControlPayload">ControlPayload</a></span>
+        <a title="The ping message helps confirm that the receiving peer is still connected." href="PingMessage.html"><span class="name">PingMessage</span></a><span class="result"> extends <a href="ControlPayload.html" class="extype" name="org.bitcoins.core.p2p.ControlPayload">ControlPayload</a></span>
       </span>
       
       <p class="shortcomment cmt">The ping message helps confirm that the receiving peer is still connected.</p><div class="fullcomment"><div class="comment cmt"><p>The ping message helps confirm that the receiving peer is still connected.
@@ -1025,9 +1025,9 @@ If a TCP/IP error is encountered when sending the ping message (such as a connec
 the transmitting node can assume that the receiving node is disconnected.
 The response to a ping message is the pong message.</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://bitcoin.org/en/developer-reference#ping" target="_blank">https://bitcoin.org/en/developer-reference#ping</a></p></span></dd></dl></div>
     </li><li name="org.bitcoins.core.p2p.PongMessage" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="PongMessageextendsNetworkElementwithControlPayload"></a><a id="PongMessage:PongMessage"></a>
+      <a id="PongMessageextendsControlPayload"></a><a id="PongMessage:PongMessage"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/index.html#PongMessageextendsNetworkElementwithControlPayload" title="Permalink">
+      <a href="../../../../org/bitcoins/core/p2p/index.html#PongMessageextendsControlPayload" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1036,7 +1036,7 @@ The response to a ping message is the pong message.</p></div><dl class="attribut
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="The pong message replies to a ping message, proving to the pinging node that the ponging node is still alive." href="PongMessage.html"><span class="name">PongMessage</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ControlPayload.html" class="extype" name="org.bitcoins.core.p2p.ControlPayload">ControlPayload</a></span>
+        <a title="The pong message replies to a ping message, proving to the pinging node that the ponging node is still alive." href="PongMessage.html"><span class="name">PongMessage</span></a><span class="result"> extends <a href="ControlPayload.html" class="extype" name="org.bitcoins.core.p2p.ControlPayload">ControlPayload</a></span>
       </span>
       
       <p class="shortcomment cmt">The pong message replies to a ping message, proving to the pinging node that the ponging node is still alive.</p><div class="fullcomment"><div class="comment cmt"><p>The pong message replies to a ping message, proving to the pinging node that the ponging node is still alive.
@@ -1061,9 +1061,9 @@ to a ping message within 20 minutes.</p></div><dl class="attributes block"> <dt>
 Here are the currently protocol versions in the network</p><div class="fullcomment"><div class="comment cmt"><p>The peer to peer network has versions to allow for new operations
 Here are the currently protocol versions in the network</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://bitcoin.org/en/developer-reference#protocol-versions" target="_blank">https://bitcoin.org/en/developer-reference#protocol-versions</a></p></span></dd></dl></div>
     </li><li name="org.bitcoins.core.p2p.RejectMessage" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="RejectMessageextendsNetworkElementwithControlPayload"></a><a id="RejectMessage:RejectMessage"></a>
+      <a id="RejectMessageextendsControlPayload"></a><a id="RejectMessage:RejectMessage"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/index.html#RejectMessageextendsNetworkElementwithControlPayload" title="Permalink">
+      <a href="../../../../org/bitcoins/core/p2p/index.html#RejectMessageextendsControlPayload" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1072,7 +1072,7 @@ Here are the currently protocol versions in the network</p></div><dl class="attr
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="The reject message informs the receiving node that one of its previous messages has been rejected." href="RejectMessage.html"><span class="name">RejectMessage</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ControlPayload.html" class="extype" name="org.bitcoins.core.p2p.ControlPayload">ControlPayload</a></span>
+        <a title="The reject message informs the receiving node that one of its previous messages has been rejected." href="RejectMessage.html"><span class="name">RejectMessage</span></a><span class="result"> extends <a href="ControlPayload.html" class="extype" name="org.bitcoins.core.p2p.ControlPayload">ControlPayload</a></span>
       </span>
       
       <p class="shortcomment cmt">The reject message informs the receiving node that one of its previous messages has been rejected.</p><div class="fullcomment"><div class="comment cmt"><p>The reject message informs the receiving node that one of its previous messages has been rejected.</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://bitcoin.org/en/developer-reference#reject" target="_blank">https://bitcoin.org/en/developer-reference#reject</a></p></span></dd></dl></div>
@@ -1096,9 +1096,9 @@ Here are the currently protocol versions in the network</p></div><dl class="attr
 </p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://bitcoin.org/en/developer-reference#version" target="_blank">https://bitcoin.org/en/developer-reference#version</a></p></span><span class="cmt"><p><a href="https://github.com/bitcoin/bitcoin/blob/master/src/protocol.h#L247" target="_blank">protocol.h</a>
      in Bitcoin Core</p></span></dd></dl></div>
     </li><li name="org.bitcoins.core.p2p.TransactionMessage" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="TransactionMessageextendsNetworkElementwithDataPayloadwithProductwithSerializable"></a><a id="TransactionMessage:TransactionMessage"></a>
+      <a id="TransactionMessageextendsDataPayloadwithProductwithSerializable"></a><a id="TransactionMessage:TransactionMessage"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/index.html#TransactionMessageextendsNetworkElementwithDataPayloadwithProductwithSerializable" title="Permalink">
+      <a href="../../../../org/bitcoins/core/p2p/index.html#TransactionMessageextendsDataPayloadwithProductwithSerializable" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1107,7 +1107,7 @@ Here are the currently protocol versions in the network</p></div><dl class="attr
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="The tx message transmits a single transaction in the raw transaction format." href="TransactionMessage.html"><span class="name">TransactionMessage</span></a><span class="params">(<span name="transaction">transaction: <a href="../protocol/transaction/Transaction.html" class="extype" name="org.bitcoins.core.protocol.transaction.Transaction">Transaction</a></span>)</span><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="DataPayload.html" class="extype" name="org.bitcoins.core.p2p.DataPayload">DataPayload</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="The tx message transmits a single transaction in the raw transaction format." href="TransactionMessage.html"><span class="name">TransactionMessage</span></a><span class="params">(<span name="transaction">transaction: <a href="../protocol/transaction/Transaction.html" class="extype" name="org.bitcoins.core.protocol.transaction.Transaction">Transaction</a></span>)</span><span class="result"> extends <a href="DataPayload.html" class="extype" name="org.bitcoins.core.p2p.DataPayload">DataPayload</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">The tx message transmits a single transaction in the raw transaction format.</p><div class="fullcomment"><div class="comment cmt"><p>The tx message transmits a single transaction in the raw transaction format.
@@ -1148,9 +1148,9 @@ It can be sent in a variety of situations;</p></div><dl class="paramcmts block">
       <p class="shortcomment cmt">Designated type for any service that does not have value of 0 or 1
 </p>
     </li><li name="org.bitcoins.core.p2p.VersionMessage" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="VersionMessageextendsNetworkElementwithControlPayload"></a><a id="VersionMessage:VersionMessage"></a>
+      <a id="VersionMessageextendsControlPayload"></a><a id="VersionMessage:VersionMessage"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/index.html#VersionMessageextendsNetworkElementwithControlPayload" title="Permalink">
+      <a href="../../../../org/bitcoins/core/p2p/index.html#VersionMessageextendsControlPayload" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1159,7 +1159,7 @@ It can be sent in a variety of situations;</p></div><dl class="paramcmts block">
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="The version message provides information about the transmitting node to the receiving node at the beginning of a connection." href="VersionMessage.html"><span class="name">VersionMessage</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ControlPayload.html" class="extype" name="org.bitcoins.core.p2p.ControlPayload">ControlPayload</a></span>
+        <a title="The version message provides information about the transmitting node to the receiving node at the beginning of a connection." href="VersionMessage.html"><span class="name">VersionMessage</span></a><span class="result"> extends <a href="ControlPayload.html" class="extype" name="org.bitcoins.core.p2p.ControlPayload">ControlPayload</a></span>
       </span>
       
       <p class="shortcomment cmt">The version message provides information about the transmitting node to the
@@ -1255,7 +1255,7 @@ by first sending a version message.
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="The filterclear message tells the receiving peer to remove a previously-set bloom filter." href="FilterClearMessage$.html"><span class="name">FilterClearMessage</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ControlPayload.html" class="extype" name="org.bitcoins.core.p2p.ControlPayload">ControlPayload</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="The filterclear message tells the receiving peer to remove a previously-set bloom filter." href="FilterClearMessage$.html"><span class="name">FilterClearMessage</span></a><span class="result"> extends <a href="ControlPayload.html" class="extype" name="org.bitcoins.core.p2p.ControlPayload">ControlPayload</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">The filterclear message tells the receiving peer to remove a previously-set bloom filter.</p><div class="fullcomment"><div class="comment cmt"><p>The filterclear message tells the receiving peer to remove a previously-set bloom filter.
@@ -1289,7 +1289,7 @@ allowing unfiltered access to inv messages announcing new transactions.</p></div
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="The getaddr message requests an addr message from the receiving node, preferably one with lots of IP addresses of other receiving nodes." href="GetAddrMessage$.html"><span class="name">GetAddrMessage</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ControlPayload.html" class="extype" name="org.bitcoins.core.p2p.ControlPayload">ControlPayload</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="The getaddr message requests an addr message from the receiving node, preferably one with lots of IP addresses of other receiving nodes." href="GetAddrMessage$.html"><span class="name">GetAddrMessage</span></a><span class="result"> extends <a href="ControlPayload.html" class="extype" name="org.bitcoins.core.p2p.ControlPayload">ControlPayload</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">The getaddr message requests an addr message from the receiving node,
@@ -1405,7 +1405,7 @@ database of available nodes rather than waiting for unsolicited addr messages to
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="The mempool message requests the TXIDs of transactions that the receiving node has verified as valid but which have not yet appeared in a block." href="MemPoolMessage$.html"><span class="name">MemPoolMessage</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="DataPayload.html" class="extype" name="org.bitcoins.core.p2p.DataPayload">DataPayload</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="The mempool message requests the TXIDs of transactions that the receiving node has verified as valid but which have not yet appeared in a block." href="MemPoolMessage$.html"><span class="name">MemPoolMessage</span></a><span class="result"> extends <a href="DataPayload.html" class="extype" name="org.bitcoins.core.p2p.DataPayload">DataPayload</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">The mempool message requests the TXIDs of transactions that the receiving node has verified
@@ -1572,7 +1572,7 @@ The response to the mempool message is one or more inv messages containing the T
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="Added receive IP address fields to version message." href="ProtocolVersion106$.html"><span class="name">ProtocolVersion106</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ProtocolVersion.html" class="extype" name="org.bitcoins.core.p2p.ProtocolVersion">ProtocolVersion</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="Added receive IP address fields to version message." href="ProtocolVersion106$.html"><span class="name">ProtocolVersion106</span></a><span class="result"> extends <a href="ProtocolVersion.html" class="extype" name="org.bitcoins.core.p2p.ProtocolVersion">ProtocolVersion</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">Added receive IP address fields to version message.</p><div class="fullcomment"><div class="comment cmt"><p>Added receive IP address fields to version message.
@@ -1590,7 +1590,7 @@ Bitcoin Core 0.1.6 (Oct 2009)
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="Added checksum field to message headers." href="ProtocolVersion209$.html"><span class="name">ProtocolVersion209</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ProtocolVersion.html" class="extype" name="org.bitcoins.core.p2p.ProtocolVersion">ProtocolVersion</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="Added checksum field to message headers." href="ProtocolVersion209$.html"><span class="name">ProtocolVersion209</span></a><span class="result"> extends <a href="ProtocolVersion.html" class="extype" name="org.bitcoins.core.p2p.ProtocolVersion">ProtocolVersion</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">Added checksum field to message headers.</p><div class="fullcomment"><div class="comment cmt"><p>Added checksum field to message headers.
@@ -1608,7 +1608,7 @@ Bitcoin Core 0.2.9 (May 2010)
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="Added alert message Bitcion Core 0.3.11 (Aug 2010)" href="ProtocolVersion311$.html"><span class="name">ProtocolVersion311</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ProtocolVersion.html" class="extype" name="org.bitcoins.core.p2p.ProtocolVersion">ProtocolVersion</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="Added alert message Bitcion Core 0.3.11 (Aug 2010)" href="ProtocolVersion311$.html"><span class="name">ProtocolVersion311</span></a><span class="result"> extends <a href="ProtocolVersion.html" class="extype" name="org.bitcoins.core.p2p.ProtocolVersion">ProtocolVersion</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">Added alert message
@@ -1626,7 +1626,7 @@ Bitcion Core 0.3.11 (Aug 2010)
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="Added time field to addr message." href="ProtocolVersion31402$.html"><span class="name">ProtocolVersion31402</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ProtocolVersion.html" class="extype" name="org.bitcoins.core.p2p.ProtocolVersion">ProtocolVersion</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="Added time field to addr message." href="ProtocolVersion31402$.html"><span class="name">ProtocolVersion31402</span></a><span class="result"> extends <a href="ProtocolVersion.html" class="extype" name="org.bitcoins.core.p2p.ProtocolVersion">ProtocolVersion</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">Added time field to addr message.</p><div class="fullcomment"><div class="comment cmt"><p>Added time field to addr message.
@@ -1644,7 +1644,7 @@ Bitcoin Core 0.3.15 (Oct 2010)
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="Added getheaders message and headers message." href="ProtocolVersion31800$.html"><span class="name">ProtocolVersion31800</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ProtocolVersion.html" class="extype" name="org.bitcoins.core.p2p.ProtocolVersion">ProtocolVersion</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="Added getheaders message and headers message." href="ProtocolVersion31800$.html"><span class="name">ProtocolVersion31800</span></a><span class="result"> extends <a href="ProtocolVersion.html" class="extype" name="org.bitcoins.core.p2p.ProtocolVersion">ProtocolVersion</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">Added getheaders message and headers message.</p><div class="fullcomment"><div class="comment cmt"><p>Added getheaders message and headers message.
@@ -1662,7 +1662,7 @@ Bitcoin Core 0.3.18 (Dec 2010)
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="BIP14: Separated protocol version from Bitcoin Core version Bitcoin Core 0.6.0 (Mar 2012)" href="ProtocolVersion60000$.html"><span class="name">ProtocolVersion60000</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ProtocolVersion.html" class="extype" name="org.bitcoins.core.p2p.ProtocolVersion">ProtocolVersion</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="BIP14: Separated protocol version from Bitcoin Core version Bitcoin Core 0.6.0 (Mar 2012)" href="ProtocolVersion60000$.html"><span class="name">ProtocolVersion60000</span></a><span class="result"> extends <a href="ProtocolVersion.html" class="extype" name="org.bitcoins.core.p2p.ProtocolVersion">ProtocolVersion</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">BIP14: Separated protocol version from Bitcoin Core version
@@ -1680,7 +1680,7 @@ Bitcoin Core 0.6.0 (Mar 2012)
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="BIP31: Added nonce field to ping message, Added pong message Bitcoin Core 0.6.1 (May 2012)" href="ProtocolVersion60001$.html"><span class="name">ProtocolVersion60001</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ProtocolVersion.html" class="extype" name="org.bitcoins.core.p2p.ProtocolVersion">ProtocolVersion</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="BIP31: Added nonce field to ping message, Added pong message Bitcoin Core 0.6.1 (May 2012)" href="ProtocolVersion60001$.html"><span class="name">ProtocolVersion60001</span></a><span class="result"> extends <a href="ProtocolVersion.html" class="extype" name="org.bitcoins.core.p2p.ProtocolVersion">ProtocolVersion</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">BIP31: Added nonce field to ping message, Added pong message
@@ -1698,7 +1698,7 @@ Bitcoin Core 0.6.1 (May 2012)
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="BIP35: Added mempool message." href="ProtocolVersion60002$.html"><span class="name">ProtocolVersion60002</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ProtocolVersion.html" class="extype" name="org.bitcoins.core.p2p.ProtocolVersion">ProtocolVersion</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="BIP35: Added mempool message." href="ProtocolVersion60002$.html"><span class="name">ProtocolVersion60002</span></a><span class="result"> extends <a href="ProtocolVersion.html" class="extype" name="org.bitcoins.core.p2p.ProtocolVersion">ProtocolVersion</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">BIP35: Added mempool message.</p><div class="fullcomment"><div class="comment cmt"><p>BIP35: Added mempool message.
@@ -1717,7 +1717,7 @@ Bitcoin Core 0.7.0 (Sep 2012)
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="Added notfound message." href="ProtocolVersion70001$.html"><span class="name">ProtocolVersion70001</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ProtocolVersion.html" class="extype" name="org.bitcoins.core.p2p.ProtocolVersion">ProtocolVersion</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="Added notfound message." href="ProtocolVersion70001$.html"><span class="name">ProtocolVersion70001</span></a><span class="result"> extends <a href="ProtocolVersion.html" class="extype" name="org.bitcoins.core.p2p.ProtocolVersion">ProtocolVersion</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">Added notfound message.</p><div class="fullcomment"><div class="comment cmt"><p>Added notfound message.
@@ -1742,7 +1742,7 @@ Bitcoin Core 0.8.0 (Feb 2013)
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="Send multiple inv messages in response to a mempool message if necessary BIP61: Add reject message Bitcoin Core 0.9.0 (Mar 2014)" href="ProtocolVersion70002$.html"><span class="name">ProtocolVersion70002</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ProtocolVersion.html" class="extype" name="org.bitcoins.core.p2p.ProtocolVersion">ProtocolVersion</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="Send multiple inv messages in response to a mempool message if necessary BIP61: Add reject message Bitcoin Core 0.9.0 (Mar 2014)" href="ProtocolVersion70002$.html"><span class="name">ProtocolVersion70002</span></a><span class="result"> extends <a href="ProtocolVersion.html" class="extype" name="org.bitcoins.core.p2p.ProtocolVersion">ProtocolVersion</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">Send multiple inv messages in response to a mempool message if necessary
@@ -1761,7 +1761,7 @@ Bitcoin Core 0.9.0 (Mar 2014)
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="BIP130: Add sendheaders message Bitcoin Core 0.12.0" href="ProtocolVersion70012$.html"><span class="name">ProtocolVersion70012</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ProtocolVersion.html" class="extype" name="org.bitcoins.core.p2p.ProtocolVersion">ProtocolVersion</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="BIP130: Add sendheaders message Bitcoin Core 0.12.0" href="ProtocolVersion70012$.html"><span class="name">ProtocolVersion70012</span></a><span class="result"> extends <a href="ProtocolVersion.html" class="extype" name="org.bitcoins.core.p2p.ProtocolVersion">ProtocolVersion</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">BIP130: Add sendheaders message
@@ -1779,7 +1779,7 @@ Bitcoin Core 0.12.0
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="Added feefilter message." href="ProtocolVersion70013$.html"><span class="name">ProtocolVersion70013</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ProtocolVersion.html" class="extype" name="org.bitcoins.core.p2p.ProtocolVersion">ProtocolVersion</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="Added feefilter message." href="ProtocolVersion70013$.html"><span class="name">ProtocolVersion70013</span></a><span class="result"> extends <a href="ProtocolVersion.html" class="extype" name="org.bitcoins.core.p2p.ProtocolVersion">ProtocolVersion</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">Added feefilter message.</p><div class="fullcomment"><div class="comment cmt"><p>Added feefilter message.
@@ -1798,7 +1798,7 @@ Bitcoin Core 0.13.0 (August 2016)
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="BIP152 Added sendcmpct, cmpctblock, getblocktxn, blocktxn messages Added MSG_CMPCT_BLOCK inventory type to getdata message." href="ProtocolVersion70014$.html"><span class="name">ProtocolVersion70014</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ProtocolVersion.html" class="extype" name="org.bitcoins.core.p2p.ProtocolVersion">ProtocolVersion</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="BIP152 Added sendcmpct, cmpctblock, getblocktxn, blocktxn messages Added MSG_CMPCT_BLOCK inventory type to getdata message." href="ProtocolVersion70014$.html"><span class="name">ProtocolVersion70014</span></a><span class="result"> extends <a href="ProtocolVersion.html" class="extype" name="org.bitcoins.core.p2p.ProtocolVersion">ProtocolVersion</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">BIP152
@@ -1820,7 +1820,7 @@ Bitcoin Core 0.13.0 (August 2016)
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="New banning behavior for invalid compact blocks #9026 in v0.14.0, Backported to v0.13.2 in #9048." href="ProtocolVersion70015$.html"><span class="name">ProtocolVersion70015</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ProtocolVersion.html" class="extype" name="org.bitcoins.core.p2p.ProtocolVersion">ProtocolVersion</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="New banning behavior for invalid compact blocks #9026 in v0.14.0, Backported to v0.13.2 in #9048." href="ProtocolVersion70015$.html"><span class="name">ProtocolVersion70015</span></a><span class="result"> extends <a href="ProtocolVersion.html" class="extype" name="org.bitcoins.core.p2p.ProtocolVersion">ProtocolVersion</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">New banning behavior for invalid compact blocks #9026 in v0.14.0, Backported to v0.13.2 in #9048.</p><div class="fullcomment"><div class="comment cmt"><p>New banning behavior for invalid compact blocks #9026 in v0.14.0, Backported to v0.13.2 in #9048.
@@ -1854,7 +1854,7 @@ Bitcoin Core 0.13.2 (January 2017)
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="The sendheaders message tells the receiving peer to send new block announcements using a headers message rather than an inv message." href="SendHeadersMessage$.html"><span class="name">SendHeadersMessage</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ControlPayload.html" class="extype" name="org.bitcoins.core.p2p.ControlPayload">ControlPayload</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="The sendheaders message tells the receiving peer to send new block announcements using a headers message rather than an inv message." href="SendHeadersMessage$.html"><span class="name">SendHeadersMessage</span></a><span class="result"> extends <a href="ControlPayload.html" class="extype" name="org.bitcoins.core.p2p.ControlPayload">ControlPayload</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">The sendheaders message tells the receiving peer to send new block announcements
@@ -1922,7 +1922,7 @@ of a message without a payload.</p></div><dl class="attributes block"> <dt>See a
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="The verack message acknowledges a previously-received version message, informing the connecting node that it can begin to send other messages." href="VerAckMessage$.html"><span class="name">VerAckMessage</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ControlPayload.html" class="extype" name="org.bitcoins.core.p2p.ControlPayload">ControlPayload</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="The verack message acknowledges a previously-received version message, informing the connecting node that it can begin to send other messages." href="VerAckMessage$.html"><span class="name">VerAckMessage</span></a><span class="result"> extends <a href="ControlPayload.html" class="extype" name="org.bitcoins.core.p2p.ControlPayload">ControlPayload</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">The verack message acknowledges a previously-received version message,
