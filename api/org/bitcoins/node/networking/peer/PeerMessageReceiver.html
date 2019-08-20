@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 183-4afdccb0-SNAPSHOT - org.bitcoins.node.networking.peer.PeerMessageReceiver</title>
-          <meta name="description" content="Bitcoin - S 183 - 4afdccb0 - SNAPSHOT - org.bitcoins.node.networking.peer.PeerMessageReceiver" />
-          <meta name="keywords" content="Bitcoin S 183 4afdccb0 SNAPSHOT org.bitcoins.node.networking.peer.PeerMessageReceiver" />
+          <title>Bitcoin-S 180-8ba96265-SNAPSHOT - org.bitcoins.node.networking.peer.PeerMessageReceiver</title>
+          <meta name="description" content="Bitcoin - S 180 - 8ba96265 - SNAPSHOT - org.bitcoins.node.networking.peer.PeerMessageReceiver" />
+          <meta name="keywords" content="Bitcoin S 180 8ba96265 SNAPSHOT org.bitcoins.node.networking.peer.PeerMessageReceiver" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">183-4afdccb0-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">180-8ba96265-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -194,7 +194,7 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">PeerMessageReceiver</span><span class="result"> extends <span class="extype" name="org.bitcoins.db.P2PLogger">P2PLogger</span></span>
+        <span class="name">PeerMessageReceiver</span><span class="result"> extends <span class="extype" name="org.bitcoins.node.P2PLogger">P2PLogger</span></span>
       </span>
       </h4>
 
@@ -208,7 +208,7 @@ operations. This is the entry point for handling all received
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><span class="extype" name="org.bitcoins.db.P2PLogger">P2PLogger</span>, <a href="../../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.8/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="org.bitcoins.node.P2PLogger">P2PLogger</span>, <a href="../../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.8/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></div>
         </div></div>
         
 
@@ -234,7 +234,7 @@ operations. This is the entry point for handling all received
                   <span class="filtertype">Inherited<br />
                   </span>
                   <ol id="linearization">
-                    <li class="in" name="org.bitcoins.node.networking.peer.PeerMessageReceiver"><span>PeerMessageReceiver</span></li><li class="in" name="org.bitcoins.db.P2PLogger"><span>P2PLogger</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                    <li class="in" name="org.bitcoins.node.networking.peer.PeerMessageReceiver"><span>PeerMessageReceiver</span></li><li class="in" name="org.bitcoins.node.P2PLogger"><span>P2PLogger</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                   </ol>
                 </div><div class="ancestors">
               <span class="filtertype"></span>
@@ -518,10 +518,10 @@ This method will initiate the handshake
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="org.bitcoins.db.P2PLogger#logger" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="logger(implicitconfig:org.bitcoins.db.AppConfig):org.slf4j.Logger"></a><a id="logger(AppConfig):Logger"></a>
+    </li><li name="org.bitcoins.node.P2PLogger#logger" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="logger(implicitconfig:org.bitcoins.node.config.NodeAppConfig):org.slf4j.Logger"></a><a id="logger(NodeAppConfig):Logger"></a>
       <span class="permalink">
-      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageReceiver.html#logger(implicitconfig:org.bitcoins.db.AppConfig):org.slf4j.Logger" title="Permalink">
+      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageReceiver.html#logger(implicitconfig:org.bitcoins.node.config.NodeAppConfig):org.slf4j.Logger" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -530,7 +530,7 @@ This method will initiate the handshake
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">logger</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="../../../db/AppConfig.html" class="extype" name="org.bitcoins.db.AppConfig">AppConfig</a></span>)</span><span class="result">: <a href="https://javadoc.io/page/org.slf4j/slf4j-api/1.7.25/org/slf4j/Logger.html#org.slf4j.Logger" class="extype" name="org.slf4j.Logger">Logger</a></span>
+        <span class="name">logger</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="../../config/NodeAppConfig.html" class="extype" name="org.bitcoins.node.config.NodeAppConfig">NodeAppConfig</a></span>)</span><span class="result">: <a href="https://javadoc.io/page/org.slf4j/slf4j-api/1.7.25/org/slf4j/Logger.html#org.slf4j.Logger" class="extype" name="org.slf4j.Logger">Logger</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>P2PLogger</dd></dl></div>
@@ -763,8 +763,8 @@ This method will initiate the handshake
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="org.bitcoins.db.P2PLogger">
-              <h3>Inherited from <span class="extype" name="org.bitcoins.db.P2PLogger">P2PLogger</span></h3>
+        <div class="parent" name="org.bitcoins.node.P2PLogger">
+              <h3>Inherited from <span class="extype" name="org.bitcoins.node.P2PLogger">P2PLogger</span></h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <a href="../../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">

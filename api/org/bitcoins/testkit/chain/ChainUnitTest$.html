@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 183-4afdccb0-SNAPSHOT - org.bitcoins.testkit.chain.ChainUnitTest</title>
-          <meta name="description" content="Bitcoin - S 183 - 4afdccb0 - SNAPSHOT - org.bitcoins.testkit.chain.ChainUnitTest" />
-          <meta name="keywords" content="Bitcoin S 183 4afdccb0 SNAPSHOT org.bitcoins.testkit.chain.ChainUnitTest" />
+          <title>Bitcoin-S 180-8ba96265-SNAPSHOT - org.bitcoins.testkit.chain.ChainUnitTest</title>
+          <meta name="description" content="Bitcoin - S 180 - 8ba96265 - SNAPSHOT - org.bitcoins.testkit.chain.ChainUnitTest" />
+          <meta name="keywords" content="Bitcoin S 180 8ba96265 SNAPSHOT org.bitcoins.testkit.chain.ChainUnitTest" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">183-4afdccb0-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">180-8ba96265-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -186,7 +186,7 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">ChainUnitTest</span><span class="result"> extends <a href="../../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <span class="name">ChainUnitTest</span><span class="result"> extends <span class="extype" name="org.bitcoins.chain.ChainVerificationLogger">ChainVerificationLogger</span> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       </h4>
 
@@ -195,7 +195,7 @@
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java/io/Serializable.html#java.io.Serializable" class="extype" name="java.io.Serializable">Serializable</a>, <a href="../../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a>, <a href="../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.8/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></div>
+          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java/io/Serializable.html#java.io.Serializable" class="extype" name="java.io.Serializable">Serializable</a>, <span class="extype" name="org.bitcoins.chain.ChainVerificationLogger">ChainVerificationLogger</span>, <a href="../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.8/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></div>
         </div></div>
         
 
@@ -221,7 +221,7 @@
                   <span class="filtertype">Inherited<br />
                   </span>
                   <ol id="linearization">
-                    <li class="in" name="org.bitcoins.testkit.chain.ChainUnitTest"><span>ChainUnitTest</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="org.bitcoins.core.util.BitcoinSLogger"><span>BitcoinSLogger</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                    <li class="in" name="org.bitcoins.testkit.chain.ChainUnitTest"><span>ChainUnitTest</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="org.bitcoins.chain.ChainVerificationLogger"><span>ChainVerificationLogger</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                   </ol>
                 </div><div class="ancestors">
               <span class="filtertype"></span>
@@ -556,22 +556,22 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="org.bitcoins.core.util.BitcoinSLogger#logger" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="logger:org.slf4j.Logger"></a><a id="logger:Logger"></a>
+    </li><li name="org.bitcoins.chain.ChainVerificationLogger#logger" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="logger(implicitconfig:org.bitcoins.chain.config.ChainAppConfig):org.slf4j.Logger"></a><a id="logger(ChainAppConfig):Logger"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/testkit/chain/ChainUnitTest$.html#logger:org.slf4j.Logger" title="Permalink">
+      <a href="../../../../org/bitcoins/testkit/chain/ChainUnitTest$.html#logger(implicitconfig:org.bitcoins.chain.config.ChainAppConfig):org.slf4j.Logger" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">lazy val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">logger</span><span class="result">: <a href="https://javadoc.io/page/org.slf4j/slf4j-api/1.7.25/org/slf4j/Logger.html#org.slf4j.Logger" class="extype" name="org.slf4j.Logger">Logger</a></span>
+        <span class="name">logger</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="../../chain/config/ChainAppConfig.html" class="extype" name="org.bitcoins.chain.config.ChainAppConfig">ChainAppConfig</a></span>)</span><span class="result">: <a href="https://javadoc.io/page/org.slf4j/slf4j-api/1.7.25/org/slf4j/Logger.html#org.slf4j.Logger" class="extype" name="org.slf4j.Logger">Logger</a></span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../index.html" class="extype" name="org.bitcoins">org.bitcoins</a>] </dd><dt>Definition Classes</dt><dd>ChainVerificationLogger</dd></dl></div>
     </li><li name="org.bitcoins.testkit.chain.ChainUnitTest#makeChainHandler" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="makeChainHandler()(implicitappConfig:org.bitcoins.chain.config.ChainAppConfig,implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[org.bitcoins.chain.blockchain.ChainHandler]"></a><a id="makeChainHandler()(ChainAppConfig,ExecutionContext):Future[ChainHandler]"></a>
       <span class="permalink">
@@ -805,8 +805,8 @@
               <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></h3>
             </div><div class="parent" name="java.io.Serializable">
               <h3>Inherited from <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java/io/Serializable.html#java.io.Serializable" class="extype" name="java.io.Serializable">Serializable</a></h3>
-            </div><div class="parent" name="org.bitcoins.core.util.BitcoinSLogger">
-              <h3>Inherited from <a href="../../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a></h3>
+            </div><div class="parent" name="org.bitcoins.chain.ChainVerificationLogger">
+              <h3>Inherited from <span class="extype" name="org.bitcoins.chain.ChainVerificationLogger">ChainVerificationLogger</span></h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <a href="../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">

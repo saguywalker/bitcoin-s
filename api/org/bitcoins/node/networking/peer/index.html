@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 183-4afdccb0-SNAPSHOT - org.bitcoins.node.networking.peer</title>
-          <meta name="description" content="Bitcoin - S 183 - 4afdccb0 - SNAPSHOT - org.bitcoins.node.networking.peer" />
-          <meta name="keywords" content="Bitcoin S 183 4afdccb0 SNAPSHOT org.bitcoins.node.networking.peer" />
+          <title>Bitcoin-S 180-8ba96265-SNAPSHOT - org.bitcoins.node.networking.peer</title>
+          <meta name="description" content="Bitcoin - S 180 - 8ba96265 - SNAPSHOT - org.bitcoins.node.networking.peer" />
+          <meta name="keywords" content="Bitcoin S 180 8ba96265 SNAPSHOT org.bitcoins.node.networking.peer" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">183-4afdccb0-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">180-8ba96265-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -244,7 +244,7 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="This actor is meant to handle a DataPayload that a peer to sent to us on the p2p network, for instance, if we a receive a HeadersMessage we should store those headers in our database" href="DataMessageHandler.html"><span class="name">DataMessageHandler</span></a><span class="result"> extends <span class="extype" name="org.bitcoins.db.P2PLogger">P2PLogger</span></span>
+        <a title="This actor is meant to handle a DataPayload that a peer to sent to us on the p2p network, for instance, if we a receive a HeadersMessage we should store those headers in our database" href="DataMessageHandler.html"><span class="name">DataMessageHandler</span></a><span class="result"> extends <span class="extype" name="org.bitcoins.node.P2PLogger">P2PLogger</span></span>
       </span>
       
       <p class="shortcomment cmt">This actor is meant to handle a <a href="../../../core/p2p/DataPayload.html" class="extype" name="org.bitcoins.core.p2p.DataPayload">DataPayload</a>
@@ -279,7 +279,7 @@ that a peer to sent to us on the p2p network, for instance, if we a receive a
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="Responsible for receiving messages from a peer on the p2p network." href="PeerMessageReceiver.html"><span class="name">PeerMessageReceiver</span></a><span class="result"> extends <span class="extype" name="org.bitcoins.db.P2PLogger">P2PLogger</span></span>
+        <a title="Responsible for receiving messages from a peer on the p2p network." href="PeerMessageReceiver.html"><span class="name">PeerMessageReceiver</span></a><span class="result"> extends <span class="extype" name="org.bitcoins.node.P2PLogger">P2PLogger</span></span>
       </span>
       
       <p class="shortcomment cmt">Responsible for receiving messages from a peer on the
@@ -317,7 +317,7 @@ operations. This is the entry point for handling all received
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="" href="PeerMessageSender.html"><span class="name">PeerMessageSender</span></a><span class="params">(<span name="client">client: <a href="../P2PClient.html" class="extype" name="org.bitcoins.node.networking.P2PClient">P2PClient</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="conf">conf: <a href="../../config/NodeAppConfig.html" class="extype" name="org.bitcoins.node.config.NodeAppConfig">NodeAppConfig</a></span>)</span><span class="result"> extends <span class="extype" name="org.bitcoins.db.P2PLogger">P2PLogger</span> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="" href="PeerMessageSender.html"><span class="name">PeerMessageSender</span></a><span class="params">(<span name="client">client: <a href="../P2PClient.html" class="extype" name="org.bitcoins.node.networking.P2PClient">P2PClient</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="conf">conf: <a href="../../config/NodeAppConfig.html" class="extype" name="org.bitcoins.node.config.NodeAppConfig">NodeAppConfig</a></span>)</span><span class="result"> extends <span class="extype" name="org.bitcoins.node.P2PLogger">P2PLogger</span> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       
