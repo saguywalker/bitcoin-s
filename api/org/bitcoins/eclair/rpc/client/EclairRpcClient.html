@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 180-8ba96265-SNAPSHOT - org.bitcoins.eclair.rpc.client.EclairRpcClient</title>
-          <meta name="description" content="Bitcoin - S 180 - 8ba96265 - SNAPSHOT - org.bitcoins.eclair.rpc.client.EclairRpcClient" />
-          <meta name="keywords" content="Bitcoin S 180 8ba96265 SNAPSHOT org.bitcoins.eclair.rpc.client.EclairRpcClient" />
+          <title>Bitcoin-S 176-6a69228b-SNAPSHOT - org.bitcoins.eclair.rpc.client.EclairRpcClient</title>
+          <meta name="description" content="Bitcoin - S 176 - 6a69228b - SNAPSHOT - org.bitcoins.eclair.rpc.client.EclairRpcClient" />
+          <meta name="keywords" content="Bitcoin S 176 6a69228b SNAPSHOT org.bitcoins.eclair.rpc.client.EclairRpcClient" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">180-8ba96265-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">176-6a69228b-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -243,7 +243,7 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">EclairRpcClient</span><span class="params">(<span name="instance">instance: <a href="../config/EclairInstance.html" class="extype" name="org.bitcoins.eclair.rpc.config.EclairInstance">EclairInstance</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="system">system: <a href="https://doc.akka.io/api/akka/2.5.24/akka/actor/ActorSystem.html#akka.actor.ActorSystem" class="extype" name="akka.actor.ActorSystem">ActorSystem</a></span>)</span>
+        <span class="name">EclairRpcClient</span><span class="params">(<span name="instance">instance: <a href="../config/EclairInstance.html" class="extype" name="org.bitcoins.eclair.rpc.config.EclairInstance">EclairInstance</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="system">system: <a href="https://doc.akka.io/api/akka/2.5.25/akka/actor/ActorSystem.html#akka.actor.ActorSystem" class="extype" name="akka.actor.ActorSystem">ActorSystem</a></span>)</span>
       </span>
       
       
@@ -1198,12 +1198,12 @@ when the payment is received</p></div><dl class="paramcmts block"><dt class="par
       <p class="shortcomment cmt">Pings eclair to see if a invoice has been paid
 If the invoice has been paid or the payment has failed, we publish a
 <a href="../json/PaymentResult.html" class="extype" name="org.bitcoins.eclair.rpc.json.PaymentResult">PaymentResult</a>
-event to the <a href="https://doc.akka.io/api/akka/2.5.24/akka/actor/ActorSystem.html" class="extype" name="akka.actor.ActorSystem">ActorSystem</a>'s
-<a href="https://doc.akka.io/api/akka/2.5.24/akka/event/EventStream.html" class="extype" name="akka.event.EventStream">ActorSystem.eventStream</a></p><div class="fullcomment"><div class="comment cmt"><p>Pings eclair to see if a invoice has been paid
+event to the <a href="https://doc.akka.io/api/akka/2.5.25/akka/actor/ActorSystem.html" class="extype" name="akka.actor.ActorSystem">ActorSystem</a>'s
+<a href="https://doc.akka.io/api/akka/2.5.25/akka/event/EventStream.html" class="extype" name="akka.event.EventStream">ActorSystem.eventStream</a></p><div class="fullcomment"><div class="comment cmt"><p>Pings eclair to see if a invoice has been paid
 If the invoice has been paid or the payment has failed, we publish a
 <a href="../json/PaymentResult.html" class="extype" name="org.bitcoins.eclair.rpc.json.PaymentResult">PaymentResult</a>
-event to the <a href="https://doc.akka.io/api/akka/2.5.24/akka/actor/ActorSystem.html" class="extype" name="akka.actor.ActorSystem">ActorSystem</a>'s
-<a href="https://doc.akka.io/api/akka/2.5.24/akka/event/EventStream.html" class="extype" name="akka.event.EventStream">ActorSystem.eventStream</a></p><p>We also return a Future[PaymentResult] that is completed when one of three things is true
+event to the <a href="https://doc.akka.io/api/akka/2.5.25/akka/actor/ActorSystem.html" class="extype" name="akka.actor.ActorSystem">ActorSystem</a>'s
+<a href="https://doc.akka.io/api/akka/2.5.25/akka/event/EventStream.html" class="extype" name="akka.event.EventStream">ActorSystem.eventStream</a></p><p>We also return a Future[PaymentResult] that is completed when one of three things is true
 1. The payment has succeeded
 2. The payment has failed
 3. We have attempted to query the eclair more than maxAttempts, and the payment is still pending</p></div><dl class="paramcmts block"><dt class="param">paymentId</dt><dd class="cmt"><p>the payment id returnned by <a href="../api/EclairApi.html#payInvoice(invoice:org.bitcoins.core.protocol.ln.LnInvoice,amountMsat:Option[org.bitcoins.core.protocol.ln.currency.MilliSatoshis],maxAttempts:Option[Int],feeThresholdSat:Option[org.bitcoins.core.currency.Satoshis],maxFeePct:Option[Int]):scala.concurrent.Future[org.bitcoins.eclair.rpc.json.PaymentId]" class="extmbr" name="org.bitcoins.eclair.rpc.api.EclairApi#payInvoice">payInvoice</a></p></dd><dt class="param">interval</dt><dd class="cmt"><p>the ping interval</p></dd><dt class="param">maxAttempts</dt><dd class="cmt"><p>the maximum number of pings</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.bitcoins.eclair.rpc.client.EclairRpcClient">EclairRpcClient</a> → <a href="../api/EclairApi.html" class="extype" name="org.bitcoins.eclair.rpc.api.EclairApi">EclairApi</a></dd></dl></div>
