@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 161-f27edd5b-SNAPSHOT - org.bitcoins.chain.blockchain.BlockchainUpdate</title>
-          <meta name="description" content="Bitcoin - S 161 - f27edd5b - SNAPSHOT - org.bitcoins.chain.blockchain.BlockchainUpdate" />
-          <meta name="keywords" content="Bitcoin S 161 f27edd5b SNAPSHOT org.bitcoins.chain.blockchain.BlockchainUpdate" />
+          <title>Bitcoin-S 155-ab170d05-SNAPSHOT - org.bitcoins.chain.blockchain.BlockchainUpdate</title>
+          <meta name="description" content="Bitcoin - S 155 - ab170d05 - SNAPSHOT - org.bitcoins.chain.blockchain.BlockchainUpdate" />
+          <meta name="keywords" content="Bitcoin S 155 ab170d05 SNAPSHOT org.bitcoins.chain.blockchain.BlockchainUpdate" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">161-f27edd5b-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">155-ab170d05-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -159,8 +159,8 @@
                         <a href="BlockchainBuilder.html" title="">BlockchainBuilder</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="BlockchainUpdate$.html" title=""></a>
-                        <a class="class" href="" title="Represents the state of an update to our Blockchain An example of a successful update is receiving a BlockHeader and successfully adding it to our database."></a>
-                        <a href="" title="Represents the state of an update to our Blockchain An example of a successful update is receiving a BlockHeader and successfully adding it to our database.">BlockchainUpdate</a>
+                        <a class="class" href="" title="Represens the state of a batch of BlockHeaders being added to our blockchain"></a>
+                        <a href="" title="Represens the state of a batch of BlockHeaders being added to our blockchain">BlockchainUpdate</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="ChainHandler$.html" title=""></a>
                         <a class="class" href="ChainHandler.html" title="Chain Handler is meant to be the reference implementation of ChainApi, this is the entry point in to the chain project."></a>
@@ -169,6 +169,10 @@
                         <span class="separator"></span>
                         <a class="class" href="CheckHeaderResult.html" title=""></a>
                         <a href="CheckHeaderResult.html" title="">CheckHeaderResult</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="ConnectTipResult$.html" title=""></a>
+                        <a class="trait" href="ConnectTipResult.html" title="The result indicating how the TipUpdateResult modified the chain."></a>
+                        <a href="ConnectTipResult.html" title="The result indicating how the TipUpdateResult modified the chain.">ConnectTipResult</a>
                       </li>
               </ul>
             </div>
@@ -199,9 +203,7 @@
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Represents the state of an update to our <a href="Blockchain.html" class="extype" name="org.bitcoins.chain.blockchain.Blockchain">Blockchain</a>
-An example of a successful update is receiving a <a href="../../core/protocol/blockchain/BlockHeader.html" class="extype" name="org.bitcoins.core.protocol.blockchain.BlockHeader">BlockHeader</a> and successfully
-adding it to our database.</p><p>An example of a <a href="BlockchainUpdate$$Failed.html" class="extype" name="org.bitcoins.chain.blockchain.BlockchainUpdate.Failed">Failed</a> update
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Represens the state of a batch of <a href="../../core/protocol/blockchain/BlockHeader.html" class="extype" name="org.bitcoins.core.protocol.blockchain.BlockHeader">BlockHeaders</a> being added to our blockchain</p><p>An example of a <a href="BlockchainUpdate$$Failed.html" class="extype" name="org.bitcoins.chain.blockchain.BlockchainUpdate.Failed">Failed</a> update
 is when we receive a <a href="../../core/protocol/blockchain/BlockHeader.html" class="extype" name="org.bitcoins.core.protocol.blockchain.BlockHeader">BlockHeader</a> that is invalid and because of a
 <a href="../validation/TipUpdateResult$$Failure.html" class="extype" name="org.bitcoins.chain.validation.TipUpdateResult.Failure">TipUpdateFailure</a>
 because of <a href="../validation/TipUpdateResult$$BadPOW.html" class="extype" name="org.bitcoins.chain.validation.TipUpdateResult.BadPOW">BadPOW</a> or a
@@ -263,10 +265,45 @@ because of <a href="../validation/TipUpdateResult$$BadPOW.html" class="extype" n
 
         
 
-        
+        <div class="values members">
+              <h3>Abstract Value Members</h3>
+              <ol><li name="org.bitcoins.chain.blockchain.BlockchainUpdate#blockchain" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="blockchain:org.bitcoins.chain.blockchain.Blockchain"></a><a id="blockchain:Blockchain"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/chain/blockchain/BlockchainUpdate.html#blockchain:org.bitcoins.chain.blockchain.Blockchain" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">blockchain</span><span class="result">: <a href="Blockchain.html" class="extype" name="org.bitcoins.chain.blockchain.Blockchain">Blockchain</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Our current blockchain</p>
+    </li><li name="org.bitcoins.chain.blockchain.BlockchainUpdate#successfulHeaders" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="successfulHeaders:Vector[org.bitcoins.chain.models.BlockHeaderDb]"></a><a id="successfulHeaders:Vector[BlockHeaderDb]"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/chain/blockchain/BlockchainUpdate.html#successfulHeaders:Vector[org.bitcoins.chain.models.BlockHeaderDb]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">successfulHeaders</span><span class="result">: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../models/BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">BlockHeaderDb</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">The successful headers in this batch blockchain update that need to be persisted</p>
+    </li></ol>
+            </div>
 
         <div class="values members">
-              <h3>Value Members</h3>
+              <h3>Concrete Value Members</h3>
               <ol>
                 <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
@@ -606,6 +643,22 @@ because of <a href="../validation/TipUpdateResult$$BadPOW.html" class="extype" n
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="org.bitcoins.chain.blockchain.BlockchainUpdate#withSuccessfulHeaders" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withSuccessfulHeaders(headers:Vector[org.bitcoins.chain.models.BlockHeaderDb]):org.bitcoins.chain.blockchain.BlockchainUpdate"></a><a id="withSuccessfulHeaders(Vector[BlockHeaderDb]):BlockchainUpdate"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/chain/blockchain/BlockchainUpdate.html#withSuccessfulHeaders(headers:Vector[org.bitcoins.chain.models.BlockHeaderDb]):org.bitcoins.chain.blockchain.BlockchainUpdate" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withSuccessfulHeaders</span><span class="params">(<span name="headers">headers: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../models/BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">BlockHeaderDb</a>]</span>)</span><span class="result">: <a href="" class="extype" name="org.bitcoins.chain.blockchain.BlockchainUpdate">BlockchainUpdate</a></span>
+      </span>
+      
+      
     </li>
               </ol>
             </div>

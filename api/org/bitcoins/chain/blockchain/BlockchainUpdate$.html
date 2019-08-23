@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 161-f27edd5b-SNAPSHOT - org.bitcoins.chain.blockchain.BlockchainUpdate</title>
-          <meta name="description" content="Bitcoin - S 161 - f27edd5b - SNAPSHOT - org.bitcoins.chain.blockchain.BlockchainUpdate" />
-          <meta name="keywords" content="Bitcoin S 161 f27edd5b SNAPSHOT org.bitcoins.chain.blockchain.BlockchainUpdate" />
+          <title>Bitcoin-S 155-ab170d05-SNAPSHOT - org.bitcoins.chain.blockchain.BlockchainUpdate</title>
+          <meta name="description" content="Bitcoin - S 155 - ab170d05 - SNAPSHOT - org.bitcoins.chain.blockchain.BlockchainUpdate" />
+          <meta name="keywords" content="Bitcoin S 155 ab170d05 SNAPSHOT org.bitcoins.chain.blockchain.BlockchainUpdate" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">161-f27edd5b-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">155-ab170d05-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -159,8 +159,8 @@
                         <a href="BlockchainBuilder.html" title="">BlockchainBuilder</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="" title=""></a>
-                        <a class="class" href="BlockchainUpdate.html" title="Represents the state of an update to our Blockchain An example of a successful update is receiving a BlockHeader and successfully adding it to our database."></a>
-                        <a href="BlockchainUpdate.html" title="Represents the state of an update to our Blockchain An example of a successful update is receiving a BlockHeader and successfully adding it to our database.">BlockchainUpdate</a>
+                        <a class="class" href="BlockchainUpdate.html" title="Represens the state of a batch of BlockHeaders being added to our blockchain"></a>
+                        <a href="BlockchainUpdate.html" title="Represens the state of a batch of BlockHeaders being added to our blockchain">BlockchainUpdate</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="ChainHandler$.html" title=""></a>
                         <a class="class" href="ChainHandler.html" title="Chain Handler is meant to be the reference implementation of ChainApi, this is the entry point in to the chain project."></a>
@@ -169,6 +169,10 @@
                         <span class="separator"></span>
                         <a class="class" href="CheckHeaderResult.html" title=""></a>
                         <a href="CheckHeaderResult.html" title="">CheckHeaderResult</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="ConnectTipResult$.html" title=""></a>
+                        <a class="trait" href="ConnectTipResult.html" title="The result indicating how the TipUpdateResult modified the chain."></a>
+                        <a href="ConnectTipResult.html" title="The result indicating how the TipUpdateResult modified the chain.">ConnectTipResult</a>
                       </li>
               </ul>
             </div>
@@ -263,10 +267,13 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="" href="BlockchainUpdate$$Failed.html"><span class="name">Failed</span></a><span class="params">(<span name="blockchain">blockchain: <a href="Blockchain.html" class="extype" name="org.bitcoins.chain.blockchain.Blockchain">Blockchain</a></span>, <span name="failedHeader">failedHeader: <a href="../../core/protocol/blockchain/BlockHeader.html" class="extype" name="org.bitcoins.core.protocol.blockchain.BlockHeader">BlockHeader</a></span>, <span name="tipUpdateFailure">tipUpdateFailure: <a href="../validation/TipUpdateResult$$Failure.html" class="extype" name="org.bitcoins.chain.validation.TipUpdateResult.Failure">Failure</a></span>)</span><span class="result"> extends <a href="BlockchainUpdate.html" class="extype" name="org.bitcoins.chain.blockchain.BlockchainUpdate">BlockchainUpdate</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="Means we failed to update the given blockchain with _ALL_ given headers This means we could have had a partially successful update, with the headers/blockchain returned in this case class" href="BlockchainUpdate$$Failed.html"><span class="name">Failed</span></a><span class="params">(<span name="blockchain">blockchain: <a href="Blockchain.html" class="extype" name="org.bitcoins.chain.blockchain.Blockchain">Blockchain</a></span>, <span name="successfulHeaders">successfulHeaders: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../models/BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">BlockHeaderDb</a>]</span>, <span name="failedHeader">failedHeader: <a href="../../core/protocol/blockchain/BlockHeader.html" class="extype" name="org.bitcoins.core.protocol.blockchain.BlockHeader">BlockHeader</a></span>, <span name="tipUpdateFailure">tipUpdateFailure: <a href="../validation/TipUpdateResult$$Failure.html" class="extype" name="org.bitcoins.chain.validation.TipUpdateResult.Failure">Failure</a></span>)</span><span class="result"> extends <a href="BlockchainUpdate.html" class="extype" name="org.bitcoins.chain.blockchain.BlockchainUpdate">BlockchainUpdate</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
-      
+      <p class="shortcomment cmt">Means we failed to update the given blockchain with _ALL_ given headers
+This means we could have had a partially successful update, with the headers/blockchain
+returned in this case class
+</p>
     </li><li name="org.bitcoins.chain.blockchain.BlockchainUpdate.Successful" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="SuccessfulextendsBlockchainUpdatewithProductwithSerializable"></a><a id="Successful:Successful"></a>
       <span class="permalink">
@@ -279,12 +286,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="The key thing we receive here is BlockHeaderDb with a height assigned to it this happens after calling ChainHandler.processHeader" href="BlockchainUpdate$$Successful.html"><span class="name">Successful</span></a><span class="params">(<span name="blockchain">blockchain: <a href="Blockchain.html" class="extype" name="org.bitcoins.chain.blockchain.Blockchain">Blockchain</a></span>, <span name="updatedHeader">updatedHeader: <a href="../models/BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">BlockHeaderDb</a></span>)</span><span class="result"> extends <a href="BlockchainUpdate.html" class="extype" name="org.bitcoins.chain.blockchain.BlockchainUpdate">BlockchainUpdate</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="The key thing we receive here is BlockHeaderDb with a height assigned to it this happens after calling ChainHandler.processHeaders" href="BlockchainUpdate$$Successful.html"><span class="name">Successful</span></a><span class="params">(<span name="blockchain">blockchain: <a href="Blockchain.html" class="extype" name="org.bitcoins.chain.blockchain.Blockchain">Blockchain</a></span>, <span name="successfulHeaders">successfulHeaders: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../models/BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">BlockHeaderDb</a>]</span>)</span><span class="result"> extends <a href="BlockchainUpdate.html" class="extype" name="org.bitcoins.chain.blockchain.BlockchainUpdate">BlockchainUpdate</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">The key thing we receive here is <a href="../models/BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">BlockHeaderDb</a>
 with a height assigned to it this happens after
-calling <a href="ChainHandler.html#processHeader(header:org.bitcoins.core.protocol.blockchain.BlockHeader)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[org.bitcoins.chain.blockchain.ChainHandler]" class="extmbr" name="org.bitcoins.chain.blockchain.ChainHandler#processHeader">ChainHandler.processHeader</a>
+calling <a href="ChainHandler.html#processHeaders(headers:Vector[org.bitcoins.core.protocol.blockchain.BlockHeader])(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[org.bitcoins.chain.api.ChainApi]" class="extmbr" name="org.bitcoins.chain.blockchain.ChainHandler#processHeaders">ChainHandler.processHeaders</a>
 </p>
     </li></ol>
             </div>

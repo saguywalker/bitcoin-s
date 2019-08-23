@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 161-f27edd5b-SNAPSHOT - org.bitcoins.chain.blockchain.Blockchain</title>
-          <meta name="description" content="Bitcoin - S 161 - f27edd5b - SNAPSHOT - org.bitcoins.chain.blockchain.Blockchain" />
-          <meta name="keywords" content="Bitcoin S 161 f27edd5b SNAPSHOT org.bitcoins.chain.blockchain.Blockchain" />
+          <title>Bitcoin-S 155-ab170d05-SNAPSHOT - org.bitcoins.chain.blockchain.Blockchain</title>
+          <meta name="description" content="Bitcoin - S 155 - ab170d05 - SNAPSHOT - org.bitcoins.chain.blockchain.Blockchain" />
+          <meta name="keywords" content="Bitcoin S 155 ab170d05 SNAPSHOT org.bitcoins.chain.blockchain.Blockchain" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">161-f27edd5b-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">155-ab170d05-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -159,8 +159,8 @@
                         <a href="BlockchainBuilder.html" title="">BlockchainBuilder</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="BlockchainUpdate$.html" title=""></a>
-                        <a class="class" href="BlockchainUpdate.html" title="Represents the state of an update to our Blockchain An example of a successful update is receiving a BlockHeader and successfully adding it to our database."></a>
-                        <a href="BlockchainUpdate.html" title="Represents the state of an update to our Blockchain An example of a successful update is receiving a BlockHeader and successfully adding it to our database.">BlockchainUpdate</a>
+                        <a class="class" href="BlockchainUpdate.html" title="Represens the state of a batch of BlockHeaders being added to our blockchain"></a>
+                        <a href="BlockchainUpdate.html" title="Represens the state of a batch of BlockHeaders being added to our blockchain">BlockchainUpdate</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="ChainHandler$.html" title=""></a>
                         <a class="class" href="ChainHandler.html" title="Chain Handler is meant to be the reference implementation of ChainApi, this is the entry point in to the chain project."></a>
@@ -169,6 +169,10 @@
                         <span class="separator"></span>
                         <a class="class" href="CheckHeaderResult.html" title=""></a>
                         <a href="CheckHeaderResult.html" title="">CheckHeaderResult</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="ConnectTipResult$.html" title=""></a>
+                        <a class="trait" href="ConnectTipResult.html" title="The result indicating how the TipUpdateResult modified the chain."></a>
+                        <a href="ConnectTipResult.html" title="The result indicating how the TipUpdateResult modified the chain.">ConnectTipResult</a>
                       </li>
               </ul>
             </div>
@@ -1128,6 +1132,22 @@ You can walk the chain by</p><pre>headers.map(h <span class="kw">=&gt;</span> pr
       </span>
       
       <p class="shortcomment cmt">Splits the blockchain at the header, returning a new blockchain where the best tip is the given header</p>
+    </li><li name="org.bitcoins.chain.blockchain.Blockchain#fromValidHeader" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="fromValidHeader(header:org.bitcoins.chain.models.BlockHeaderDb):org.bitcoins.chain.blockchain.Blockchain"></a><a id="fromValidHeader(BlockHeaderDb):Blockchain"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/chain/blockchain/Blockchain.html#fromValidHeader(header:org.bitcoins.chain.models.BlockHeaderDb):org.bitcoins.chain.blockchain.Blockchain" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fromValidHeader</span><span class="params">(<span name="header">header: <a href="../models/BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">BlockHeaderDb</a></span>)</span><span class="result">: <a href="" class="extype" name="org.bitcoins.chain.blockchain.Blockchain">Blockchain</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Unsafe version for <span class="extype" name="org.bitcoins.chain.blockchain.Blockchain.fromHeader()">fromHeader</span> that can throw <span class="extype" name="NoSuchElementException">NoSuchElementException</span></p>
     </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <span class="permalink">
@@ -1261,6 +1281,22 @@ You can walk the chain by</p><pre>headers.map(h <span class="kw">=&gt;</span> pr
       </span>
       
       
+    </li><li name="org.bitcoins.chain.blockchain.Blockchain#height" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="height:Int"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/chain/blockchain/Blockchain.html#height:Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">height</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The height of the chain</p>
     </li><li name="scala.collection.GenSeqLike#indexOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="indexOf[B&gt;:A](elem:B,from:Int):Int"></a><a id="indexOf[B&gt;:BlockHeaderDb](B,Int):Int"></a>
       <span class="permalink">

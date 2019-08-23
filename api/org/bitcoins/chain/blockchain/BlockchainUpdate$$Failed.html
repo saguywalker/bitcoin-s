@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 161-f27edd5b-SNAPSHOT - org.bitcoins.chain.blockchain.BlockchainUpdate.Failed</title>
-          <meta name="description" content="Bitcoin - S 161 - f27edd5b - SNAPSHOT - org.bitcoins.chain.blockchain.BlockchainUpdate.Failed" />
-          <meta name="keywords" content="Bitcoin S 161 f27edd5b SNAPSHOT org.bitcoins.chain.blockchain.BlockchainUpdate.Failed" />
+          <title>Bitcoin-S 155-ab170d05-SNAPSHOT - org.bitcoins.chain.blockchain.BlockchainUpdate.Failed</title>
+          <meta name="description" content="Bitcoin - S 155 - ab170d05 - SNAPSHOT - org.bitcoins.chain.blockchain.BlockchainUpdate.Failed" />
+          <meta name="keywords" content="Bitcoin S 155 ab170d05 SNAPSHOT org.bitcoins.chain.blockchain.BlockchainUpdate.Failed" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">161-f27edd5b-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">155-ab170d05-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -151,12 +151,12 @@
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="org.bitcoins.chain.blockchain">blockchain</a></dd></dl></div>
     </li><li class="current-entities indented5">
                         <span class="separator"></span>
-                        <a class="class" href="" title=""></a>
-                        <a href="" title="">Failed</a>
+                        <a class="class" href="" title="Means we failed to update the given blockchain with _ALL_ given headers This means we could have had a partially successful update, with the headers/blockchain returned in this case class"></a>
+                        <a href="" title="Means we failed to update the given blockchain with _ALL_ given headers This means we could have had a partially successful update, with the headers/blockchain returned in this case class">Failed</a>
                       </li><li class="current-entities indented5">
                         <span class="separator"></span>
-                        <a class="class" href="BlockchainUpdate$$Successful.html" title="The key thing we receive here is BlockHeaderDb with a height assigned to it this happens after calling ChainHandler.processHeader"></a>
-                        <a href="BlockchainUpdate$$Successful.html" title="The key thing we receive here is BlockHeaderDb with a height assigned to it this happens after calling ChainHandler.processHeader">Successful</a>
+                        <a class="class" href="BlockchainUpdate$$Successful.html" title="The key thing we receive here is BlockHeaderDb with a height assigned to it this happens after calling ChainHandler.processHeaders"></a>
+                        <a href="BlockchainUpdate$$Successful.html" title="The key thing we receive here is BlockHeaderDb with a height assigned to it this happens after calling ChainHandler.processHeaders">Successful</a>
                       </li>
               </ul>
             </div>
@@ -180,12 +180,15 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">Failed</span><span class="params">(<span name="blockchain">blockchain: <a href="Blockchain.html" class="extype" name="org.bitcoins.chain.blockchain.Blockchain">Blockchain</a></span>, <span name="failedHeader">failedHeader: <a href="../../core/protocol/blockchain/BlockHeader.html" class="extype" name="org.bitcoins.core.protocol.blockchain.BlockHeader">BlockHeader</a></span>, <span name="tipUpdateFailure">tipUpdateFailure: <a href="../validation/TipUpdateResult$$Failure.html" class="extype" name="org.bitcoins.chain.validation.TipUpdateResult.Failure">Failure</a></span>)</span><span class="result"> extends <a href="BlockchainUpdate.html" class="extype" name="org.bitcoins.chain.blockchain.BlockchainUpdate">BlockchainUpdate</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <span class="name">Failed</span><span class="params">(<span name="blockchain">blockchain: <a href="Blockchain.html" class="extype" name="org.bitcoins.chain.blockchain.Blockchain">Blockchain</a></span>, <span name="successfulHeaders">successfulHeaders: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../models/BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">BlockHeaderDb</a>]</span>, <span name="failedHeader">failedHeader: <a href="../../core/protocol/blockchain/BlockHeader.html" class="extype" name="org.bitcoins.core.protocol.blockchain.BlockHeader">BlockHeader</a></span>, <span name="tipUpdateFailure">tipUpdateFailure: <a href="../validation/TipUpdateResult$$Failure.html" class="extype" name="org.bitcoins.chain.validation.TipUpdateResult.Failure">Failure</a></span>)</span><span class="result"> extends <a href="BlockchainUpdate.html" class="extype" name="org.bitcoins.chain.blockchain.BlockchainUpdate">BlockchainUpdate</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Means we failed to update the given blockchain with _ALL_ given headers
+This means we could have had a partially successful update, with the headers/blockchain
+returned in this case class
+</p></div><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -236,9 +239,9 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="org.bitcoins.chain.blockchain.BlockchainUpdate.Failed#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(blockchain:org.bitcoins.chain.blockchain.Blockchain,failedHeader:org.bitcoins.core.protocol.blockchain.BlockHeader,tipUpdateFailure:org.bitcoins.chain.validation.TipUpdateResult.Failure):org.bitcoins.chain.blockchain.BlockchainUpdate.Failed"></a><a id="&lt;init&gt;:Failed"></a>
+      <a id="&lt;init&gt;(blockchain:org.bitcoins.chain.blockchain.Blockchain,successfulHeaders:Vector[org.bitcoins.chain.models.BlockHeaderDb],failedHeader:org.bitcoins.core.protocol.blockchain.BlockHeader,tipUpdateFailure:org.bitcoins.chain.validation.TipUpdateResult.Failure):org.bitcoins.chain.blockchain.BlockchainUpdate.Failed"></a><a id="&lt;init&gt;:Failed"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/chain/blockchain/BlockchainUpdate$$Failed.html#&lt;init&gt;(blockchain:org.bitcoins.chain.blockchain.Blockchain,failedHeader:org.bitcoins.core.protocol.blockchain.BlockHeader,tipUpdateFailure:org.bitcoins.chain.validation.TipUpdateResult.Failure):org.bitcoins.chain.blockchain.BlockchainUpdate.Failed" title="Permalink">
+      <a href="../../../../org/bitcoins/chain/blockchain/BlockchainUpdate$$Failed.html#&lt;init&gt;(blockchain:org.bitcoins.chain.blockchain.Blockchain,successfulHeaders:Vector[org.bitcoins.chain.models.BlockHeaderDb],failedHeader:org.bitcoins.core.protocol.blockchain.BlockHeader,tipUpdateFailure:org.bitcoins.chain.validation.TipUpdateResult.Failure):org.bitcoins.chain.blockchain.BlockchainUpdate.Failed" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -247,7 +250,7 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">Failed</span><span class="params">(<span name="blockchain">blockchain: <a href="Blockchain.html" class="extype" name="org.bitcoins.chain.blockchain.Blockchain">Blockchain</a></span>, <span name="failedHeader">failedHeader: <a href="../../core/protocol/blockchain/BlockHeader.html" class="extype" name="org.bitcoins.core.protocol.blockchain.BlockHeader">BlockHeader</a></span>, <span name="tipUpdateFailure">tipUpdateFailure: <a href="../validation/TipUpdateResult$$Failure.html" class="extype" name="org.bitcoins.chain.validation.TipUpdateResult.Failure">Failure</a></span>)</span>
+        <span class="name">Failed</span><span class="params">(<span name="blockchain">blockchain: <a href="Blockchain.html" class="extype" name="org.bitcoins.chain.blockchain.Blockchain">Blockchain</a></span>, <span name="successfulHeaders">successfulHeaders: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../models/BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">BlockHeaderDb</a>]</span>, <span name="failedHeader">failedHeader: <a href="../../core/protocol/blockchain/BlockHeader.html" class="extype" name="org.bitcoins.core.protocol.blockchain.BlockHeader">BlockHeader</a></span>, <span name="tipUpdateFailure">tipUpdateFailure: <a href="../validation/TipUpdateResult$$Failure.html" class="extype" name="org.bitcoins.chain.validation.TipUpdateResult.Failure">Failure</a></span>)</span>
       </span>
       
       
@@ -325,7 +328,7 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="org.bitcoins.chain.blockchain.BlockchainUpdate.Failed#blockchain" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="org.bitcoins.chain.blockchain.BlockchainUpdate.Failed#blockchain" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="blockchain:org.bitcoins.chain.blockchain.Blockchain"></a><a id="blockchain:Blockchain"></a>
       <span class="permalink">
       <a href="../../../../org/bitcoins/chain/blockchain/BlockchainUpdate$$Failed.html#blockchain:org.bitcoins.chain.blockchain.Blockchain" title="Permalink">
@@ -340,7 +343,7 @@
         <span class="name">blockchain</span><span class="result">: <a href="Blockchain.html" class="extype" name="org.bitcoins.chain.blockchain.Blockchain">Blockchain</a></span>
       </span>
       
-      
+      <p class="shortcomment cmt">Our current blockchain</p><div class="fullcomment"><div class="comment cmt"><p>Our current blockchain</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.bitcoins.chain.blockchain.BlockchainUpdate.Failed">Failed</a> → <a href="BlockchainUpdate.html" class="extype" name="org.bitcoins.chain.blockchain.BlockchainUpdate">BlockchainUpdate</a></dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a><a id="clone():AnyRef"></a>
       <span class="permalink">
@@ -494,6 +497,22 @@
                 <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="org.bitcoins.chain.blockchain.BlockchainUpdate.Failed#successfulHeaders" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="successfulHeaders:Vector[org.bitcoins.chain.models.BlockHeaderDb]"></a><a id="successfulHeaders:Vector[BlockHeaderDb]"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/chain/blockchain/BlockchainUpdate$$Failed.html#successfulHeaders:Vector[org.bitcoins.chain.models.BlockHeaderDb]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">successfulHeaders</span><span class="result">: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../models/BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">BlockHeaderDb</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">The successful headers in this batch blockchain update that need to be persisted</p><div class="fullcomment"><div class="comment cmt"><p>The successful headers in this batch blockchain update that need to be persisted</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.bitcoins.chain.blockchain.BlockchainUpdate.Failed">Failed</a> → <a href="BlockchainUpdate.html" class="extype" name="org.bitcoins.chain.blockchain.BlockchainUpdate">BlockchainUpdate</a></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">
@@ -594,6 +613,22 @@
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="org.bitcoins.chain.blockchain.BlockchainUpdate#withSuccessfulHeaders" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withSuccessfulHeaders(headers:Vector[org.bitcoins.chain.models.BlockHeaderDb]):org.bitcoins.chain.blockchain.BlockchainUpdate"></a><a id="withSuccessfulHeaders(Vector[BlockHeaderDb]):BlockchainUpdate"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/chain/blockchain/BlockchainUpdate$$Failed.html#withSuccessfulHeaders(headers:Vector[org.bitcoins.chain.models.BlockHeaderDb]):org.bitcoins.chain.blockchain.BlockchainUpdate" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withSuccessfulHeaders</span><span class="params">(<span name="headers">headers: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../models/BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">BlockHeaderDb</a>]</span>)</span><span class="result">: <a href="BlockchainUpdate.html" class="extype" name="org.bitcoins.chain.blockchain.BlockchainUpdate">BlockchainUpdate</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BlockchainUpdate.html" class="extype" name="org.bitcoins.chain.blockchain.BlockchainUpdate">BlockchainUpdate</a></dd></dl></div>
     </li>
               </ol>
             </div>

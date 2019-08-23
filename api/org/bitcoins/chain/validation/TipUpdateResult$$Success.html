@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 161-f27edd5b-SNAPSHOT - org.bitcoins.chain.validation.TipUpdateResult.Success</title>
-          <meta name="description" content="Bitcoin - S 161 - f27edd5b - SNAPSHOT - org.bitcoins.chain.validation.TipUpdateResult.Success" />
-          <meta name="keywords" content="Bitcoin S 161 f27edd5b SNAPSHOT org.bitcoins.chain.validation.TipUpdateResult.Success" />
+          <title>Bitcoin-S 155-ab170d05-SNAPSHOT - org.bitcoins.chain.validation.TipUpdateResult.Success</title>
+          <meta name="description" content="Bitcoin - S 155 - ab170d05 - SNAPSHOT - org.bitcoins.chain.validation.TipUpdateResult.Success" />
+          <meta name="keywords" content="Bitcoin S 155 ab170d05 SNAPSHOT org.bitcoins.chain.validation.TipUpdateResult.Success" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">161-f27edd5b-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">155-ab170d05-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -192,7 +192,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">Success</span><span class="params">(<span name="header">header: <a href="../models/BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">BlockHeaderDb</a></span>)</span><span class="result"> extends <a href="TipUpdateResult.html" class="extype" name="org.bitcoins.chain.validation.TipUpdateResult">TipUpdateResult</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <span class="name">Success</span><span class="params">(<span name="headerDb">headerDb: <a href="../models/BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">BlockHeaderDb</a></span>)</span><span class="result"> extends <a href="TipUpdateResult.html" class="extype" name="org.bitcoins.chain.validation.TipUpdateResult">TipUpdateResult</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       </h4>
 
@@ -248,9 +248,9 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="org.bitcoins.chain.validation.TipUpdateResult.Success#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(header:org.bitcoins.chain.models.BlockHeaderDb):org.bitcoins.chain.validation.TipUpdateResult.Success"></a><a id="&lt;init&gt;:Success"></a>
+      <a id="&lt;init&gt;(headerDb:org.bitcoins.chain.models.BlockHeaderDb):org.bitcoins.chain.validation.TipUpdateResult.Success"></a><a id="&lt;init&gt;:Success"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/chain/validation/TipUpdateResult$$Success.html#&lt;init&gt;(header:org.bitcoins.chain.models.BlockHeaderDb):org.bitcoins.chain.validation.TipUpdateResult.Success" title="Permalink">
+      <a href="../../../../org/bitcoins/chain/validation/TipUpdateResult$$Success.html#&lt;init&gt;(headerDb:org.bitcoins.chain.models.BlockHeaderDb):org.bitcoins.chain.validation.TipUpdateResult.Success" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -259,7 +259,7 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">Success</span><span class="params">(<span name="header">header: <a href="../models/BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">BlockHeaderDb</a></span>)</span>
+        <span class="name">Success</span><span class="params">(<span name="headerDb">headerDb: <a href="../models/BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">BlockHeaderDb</a></span>)</span>
       </span>
       
       
@@ -400,10 +400,26 @@
                 <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="org.bitcoins.chain.validation.TipUpdateResult.Success#header" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="header:org.bitcoins.chain.models.BlockHeaderDb"></a><a id="header:BlockHeaderDb"></a>
+    </li><li name="org.bitcoins.chain.validation.TipUpdateResult.Success#header" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="header:org.bitcoins.core.protocol.blockchain.BlockHeader"></a><a id="header:BlockHeader"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/chain/validation/TipUpdateResult$$Success.html#header:org.bitcoins.chain.models.BlockHeaderDb" title="Permalink">
+      <a href="../../../../org/bitcoins/chain/validation/TipUpdateResult$$Success.html#header:org.bitcoins.core.protocol.blockchain.BlockHeader" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">header</span><span class="result">: <a href="../../core/protocol/blockchain/BlockHeader.html" class="extype" name="org.bitcoins.core.protocol.blockchain.BlockHeader">BlockHeader</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.bitcoins.chain.validation.TipUpdateResult.Success">Success</a> → <a href="TipUpdateResult.html" class="extype" name="org.bitcoins.chain.validation.TipUpdateResult">TipUpdateResult</a></dd></dl></div>
+    </li><li name="org.bitcoins.chain.validation.TipUpdateResult.Success#headerDb" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="headerDb:org.bitcoins.chain.models.BlockHeaderDb"></a><a id="headerDb:BlockHeaderDb"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/chain/validation/TipUpdateResult$$Success.html#headerDb:org.bitcoins.chain.models.BlockHeaderDb" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -412,7 +428,7 @@
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">header</span><span class="result">: <a href="../models/BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">BlockHeaderDb</a></span>
+        <span class="name">headerDb</span><span class="result">: <a href="../models/BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">BlockHeaderDb</a></span>
       </span>
       
       
